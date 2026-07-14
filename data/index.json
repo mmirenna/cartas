@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-07-13T23:39:34",
+ "actualizado": "2026-07-14T15:38:40.932Z",
  "cartas": [
   {
    "id": "don-giovanni",
@@ -8,38 +8,6 @@
    "logo": "don-giovanni.svg",
    "orden": 1,
    "items": 65
-  },
-  {
-   "id": "lobby-bar",
-   "nombre": "Lobby Bar",
-   "tema": "lb",
-   "logo": "lobby-bar.svg",
-   "orden": 2,
-   "items": 238
-  },
-  {
-   "id": "room-service",
-   "nombre": "Room Service",
-   "tema": "rs",
-   "logo": "hotel.svg",
-   "orden": 3,
-   "items": 137
-  },
-  {
-   "id": "pool-snack",
-   "nombre": "Pool Snack",
-   "tema": "pool",
-   "logo": "hotel.svg",
-   "orden": 4,
-   "items": 71
-  },
-  {
-   "id": "la-federala",
-   "nombre": "La Federala",
-   "tema": "lf",
-   "logo": "la-federala.svg",
-   "orden": 5,
-   "items": 64
   },
   {
    "id": "carta-vinos",
