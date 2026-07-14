@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lobby Bar — vista previa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Cormorant+Garamond:wght@400;600&family=Libre+Baskerville:wght@400;700&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+<style>/* ============================================================
+   Cartas digitales — base + temas por carta
+   Un solo CSS. El tema se elige con <body data-tema="lb">.
+   ============================================================ */
+
+:root {
+  --paper: #FBFAF8;
+  --ink: #1B1A17;
+  --ink-soft: #6B675E;
+  --rule: #DFDAD0;
+  --accent: #8A6A3B;
+  --accent-soft: #F0E9DC;
+  --display: "Libre Baskerville", Georgia, serif;
+  --body: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --maxw: 720px;
+}
+
+/* Don Giovanni — ristorante, tinta cálida y burdeos */
+[data-tema="dg"] {
+  --paper: #F7F2E9;
+  --ink: #1E1A16;
+  --ink-soft: #756B5C;
+  --rule: #DDD2BE;
+  --accent: #7A2E38;
+  --accent-soft: #EFE2DF;
+  --display: "Cormorant Garamond", Georgia, serif;
+}
+
+/* Lobby Bar — hotel, azul profundo y bronce */
+[data-tema="lb"] {
+  --paper: #FBFAF8;
+  --ink: #16233A;
+  --ink-soft: #6C7789;
+  --rule: #DFE2E8;
+  --accent: #A67C3D;
+  --accent-soft: #F3EADA;
+  --display: "Libre Baskerville", Georgia, serif;
+}
+
+/* Room Service — sobrio, legible de noche */
+[data-tema="rs"] {
+  --paper: #FAFAF9;
+  --ink: #22262B;
+  --ink-soft: #6E747C;
+  --rule: #E2E4E6;
+  --accent: #3F5B70;
+  --accent-soft: #E7EDF2;
+  --display: "Libre Baskerville", Georgia, serif;
+}
+
+/* Pool Snack — luz, agua */
+[data-tema="pool"] {
+  --paper: #FBFCFC;
+  --ink: #12312F;
+  --ink-soft: #5E7370;
+  --rule: #D8E5E2;
+  --accent: #0F7168;
+  --accent-soft: #E0F0ED;
+  --display: "Libre Baskerville", Georgia, serif;
+}
+
+/* La Federala — parrilla, brasa */
+[data-tema="lf"] {
+  --paper: #F6F1E8;
+  --ink: #211E1B;
+  --ink-soft: #6F675E;
+  --rule: #DBD2C4;
+  --accent: #A63D22;
+  --accent-soft: #F1E1DA;
+  --display: "Oswald", Impact, sans-serif;
+}
+
+/* Carta de vinos — bodega */
+[data-tema="vinos"] {
+  --paper: #F5F1EE;
+  --ink: #241A22;
+  --ink-soft: #6E5F69;
+  --rule: #DCD1D6;
+  --accent: #5C2A45;
+  --accent-soft: #EBE0E6;
+  --display: "Cormorant Garamond", Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
+
+/* ---------- barra superior ---------- */
+.bar {
+  position: sticky; top: 0; z-index: 20;
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: saturate(1.4) blur(8px);
+  border-bottom: 1px solid var(--rule);
+}
+.bar__top {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 20px; max-width: var(--maxw); margin: 0 auto;
+}
+.bar__logo { height: 26px; width: auto; }
+.bar__name {
+  font-family: var(--display); font-size: 17px; font-weight: 400;
+  letter-spacing: .01em; margin: 0; flex: 1; white-space: nowrap;
+  overflow: hidden; text-overflow: ellipsis;
+}
+.bar__lang { display: flex; gap: 2px; }
+.bar__lang button {
+  border: 0; background: none; font: inherit; font-size: 12px;
+  text-transform: uppercase; letter-spacing: .06em;
+  color: var(--ink-soft); padding: 4px 6px; cursor: pointer; border-radius: 4px;
+}
+.bar__lang button[aria-pressed="true"] { color: var(--accent); font-weight: 700; }
+
+.search { padding: 0 20px 10px; max-width: var(--maxw); margin: 0 auto; }
+.search input {
+  width: 100%; padding: 9px 12px; font: inherit; font-size: 15px;
+  color: var(--ink); background: transparent;
+  border: 1px solid var(--rule); border-radius: 6px;
+}
+.search input::placeholder { color: var(--ink-soft); }
+.search input:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+
+/* chips de sección */
+.chips {
+  display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none;
+  padding: 0 20px 10px; max-width: var(--maxw); margin: 0 auto;
+  -webkit-overflow-scrolling: touch;
+}
+.chips::-webkit-scrollbar { display: none; }
+.chips a {
+  flex: 0 0 auto; font-size: 13px; text-decoration: none; white-space: nowrap;
+  color: var(--ink-soft); border: 1px solid var(--rule); border-radius: 999px;
+  padding: 5px 12px; transition: background .15s, color .15s, border-color .15s;
+}
+.chips a[aria-current="true"] {
+  color: var(--accent); border-color: var(--accent); background: var(--accent-soft);
+}
+
+/* ---------- portada ---------- */
+.hero { text-align: center; padding: 40px 20px 28px; }
+.hero__logo { height: 54px; width: auto; margin-bottom: 14px; }
+.hero__title {
+  font-family: var(--display); font-weight: 400; font-size: 34px;
+  line-height: 1.15; margin: 0 0 6px;
+}
+.hero__meta { font-size: 12px; color: var(--ink-soft); letter-spacing: .04em; }
+
+/* ---------- secciones ---------- */
+.sec { padding-top: 34px; scroll-margin-top: 118px; }
+.sec__foto {
+  display: block; width: 100%; height: 168px; object-fit: cover;
+  border-radius: 10px; margin-bottom: 18px; background: var(--accent-soft);
+}
+.sec__title {
+  font-family: var(--display); font-weight: 400; font-size: 24px; margin: 0 0 2px;
+  color: var(--accent);
+}
+.sec__note { font-size: 13px; color: var(--ink-soft); margin: 0 0 6px; }
+.sec__rule { border: 0; border-top: 1px solid var(--rule); margin: 12px 0 4px; }
+
+/* ---------- items: la firma es el punteado hasta el precio ---------- */
+.item { padding: 16px 0; border-bottom: 1px solid var(--rule); }
+.item:last-child { border-bottom: 0; }
+.item__head { display: flex; align-items: baseline; gap: 6px; }
+.item__name { font-weight: 700; font-size: 16px; }
+.item__dots {
+  flex: 1; border-bottom: 1px dotted var(--rule);
+  transform: translateY(-4px); min-width: 16px;
+}
+.item__price {
+  font-variant-numeric: tabular-nums; font-size: 16px; white-space: nowrap;
+  color: var(--ink);
+}
+.item__desc { margin: 5px 0 0; font-size: 14px; color: var(--ink-soft); line-height: 1.45; }
+.item__tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 7px; }
+.tag {
+  font-size: 10px; letter-spacing: .07em; text-transform: uppercase;
+  border: 1px solid var(--rule); color: var(--ink-soft);
+  border-radius: 3px; padding: 2px 6px;
+}
+.tag--nuevo, .tag--sugerencia_chef, .tag--promo_3x4 {
+  border-color: var(--accent); color: var(--accent); background: var(--accent-soft);
+}
+
+/* ---------- pie ---------- */
+.foot {
+  margin-top: 44px; padding: 22px 0 48px; border-top: 1px solid var(--rule);
+  font-size: 12px; color: var(--ink-soft); line-height: 1.6;
+}
+.foot a { color: var(--accent); }
+
+.empty { padding: 40px 0; text-align: center; color: var(--ink-soft); font-size: 15px; }
+
+/* ---------- home / selector ---------- */
+.cards { display: grid; gap: 12px; padding: 8px 0 48px; }
+.card {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 18px 20px; text-decoration: none; color: var(--ink);
+  border: 1px solid var(--rule); border-radius: 10px; background: #fff;
+}
+.card:hover, .card:focus-visible { border-color: var(--accent); outline: none; }
+.card__name { font-family: var(--display); font-size: 20px; }
+.card__meta { font-size: 12px; color: var(--ink-soft); }
+.card__arrow { color: var(--accent); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+}
+html { scroll-behavior: smooth; }
+</style></head>
+<body data-carta="lobby-bar" data-tema="lb" data-base="">
+<header class="bar" id="bar"></header>
+<main id="app"></main>
+<script>window.__DATA__ = {"carta": {"id": "lobby-bar", "nombre": "Lobby Bar", "tema": "lb", "logo": "", "idiomas": ["es", "en", "pt"], "actualizado": "2026-07-13T20:01:00", "pie": {"es": "Por favor notifique a nuestros asociados si posee alguna intolerancia alérgica."}}, "tags": {"SIN_TACC": {"es": "Sin TACC", "en": "Gluten free", "pt": "Sem glúten"}, "VEGETARIANO": {"es": "Vegetariano", "en": "Vegetarian", "pt": "Vegetariano"}, "VEGANO": {"es": "Vegano", "en": "Vegan", "pt": "Vegano"}, "NUEVO": {"es": "Nuevo", "en": "New", "pt": "Novo"}, "SUGERENCIA_CHEF": {"es": "Sugerencia del chef", "en": "Chef's suggestion", "pt": "Sugestão do chef"}, "PROMO_3X4": {"es": "Promo 3x4", "en": "3x4 promo", "pt": "Promo 3x4"}}, "config": {"moneda": {"es": "ARS", "en": "ARS", "pt": "ARS"}, "simbolo": {"es": "$", "en": "$", "pt": "$"}, "hotel": {"es": "Sheraton Pilar Hotel & Convention Center", "en": "Sheraton Pilar Hotel & Convention Center", "pt": "Sheraton Pilar Hotel & Convention Center"}, "aviso_alergias": {"es": "Si tiene alguna restricción alimentaria, por favor avise a su camarero antes de realizar su pedido.", "en": "If you have any dietary restriction, please let your waiter know before ordering.", "pt": "Se você tem alguma restrição alimentar, avise o garçom antes de fazer o pedido."}}, "secciones": [{"id": "campeones", "nombre": {"es": "Menú campeones"}, "foto": "lb-campeones.jpg", "nota": {"es": "Una selección especial de promociones, combos y platos para disfrutar cada encuentro."}, "items": [{"id": "camp-punt-e-mes-julep", "nombre": {"es": "Punt e mes julep"}, "descripcion": {"es": "Vermú Punt e Mes, almíbar, agua con gas, jugo de limón y jugo de pomelo."}, "precio": 15000, "tags": ["PROMO_3X4"]}, {"id": "camp-citric-sunset", "nombre": {"es": "Citric sunset"}, "descripcion": {"es": "Vermú Punt e Mes, naranja, lima y limón macerados en almíbar cítrico."}, "precio": 15000, "tags": ["PROMO_3X4"]}, {"id": "camp-due-mondi", "nombre": {"es": "Due mondi"}, "descripcion": {"es": "London Dry Gin, Punt e Mes, almíbar de naranja, jugo de naranja y Bitter Angostura."}, "precio": 15000, "tags": ["PROMO_3X4"]}, {"id": "camp-fernet", "nombre": {"es": "Fernet"}, "descripcion": {"es": "Fernet Branca y Cola."}, "precio": 23000, "tags": ["PROMO_3X4"]}, {"id": "camp-copa-trumpeter", "nombre": {"es": "Copa de vino Trumpeter"}, "descripcion": {"es": "Cabernet Sauvignon, Malbec, Sauvignon Blanc o Chardonnay."}, "precio": 9000, "tags": ["PROMO_3X4"]}, {"id": "camp-cerveza", "nombre": {"es": "Cerveza"}, "descripcion": {"es": "Patagonia Vera IPA, Patagonia 24.7, Patagonia Amber Lager, Stella Artois, Heineken, Heineken 0.0 o Quilmes Stout."}, "precio": 9000, "tags": ["PROMO_3X4"]}, {"id": "camp-ojo-de-bife", "nombre": {"es": "Ojo de bife"}, "descripcion": {"es": "Ojo de bife braseado, crema de vino, corona de papa y hongos, y cherrys asados. Incluye agua o gaseosa + café o alfajor / tableta Freddo."}, "precio": 49000, "tags": []}, {"id": "camp-ribs", "nombre": {"es": "Ribs de cerdo"}, "descripcion": {"es": "Ribs de cerdo, salsa BBQ, mantecado de batatas toffee y coleslaw. Incluye agua o gaseosa + café o alfajor / tableta Freddo."}, "precio": 49000, "tags": []}, {"id": "camp-ciabatta", "nombre": {"es": "Ciabatta"}, "descripcion": {"es": "Lomo grillado, tomates frescos, mozzarella, jamón y lechuga con sus papas fritas. Incluye agua o gaseosa + café o alfajor / tableta Freddo."}, "precio": 42000, "tags": []}, {"id": "camp-hamburguesa", "nombre": {"es": "Hamburguesa"}, "descripcion": {"es": "Pan de papa, tomate, mix de verdes, cheddar, pepinillos, bacon y papas fritas. Incluye agua o gaseosa + café o alfajor / tableta Freddo."}, "precio": 42000, "tags": []}, {"id": "camp-intenso", "nombre": {"es": "Intenso"}, "descripcion": {"es": "Sablée de chocolate, mousse de banana, crocante de coco, soufflé de ddl con su baño espejo y malvavisco. Incluye una infusión a elección."}, "precio": 24000, "tags": []}, {"id": "camp-cubo-burbuja", "nombre": {"es": "Cubo burbuja"}, "descripcion": {"es": "Bavaroise de ddl, centro de toffee con baileys, húmedo de ddl y crocante de chocolate con cereal. Incluye una infusión a elección."}, "precio": 25000, "tags": []}, {"id": "camp-alfajor-freddo", "nombre": {"es": "Alfajor Freddo"}, "descripcion": {"es": "Clásico Argentino (relleno de dulce de leche, cubierto por chocolate negro) o White Dubai (relleno de pistacchio y kadayif, cubierto por chocolate blanco). Incluye una infusión a elección."}, "precio": 13900, "tags": []}, {"id": "camp-franui", "nombre": {"es": "Franui"}, "descripcion": {"es": "Frambuesas bañadas en chocolate. Chocolate amargo, con leche o Franui Free (sin azúcar añadida y sin lactosa). Incluye una infusión a elección."}, "precio": 16000, "tags": []}, {"id": "camp-men-milanesa", "nombre": {"es": "Milanesa (mini hinchas)"}, "descripcion": {"es": "Milanesa de carne con papas fritas. Incluye agua o gaseosa + café o alfajor / tableta Freddo."}, "precio": 35000, "tags": []}, {"id": "camp-men-noquis", "nombre": {"es": "Ñoquis (mini hinchas)"}, "descripcion": {"es": "Ñoquis de papa con fileto. Incluye agua o gaseosa + café o alfajor / tableta Freddo."}, "precio": 34000, "tags": ["VEGETARIANO"]}, {"id": "camp-men-hamburguesa", "nombre": {"es": "Hamburguesa (mini hinchas)"}, "descripcion": {"es": "Hamburguesa con cheddar y papas fritas. Incluye agua o gaseosa + café o alfajor / tableta Freddo."}, "precio": 44000, "tags": []}, {"id": "camp-picada-2", "nombre": {"es": "Picada para 2"}, "descripcion": {"es": "Queso azul, pategrás, boconccinos saborizados, atuel, brie, ligne noire, sardo, nuestra burrata, jamón natural, jamón crudo, lomito ahumado, salame, aceitunas negras, nueces y tomates asados. Acompañada por nuestras papas fritas."}, "precio": 49000, "tags": []}, {"id": "camp-pizza-golazo", "nombre": {"es": "Pizza golazo"}, "descripcion": {"es": "De mozzarella, tomate, albahaca y aceitunas negras."}, "precio": 40000, "tags": ["VEGETARIANO"]}, {"id": "camp-pizza-titular", "nombre": {"es": "Pizza titular"}, "descripcion": {"es": "De jamón natural, mozzarella, aceitunas y morrón asado."}, "precio": 43000, "tags": []}, {"id": "camp-pizza-campeona", "nombre": {"es": "Pizza campeona"}, "descripcion": {"es": "De jamón crudo, rúcula, tomates secos, parmesano, mozzarella y aceitunas negras."}, "precio": 47000, "tags": []}, {"id": "camp-alfajor-argentino", "nombre": {"es": "Alfajor argentino"}, "descripcion": {"es": "Clásico alfajor blanco de dulce de leche con baño glaseado de azúcar."}, "precio": 9900, "tags": []}]}, {"id": "servicio-te", "nombre": {"es": "Nuestra propuesta de té"}, "foto": "lb-te.jpg", "nota": {"es": "Servicio para 2 personas. Viernes, sábados, domingos y feriados de 16:00 a 18:30. Cupos limitados."}, "items": [{"id": "te-servicio-2", "nombre": {"es": "Servicio de té para 2 personas"}, "descripcion": {"es": "Salado: Bavaria (salmón ahumado, tártara y rúcula); Sancricca (jamón crudo 12 meses, pategrás, tomates secos y cremoso de queso azul); Avocado (tostón multicereal, Finlandia, palta, huevo de codorniz y cherrys); scons de queso. Dulce: macarons de frutos rojos con centro de frambuesa; semiesfera cítrica con base de granola casera; tarta de manzanas; húmedo de dulce de leche; rústico de chocolate con centro de ddl bañado de chocolate; croissant flat, untuoso de nutella y chocolate. Bebidas: jugo de naranja e infusión a elección."}, "precio": 62000, "tags": []}, {"id": "te-promo-lanzamiento", "nombre": {"es": "Promoción lanzamiento: infusión + alfajor Freddo"}, "descripcion": {"es": "Alfajor a elección: Freddo Clásico Argentino o Freddo White Dubai. Infusión a elección del listado de cafetería, con excepción del café irlandés."}, "precio": 13900, "tags": ["NUEVO"]}]}, {"id": "ensaladas", "nombre": {"es": "Ensaladas"}, "foto": "lb-ensaladas.jpg", "nota": {}, "items": [{"id": "ens-capresse", "nombre": {"es": "Capresse"}, "descripcion": {"es": "Tomates asados y frescos, albahaca y burratina."}, "precio": 33000, "tags": ["VEGETARIANO"]}, {"id": "ens-caesar-tradicional", "nombre": {"es": "Caesar tradicional"}, "descripcion": {"es": "Mix de verdes, parmesano, bacon, croutons y aderezo caesar."}, "precio": 26500, "tags": []}, {"id": "ens-caesar-ave", "nombre": {"es": "Caesar ave"}, "descripcion": {"es": "Mix de verdes, parmesano, bacon, croutons y aderezo caesar, con ave."}, "precio": 31000, "tags": []}, {"id": "ens-caesar-langostinos", "nombre": {"es": "Caesar langostinos"}, "descripcion": {"es": "Mix de verdes, parmesano, bacon, croutons y aderezo caesar, con langostinos."}, "precio": 37000, "tags": []}, {"id": "ens-caesar-salmon", "nombre": {"es": "Caesar salmón ahumado"}, "descripcion": {"es": "Mix de verdes, parmesano, bacon, croutons y aderezo caesar, con salmón ahumado."}, "precio": 39000, "tags": []}, {"id": "ens-mar-y-tierra", "nombre": {"es": "Mar y tierra"}, "descripcion": {"es": "Salmón ahumado, huevo poché, hummus de garbanzos, mix de verdes, cherrys y cabutia asada, remolacha, almendras tostadas, semillas y su aliño."}, "precio": 34000, "tags": []}]}, {"id": "sandwicheria-fria", "nombre": {"es": "Sandwichería fría"}, "foto": "lb-sandwicheria.jpg", "nota": {}, "items": [{"id": "sfr-avocado-toast", "nombre": {"es": "Avocado toast"}, "descripcion": {"es": "Pan multicereal, huevo poché, tomates cherry, queso Finlandia, mix de semillas y palta."}, "precio": 30000, "tags": ["VEGETARIANO"]}, {"id": "sfr-baguette-cabutia", "nombre": {"es": "Baguette de cabutia"}, "descripcion": {"es": "Mini baguette de cabutia, cremoso de queso azul y crocante de nuez, albahaca, berenjenas grilladas, queso tybo y tomates grillados."}, "precio": 29000, "tags": ["VEGETARIANO"]}, {"id": "sfr-bavaria", "nombre": {"es": "Bavaria"}, "descripcion": {"es": "Sándwich de salmón ahumado, crema tártara, tomates secos, pepino y rúcula."}, "precio": 30000, "tags": []}, {"id": "sfr-brioche", "nombre": {"es": "Brioche"}, "descripcion": {"es": "Pan de brioche, jamón crudo, burrata, manteca de hierbas, tomates horneados, reducción de aceto y rúcula."}, "precio": 31000, "tags": []}]}, {"id": "sandwicheria-caliente", "nombre": {"es": "Sandwichería caliente"}, "foto": "", "nota": {}, "items": [{"id": "sca-tostado-jq", "nombre": {"es": "Tostado de jamón y queso"}, "descripcion": {"es": "En pan árabe o inglés."}, "precio": 17000, "tags": []}, {"id": "sca-tostado-jqt", "nombre": {"es": "Tostado de jamón, queso y tomate"}, "descripcion": {"es": "En pan árabe o inglés."}, "precio": 17000, "tags": []}, {"id": "sca-tostado-crudo", "nombre": {"es": "Tostado de jamón crudo y queso"}, "descripcion": {"es": "En pan árabe o inglés."}, "precio": 17000, "tags": []}, {"id": "sca-tostado-qt", "nombre": {"es": "Tostado de queso y tomate"}, "descripcion": {"es": "En pan árabe o inglés."}, "precio": 17000, "tags": ["VEGETARIANO"]}, {"id": "sca-croissant", "nombre": {"es": "Croissant"}, "descripcion": {"es": "Croissant de jamón natural y queso."}, "precio": 21000, "tags": []}, {"id": "sca-ciabatta", "nombre": {"es": "Ciabatta"}, "descripcion": {"es": "Lomo grillado, tomates frescos, mozzarella, jamón y lechuga con sus papas fritas."}, "precio": 36000, "tags": []}, {"id": "sca-ave", "nombre": {"es": "Ave"}, "descripcion": {"es": "Sándwich de pollo desmenuzado, con queso, cremoso de albahaca, tomates secos, lechuga y cebollas caramelizadas."}, "precio": 33000, "tags": []}, {"id": "sca-hamburguesa", "nombre": {"es": "Hamburguesa"}, "descripcion": {"es": "Pan de papa, tomate, mix de verdes, cheddar, pepinillos, bacon y papas fritas."}, "precio": 36000, "tags": []}, {"id": "sca-pizza-mozzarella", "nombre": {"es": "Pizza individual de mozzarella"}, "descripcion": {"es": "Mozzarella, jamón natural, huevo y pimientos asados."}, "precio": 29000, "tags": []}, {"id": "sca-pizza-integral", "nombre": {"es": "Pizza individual integral"}, "descripcion": {"es": "Masa integral, mozzarella, vegetales grillados, brie y pesto de rúcula."}, "precio": 29000, "tags": ["VEGETARIANO"]}]}, {"id": "cocina", "nombre": {"es": "Cocina"}, "foto": "lb-cocina.jpg", "nota": {}, "items": [{"id": "coc-salmon", "nombre": {"es": "Salmón"}, "descripcion": {"es": "Salmón rosado grillado, risotto cítrico, jengibre y vegetales de estación."}, "precio": 47000, "tags": []}, {"id": "coc-ojo-de-bife", "nombre": {"es": "Ojo de bife"}, "descripcion": {"es": "Ojo de bife braseado, crema de vino, corona de papa y hongos, y cherrys asados."}, "precio": 43000, "tags": []}, {"id": "coc-ribs", "nombre": {"es": "Ribs de cerdo"}, "descripcion": {"es": "Ribs de cerdo, salsa BBQ, mantecado de batatas toffee y coleslaw."}, "precio": 43000, "tags": []}, {"id": "coc-pollo-grillado", "nombre": {"es": "Pollo grillado"}, "descripcion": {"es": "Pollo grillado con puré de calabazas y sus vegetales de estación."}, "precio": 37000, "tags": []}, {"id": "coc-noquis", "nombre": {"es": "Ñoquis"}, "descripcion": {"es": "Ñoquis de boniato con crema de puerro y crocante de almendra."}, "precio": 37000, "tags": ["VEGETARIANO"]}, {"id": "coc-mini-conchiglione", "nombre": {"es": "Mini conchiglione"}, "descripcion": {"es": "Mini conchiglione con crema cuatro quesos, tomates horneados y crocante multicereal."}, "precio": 37000, "tags": ["VEGETARIANO"]}]}, {"id": "menores", "nombre": {"es": "Menores"}, "foto": "", "nota": {}, "items": [{"id": "men-milanesa", "nombre": {"es": "Milanesa de carne con papas fritas"}, "descripcion": {}, "precio": 27500, "tags": []}, {"id": "men-nuggets", "nombre": {"es": "Nuggets con papas fritas"}, "descripcion": {}, "precio": 30000, "tags": []}, {"id": "men-penne-fileto", "nombre": {"es": "Penne fileto"}, "descripcion": {}, "precio": 26500, "tags": ["VEGETARIANO"]}, {"id": "men-tallarin-crema", "nombre": {"es": "Tallarín con crema"}, "descripcion": {}, "precio": 26500, "tags": ["VEGETARIANO"]}, {"id": "men-hamburguesa", "nombre": {"es": "Hamburguesa con cheddar y papas fritas"}, "descripcion": {}, "precio": 26500, "tags": []}, {"id": "men-noquis", "nombre": {"es": "Ñoquis de papa con fileto"}, "descripcion": {}, "precio": 26500, "tags": ["VEGETARIANO"]}, {"id": "men-pasta-seca", "nombre": {"es": "Pasta seca con crema"}, "descripcion": {}, "precio": 26500, "tags": ["VEGETARIANO"]}, {"id": "men-helados", "nombre": {"es": "Variedad de helados"}, "descripcion": {}, "precio": 19500, "tags": []}, {"id": "men-flan", "nombre": {"es": "Flan con dulce de leche"}, "descripcion": {}, "precio": 19500, "tags": []}]}, {"id": "postres", "nombre": {"es": "Postres"}, "foto": "lb-postres.jpg", "nota": {}, "items": [{"id": "pos-frutas-fileteadas", "nombre": {"es": "Frutas fileteadas"}, "descripcion": {}, "precio": 20000, "tags": ["VEGANO"]}, {"id": "pos-frutos-rojos", "nombre": {"es": "Mix de frutos rojos con helado"}, "descripcion": {}, "precio": 20000, "tags": []}, {"id": "pos-helados", "nombre": {"es": "Variedad de helados"}, "descripcion": {}, "precio": 19500, "tags": []}, {"id": "pos-franui", "nombre": {"es": "Franui"}, "descripcion": {"es": "Con leche o amargo."}, "precio": 12000, "tags": []}, {"id": "pos-franui-free", "nombre": {"es": "Franui Free"}, "descripcion": {"es": "Sin azúcar añadida y sin lactosa."}, "precio": 12000, "tags": ["NUEVO"]}, {"id": "pos-tableta-freddo", "nombre": {"es": "Tableta Freddo"}, "descripcion": {}, "precio": 6800, "tags": ["NUEVO"]}, {"id": "pos-alfajor-freddo-clasico", "nombre": {"es": "Alfajor Freddo Clásico Argentino"}, "descripcion": {"es": "Relleno de dulce de leche, cubierto por chocolate negro."}, "precio": 7200, "tags": ["NUEVO"]}, {"id": "pos-alfajor-freddo-dubai", "nombre": {"es": "Alfajor Freddo White Dubai"}, "descripcion": {"es": "Relleno de pistacchio y kadayif, cubierto por chocolate blanco."}, "precio": 9000, "tags": ["NUEVO"]}]}, {"id": "pasteleria", "nombre": {"es": "Pastelería"}, "foto": "lb-pasteleria.jpg", "nota": {}, "items": [{"id": "pas-cookie-xl", "nombre": {"es": "Cookie XL"}, "descripcion": {"es": "Cookies de maní con centro de nutella, cremoso de maní, choco-marroc, crocante de merengue y salsa de ddl."}, "precio": 19000, "tags": []}, {"id": "pas-triple-chocolate", "nombre": {"es": "Triple chocolate"}, "descripcion": {"es": "Bavaroise de chocolate con leche, semiamargo y espiral de chocolate blanco sobre brownie y centro líquido de frambuesas."}, "precio": 18000, "tags": []}, {"id": "pas-key-lime-pie", "nombre": {"es": "Key lime pie"}, "descripcion": {"es": "Masa sablée, curd de lima y crema cítrica."}, "precio": 18000, "tags": []}, {"id": "pas-intenso", "nombre": {"es": "Intenso"}, "descripcion": {"es": "Sablée de chocolate, mousse de banana, crocante de coco, soufflé de ddl con su baño espejo y malvavisco."}, "precio": 20000, "tags": []}, {"id": "pas-manzana", "nombre": {"es": "Manzana"}, "descripcion": {"es": "Crumble de manzana, compota de manzana y arenado con frutos secos."}, "precio": 18000, "tags": []}, {"id": "pas-alfajor-dubai", "nombre": {"es": "Alfajor Dubái"}, "descripcion": {"es": "Capas de brownie relleno de cremoso de pistaccio y crujiente de masa kataifi, baño de chocolate con leche."}, "precio": 19000, "tags": []}, {"id": "pas-cubo-burbuja", "nombre": {"es": "Cubo burbuja"}, "descripcion": {"es": "Bavaroise de ddl, centro de toffee con baileys, húmedo de ddl y crocante de chocolate con cereal."}, "precio": 21000, "tags": []}, {"id": "pas-lingote", "nombre": {"es": "Lingote"}, "descripcion": {"es": "Brownie de chocolate, almendra, coco, garrapiñada y frutas de estación."}, "precio": 18000, "tags": []}, {"id": "pas-budin-citrico", "nombre": {"es": "Budín cítrico"}, "descripcion": {"es": "Porción de budín cítrico, glaseado de limas y amapolas."}, "precio": 14000, "tags": []}, {"id": "pas-macarons", "nombre": {"es": "Variedad de macarons x 3 u."}, "descripcion": {"es": "Gustos surtidos: chocolate Dubái, nutella, frutos rojos con centro de frambuesa."}, "precio": 20000, "tags": []}, {"id": "pas-scons", "nombre": {"es": "Scons x 2 u."}, "descripcion": {}, "precio": 11000, "tags": []}, {"id": "pas-medialuna", "nombre": {"es": "Medialuna"}, "descripcion": {"es": "De grasa o de manteca."}, "precio": 3000, "tags": []}, {"id": "pas-alfajores-maicena", "nombre": {"es": "Alfajores de maicena x 3 u."}, "descripcion": {}, "precio": 13500, "tags": []}]}, {"id": "cafeteria", "nombre": {"es": "Cafetería"}, "foto": "lb-cafeteria.jpg", "nota": {}, "items": [{"id": "caf-expreso", "nombre": {"es": "Café expreso"}, "descripcion": {"es": "Regular o descafeinado."}, "precio": 6000, "tags": []}, {"id": "caf-expreso-doble", "nombre": {"es": "Café expreso doble / con leche"}, "descripcion": {}, "precio": 9500, "tags": []}, {"id": "caf-jarrito", "nombre": {"es": "Café en jarrito"}, "descripcion": {}, "precio": 8000, "tags": []}, {"id": "caf-cappuccino", "nombre": {"es": "Cappuccino"}, "descripcion": {"es": "Con canela, crema y chocolate."}, "precio": 9500, "tags": []}, {"id": "caf-ristretto", "nombre": {"es": "Café ristretto"}, "descripcion": {}, "precio": 6000, "tags": []}, {"id": "caf-irlandes", "nombre": {"es": "Café irlandés"}, "descripcion": {"es": "Whisky irlandés, azúcar y crema."}, "precio": 23000, "tags": []}, {"id": "caf-chocolatada", "nombre": {"es": "Chocolatada"}, "descripcion": {}, "precio": 8000, "tags": []}, {"id": "caf-submarino", "nombre": {"es": "Submarino"}, "descripcion": {}, "precio": 9900, "tags": []}, {"id": "caf-te-hierbas", "nombre": {"es": "Selección de té de hierbas"}, "descripcion": {}, "precio": 5500, "tags": []}, {"id": "caf-te-twinings", "nombre": {"es": "Selección de té Twinings"}, "descripcion": {}, "precio": 6500, "tags": []}, {"id": "caf-te-hebras", "nombre": {"es": "Té en hebras"}, "descripcion": {"es": "Negro; verde; blend lovely chai; blend amelie; blend chocolat; blend patagonia in love."}, "precio": 7200, "tags": []}]}, {"id": "sin-alcohol", "nombre": {"es": "Bebidas sin alcohol"}, "foto": "", "nota": {}, "items": [{"id": "bsa-agua", "nombre": {"es": "Agua mineral con gas / sin gas"}, "descripcion": {}, "precio": 5900, "tags": ["VEGANO"]}, {"id": "bsa-agua-saborizada", "nombre": {"es": "Agua mineral saborizada"}, "descripcion": {}, "precio": 5900, "tags": []}, {"id": "bsa-gaseosas", "nombre": {"es": "Pepsi / 7Up / Paso de los Toros"}, "descripcion": {}, "precio": 5900, "tags": []}, {"id": "bsa-jugo-naranja", "nombre": {"es": "Jugo exprimido de naranja"}, "descripcion": {}, "precio": 9900, "tags": ["VEGANO"]}, {"id": "bsa-limonada", "nombre": {"es": "Limonada con menta y jengibre"}, "descripcion": {}, "precio": 9900, "tags": ["VEGANO"]}, {"id": "bsa-licuado-leche", "nombre": {"es": "Licuado de frutas con leche"}, "descripcion": {}, "precio": 12000, "tags": []}, {"id": "bsa-licuado-agua", "nombre": {"es": "Licuado de frutas con agua"}, "descripcion": {}, "precio": 11000, "tags": ["VEGANO"]}, {"id": "bsa-milkshake", "nombre": {"es": "Milk shake"}, "descripcion": {}, "precio": 12500, "tags": []}, {"id": "bsa-yogurt", "nombre": {"es": "Yogourt bebible"}, "descripcion": {}, "precio": 8000, "tags": []}, {"id": "bsa-gatorade", "nombre": {"es": "Gatorade"}, "descripcion": {}, "precio": 9900, "tags": []}, {"id": "bsa-jugo-pepino-pera", "nombre": {"es": "Jugo natural de pepino y pera"}, "descripcion": {}, "precio": 16000, "tags": ["VEGANO"]}, {"id": "bsa-jugo-zanahoria-manzana", "nombre": {"es": "Jugo natural de zanahoria y manzana"}, "descripcion": {}, "precio": 16000, "tags": ["VEGANO"]}, {"id": "bsa-jugo-zanahoria-naranja", "nombre": {"es": "Jugo natural de zanahoria y naranja"}, "descripcion": {}, "precio": 16000, "tags": ["VEGANO"]}]}, {"id": "cocktails", "nombre": {"es": "Cocktails clásicos"}, "foto": "lb-cocktails.jpg", "nota": {}, "items": [{"id": "ckt-aperol-spritz", "nombre": {"es": "Aperol spritz"}, "descripcion": {"es": "Aperol, espumoso y agua con gas."}, "precio": 23000, "tags": []}, {"id": "ckt-bacardi", "nombre": {"es": "Bacardi cocktail"}, "descripcion": {"es": "Ron, jugo de limón y granadina."}, "precio": 23000, "tags": []}, {"id": "ckt-bellini", "nombre": {"es": "Bellini"}, "descripcion": {"es": "Champagne y pulpa de durazno."}, "precio": 23000, "tags": []}, {"id": "ckt-bloody-mary", "nombre": {"es": "Bloody Mary"}, "descripcion": {"es": "Vodka, jugo de limón, jugo de tomate, sal, pimienta, tabasco y salsa inglesa."}, "precio": 23000, "tags": []}, {"id": "ckt-campari-orange", "nombre": {"es": "Campari orange"}, "descripcion": {"es": "Campari y jugo de naranja."}, "precio": 23000, "tags": []}, {"id": "ckt-caipirinha", "nombre": {"es": "Caipirinha"}, "descripcion": {"es": "Cachaça y limas maceradas."}, "precio": 23000, "tags": []}, {"id": "ckt-caipirovska", "nombre": {"es": "Caipirovska"}, "descripcion": {"es": "Vodka y limas maceradas."}, "precio": 23000, "tags": []}, {"id": "ckt-cuba-libre", "nombre": {"es": "Cuba libre"}, "descripcion": {"es": "Ron Bacardi oro, cola y limón."}, "precio": 23000, "tags": []}, {"id": "ckt-daikiri", "nombre": {"es": "Daikiri frutal"}, "descripcion": {"es": "Ron, jugo de limón, azúcar y fruta natural."}, "precio": 23000, "tags": []}, {"id": "ckt-dry-martini", "nombre": {"es": "Dry martini"}, "descripcion": {"es": "Gin, Dry Martini y oliva verde."}, "precio": 23000, "tags": []}, {"id": "ckt-gin-tonic", "nombre": {"es": "Gin tonic"}, "descripcion": {"es": "Gin Bombay, agua tónica y limón."}, "precio": 23000, "tags": []}, {"id": "ckt-margarita", "nombre": {"es": "Margarita"}, "descripcion": {"es": "Tequila, Cointreau y jugo de limón."}, "precio": 23000, "tags": []}, {"id": "ckt-negroni", "nombre": {"es": "Negroni"}, "descripcion": {"es": "Campari, Gin Bombay y Martini Rosso."}, "precio": 23000, "tags": []}, {"id": "ckt-pisco-sour", "nombre": {"es": "Pisco sour"}, "descripcion": {"es": "Pisco, jugo de limón, clara de huevo y Angostura."}, "precio": 23000, "tags": []}, {"id": "ckt-tom-collins", "nombre": {"es": "Tom Collins"}, "descripcion": {"es": "Gin Bombay, soda y jugo de limón."}, "precio": 23000, "tags": []}, {"id": "ckt-fernet-cola", "nombre": {"es": "Fernet cola"}, "descripcion": {"es": "Fernet Branca y Coca Cola."}, "precio": 23000, "tags": []}]}]};</script>
+<script>/* ============================================================
+   Cartas digitales — render de una carta
+   No hace joins ni cálculos: el JSON ya viene armado y filtrado.
+   ============================================================ */
+(function () {
+  var qs = new URLSearchParams(location.search);
+  var CARTA = document.body.dataset.carta || qs.get('carta');
+  var BASE = document.body.dataset.base || '';
+  var LANGS = ['es', 'en', 'pt'];
+  var lang = LANGS.indexOf(qs.get('lang')) >= 0 ? qs.get('lang') : 'es';
+  var data = null;
+
+  var app = document.getElementById('app');
+  var bar = document.getElementById('bar');
+
+  var UI = {
+    es: { buscar: 'Buscar un plato…', sin: 'No encontramos nada con eso.', act: 'Actualizado' },
+    en: { buscar: 'Search a dish…', sin: 'Nothing matches that.', act: 'Updated' },
+    pt: { buscar: 'Buscar um prato…', sin: 'Nada encontrado.', act: 'Atualizado' }
+  };
+
+  // Texto con fallback a español: si no hay traducción, se muestra el original.
+  function t(obj) {
+    if (!obj) return '';
+    return obj[lang] || obj.es || '';
+  }
+
+  function precio(v) {
+    if (v === 'CONSULTAR') return t({ es: 'Consultar', en: 'Ask us', pt: 'Consultar' });
+    return '$ ' + Number(v).toLocaleString('es-AR', { maximumFractionDigits: 0 });
+  }
+
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  function norm(s) {
+    return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  }
+
+  if (window.__DATA__) {           // vista previa offline (archivo único)
+    data = window.__DATA__;
+    render();
+  } else {
+    fetch(BASE + 'data/' + CARTA + '.json?v=' + Date.now())
+      .then(function (r) {
+        if (!r.ok) throw new Error(r.status);
+        return r.json();
+      })
+      .then(function (d) { data = d; render(); })
+      .catch(function () {
+        app.innerHTML = '<p class="empty">No pudimos cargar la carta. Probá recargar la página.</p>';
+      });
+  }
+
+  function render() {
+    var c = data.carta;
+    document.body.dataset.tema = c.tema;
+    document.title = c.nombre;
+
+    var idiomas = c.idiomas || ['es'];
+    bar.innerHTML =
+      '<div class="bar__top">' +
+        (c.logo ? '<img class="bar__logo" src="' + BASE + 'assets/img/logos/' + esc(c.logo) + '" alt="">' : '') +
+        '<h1 class="bar__name">' + esc(c.nombre) + '</h1>' +
+        (idiomas.length > 1 ? '<div class="bar__lang">' + idiomas.map(function (l) {
+          return '<button data-lang="' + l + '" aria-pressed="' + (l === lang) + '">' + l + '</button>';
+        }).join('') + '</div>' : '') +
+      '</div>' +
+      '<div class="search"><input id="q" type="search" autocomplete="off" placeholder="' +
+        esc(UI[lang].buscar) + '" aria-label="' + esc(UI[lang].buscar) + '"></div>' +
+      '<nav class="chips" id="chips">' + data.secciones.map(function (s) {
+        return '<a href="#' + s.id + '">' + esc(t(s.nombre)) + '</a>';
+      }).join('') + '</nav>';
+
+    bar.querySelectorAll('.bar__lang button').forEach(function (b) {
+      b.addEventListener('click', function () {
+        lang = b.dataset.lang;
+        qs.set('lang', lang);
+        history.replaceState(null, '', '?' + qs.toString());
+        render();
+      });
+    });
+    bar.querySelector('#q').addEventListener('input', function (e) { filtrar(e.target.value); });
+
+    paint(data.secciones);
+    spy();
+  }
+
+  function paint(secciones) {
+    var fecha = new Date(data.carta.actualizado)
+      .toLocaleDateString(lang === 'en' ? 'en-GB' : lang === 'pt' ? 'pt-BR' : 'es-AR');
+
+    var html = '<div class="wrap">';
+    if (!secciones.length) {
+      html += '<p class="empty">' + esc(UI[lang].sin) + '</p></div>';
+      app.innerHTML = html;
+      return;
+    }
+
+    secciones.forEach(function (s) {
+      html += '<section class="sec" id="' + s.id + '">';
+      if (s.foto) {
+        html += '<img class="sec__foto" src="' + BASE + 'assets/img/secciones/' + esc(s.foto) +
+                '" alt="" loading="lazy" onerror="this.remove()">';
+      }
+      html += '<h2 class="sec__title">' + esc(t(s.nombre)) + '</h2>';
+      if (t(s.nota)) html += '<p class="sec__note">' + esc(t(s.nota)) + '</p>';
+      html += '<hr class="sec__rule">';
+
+      s.items.forEach(function (i) {
+        html += '<article class="item">' +
+          '<div class="item__head">' +
+            '<span class="item__name">' + esc(t(i.nombre)) + '</span>' +
+            '<span class="item__dots"></span>' +
+            '<span class="item__price">' + esc(precio(i.precio)) + '</span>' +
+          '</div>';
+        if (t(i.descripcion)) html += '<p class="item__desc">' + esc(t(i.descripcion)) + '</p>';
+        if (i.tags && i.tags.length) {
+          html += '<div class="item__tags">' + i.tags.map(function (tg) {
+            var lbl = data.tags[tg] ? t(data.tags[tg]) : tg;
+            return '<span class="tag tag--' + tg.toLowerCase() + '">' + esc(lbl) + '</span>';
+          }).join('') + '</div>';
+        }
+        html += '</article>';
+      });
+      html += '</section>';
+    });
+
+    html += '<footer class="foot">' +
+      (t(data.carta.pie) ? '<p>' + esc(t(data.carta.pie)) + '</p>' : '') +
+      '<p>' + esc(UI[lang].act) + ': ' + fecha + '</p>' +
+      '</footer></div>';
+
+    app.innerHTML = html;
+  }
+
+  function filtrar(q) {
+    var n = norm(q.trim());
+    if (!n) { paint(data.secciones); spy(); return; }
+    var res = data.secciones.map(function (s) {
+      var items = s.items.filter(function (i) {
+        return norm(t(i.nombre) + ' ' + t(i.descripcion)).indexOf(n) >= 0;
+      });
+      return items.length ? Object.assign({}, s, { items: items, foto: '' }) : null;
+    }).filter(Boolean);
+    paint(res);
+  }
+
+  // Marca el chip de la sección visible.
+  function spy() {
+    var chips = document.querySelectorAll('#chips a');
+    if (!('IntersectionObserver' in window)) return;
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        chips.forEach(function (a) {
+          var on = a.getAttribute('href') === '#' + e.target.id;
+          a.setAttribute('aria-current', on);
+          if (on) a.scrollIntoView({ block: 'nearest', inline: 'center' });
+        });
+      });
+    }, { rootMargin: '-130px 0px -70% 0px' });
+    document.querySelectorAll('.sec').forEach(function (s) { obs.observe(s); });
+  }
+})();
+</script>
+</body></html>

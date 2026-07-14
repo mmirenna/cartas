@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Don Giovanni Ristorante — vista previa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Cormorant+Garamond:wght@400;600&family=Libre+Baskerville:wght@400;700&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+<style>/* ============================================================
+   Cartas digitales — base + temas por carta
+   Un solo CSS. El tema se elige con <body data-tema="lb">.
+   ============================================================ */
+
+:root {
+  --paper: #FBFAF8;
+  --ink: #1B1A17;
+  --ink-soft: #6B675E;
+  --rule: #DFDAD0;
+  --accent: #8A6A3B;
+  --accent-soft: #F0E9DC;
+  --display: "Libre Baskerville", Georgia, serif;
+  --body: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --maxw: 720px;
+}
+
+/* Don Giovanni — ristorante, tinta cálida y burdeos */
+[data-tema="dg"] {
+  --paper: #F7F2E9;
+  --ink: #1E1A16;
+  --ink-soft: #756B5C;
+  --rule: #DDD2BE;
+  --accent: #7A2E38;
+  --accent-soft: #EFE2DF;
+  --display: "Cormorant Garamond", Georgia, serif;
+}
+
+/* Lobby Bar — hotel, azul profundo y bronce */
+[data-tema="lb"] {
+  --paper: #FBFAF8;
+  --ink: #16233A;
+  --ink-soft: #6C7789;
+  --rule: #DFE2E8;
+  --accent: #A67C3D;
+  --accent-soft: #F3EADA;
+  --display: "Libre Baskerville", Georgia, serif;
+}
+
+/* Room Service — sobrio, legible de noche */
+[data-tema="rs"] {
+  --paper: #FAFAF9;
+  --ink: #22262B;
+  --ink-soft: #6E747C;
+  --rule: #E2E4E6;
+  --accent: #3F5B70;
+  --accent-soft: #E7EDF2;
+  --display: "Libre Baskerville", Georgia, serif;
+}
+
+/* Pool Snack — luz, agua */
+[data-tema="pool"] {
+  --paper: #FBFCFC;
+  --ink: #12312F;
+  --ink-soft: #5E7370;
+  --rule: #D8E5E2;
+  --accent: #0F7168;
+  --accent-soft: #E0F0ED;
+  --display: "Libre Baskerville", Georgia, serif;
+}
+
+/* La Federala — parrilla, brasa */
+[data-tema="lf"] {
+  --paper: #F6F1E8;
+  --ink: #211E1B;
+  --ink-soft: #6F675E;
+  --rule: #DBD2C4;
+  --accent: #A63D22;
+  --accent-soft: #F1E1DA;
+  --display: "Oswald", Impact, sans-serif;
+}
+
+/* Carta de vinos — bodega */
+[data-tema="vinos"] {
+  --paper: #F5F1EE;
+  --ink: #241A22;
+  --ink-soft: #6E5F69;
+  --rule: #DCD1D6;
+  --accent: #5C2A45;
+  --accent-soft: #EBE0E6;
+  --display: "Cormorant Garamond", Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
+
+/* ---------- barra superior ---------- */
+.bar {
+  position: sticky; top: 0; z-index: 20;
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: saturate(1.4) blur(8px);
+  border-bottom: 1px solid var(--rule);
+}
+.bar__top {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 20px; max-width: var(--maxw); margin: 0 auto;
+}
+.bar__logo { height: 26px; width: auto; }
+.bar__name {
+  font-family: var(--display); font-size: 17px; font-weight: 400;
+  letter-spacing: .01em; margin: 0; flex: 1; white-space: nowrap;
+  overflow: hidden; text-overflow: ellipsis;
+}
+.bar__lang { display: flex; gap: 2px; }
+.bar__lang button {
+  border: 0; background: none; font: inherit; font-size: 12px;
+  text-transform: uppercase; letter-spacing: .06em;
+  color: var(--ink-soft); padding: 4px 6px; cursor: pointer; border-radius: 4px;
+}
+.bar__lang button[aria-pressed="true"] { color: var(--accent); font-weight: 700; }
+
+.search { padding: 0 20px 10px; max-width: var(--maxw); margin: 0 auto; }
+.search input {
+  width: 100%; padding: 9px 12px; font: inherit; font-size: 15px;
+  color: var(--ink); background: transparent;
+  border: 1px solid var(--rule); border-radius: 6px;
+}
+.search input::placeholder { color: var(--ink-soft); }
+.search input:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+
+/* chips de sección */
+.chips {
+  display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none;
+  padding: 0 20px 10px; max-width: var(--maxw); margin: 0 auto;
+  -webkit-overflow-scrolling: touch;
+}
+.chips::-webkit-scrollbar { display: none; }
+.chips a {
+  flex: 0 0 auto; font-size: 13px; text-decoration: none; white-space: nowrap;
+  color: var(--ink-soft); border: 1px solid var(--rule); border-radius: 999px;
+  padding: 5px 12px; transition: background .15s, color .15s, border-color .15s;
+}
+.chips a[aria-current="true"] {
+  color: var(--accent); border-color: var(--accent); background: var(--accent-soft);
+}
+
+/* ---------- portada ---------- */
+.hero { text-align: center; padding: 40px 20px 28px; }
+.hero__logo { height: 54px; width: auto; margin-bottom: 14px; }
+.hero__title {
+  font-family: var(--display); font-weight: 400; font-size: 34px;
+  line-height: 1.15; margin: 0 0 6px;
+}
+.hero__meta { font-size: 12px; color: var(--ink-soft); letter-spacing: .04em; }
+
+/* ---------- secciones ---------- */
+.sec { padding-top: 34px; scroll-margin-top: 118px; }
+.sec__foto {
+  display: block; width: 100%; height: 168px; object-fit: cover;
+  border-radius: 10px; margin-bottom: 18px; background: var(--accent-soft);
+}
+.sec__title {
+  font-family: var(--display); font-weight: 400; font-size: 24px; margin: 0 0 2px;
+  color: var(--accent);
+}
+.sec__note { font-size: 13px; color: var(--ink-soft); margin: 0 0 6px; }
+.sec__rule { border: 0; border-top: 1px solid var(--rule); margin: 12px 0 4px; }
+
+/* ---------- items: la firma es el punteado hasta el precio ---------- */
+.item { padding: 16px 0; border-bottom: 1px solid var(--rule); }
+.item:last-child { border-bottom: 0; }
+.item__head { display: flex; align-items: baseline; gap: 6px; }
+.item__name { font-weight: 700; font-size: 16px; }
+.item__dots {
+  flex: 1; border-bottom: 1px dotted var(--rule);
+  transform: translateY(-4px); min-width: 16px;
+}
+.item__price {
+  font-variant-numeric: tabular-nums; font-size: 16px; white-space: nowrap;
+  color: var(--ink);
+}
+.item__desc { margin: 5px 0 0; font-size: 14px; color: var(--ink-soft); line-height: 1.45; }
+.item__tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 7px; }
+.tag {
+  font-size: 10px; letter-spacing: .07em; text-transform: uppercase;
+  border: 1px solid var(--rule); color: var(--ink-soft);
+  border-radius: 3px; padding: 2px 6px;
+}
+.tag--nuevo, .tag--sugerencia_chef, .tag--promo_3x4 {
+  border-color: var(--accent); color: var(--accent); background: var(--accent-soft);
+}
+
+/* ---------- pie ---------- */
+.foot {
+  margin-top: 44px; padding: 22px 0 48px; border-top: 1px solid var(--rule);
+  font-size: 12px; color: var(--ink-soft); line-height: 1.6;
+}
+.foot a { color: var(--accent); }
+
+.empty { padding: 40px 0; text-align: center; color: var(--ink-soft); font-size: 15px; }
+
+/* ---------- home / selector ---------- */
+.cards { display: grid; gap: 12px; padding: 8px 0 48px; }
+.card {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 18px 20px; text-decoration: none; color: var(--ink);
+  border: 1px solid var(--rule); border-radius: 10px; background: #fff;
+}
+.card:hover, .card:focus-visible { border-color: var(--accent); outline: none; }
+.card__name { font-family: var(--display); font-size: 20px; }
+.card__meta { font-size: 12px; color: var(--ink-soft); }
+.card__arrow { color: var(--accent); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+}
+html { scroll-behavior: smooth; }
+</style></head>
+<body data-carta="don-giovanni" data-tema="dg" data-base="">
+<header class="bar" id="bar"></header>
+<main id="app"></main>
+<script>window.__DATA__ = {"carta": {"id": "don-giovanni", "nombre": "Don Giovanni Ristorante", "tema": "dg", "logo": "", "idiomas": ["es", "en", "pt"], "actualizado": "2026-07-13T20:01:00", "pie": {"es": "Apto celíacos / *Sugerencia del chef / Vegetariano. Si tiene alguna restricción alimentaria, por favor avise a su camarero antes de realizar su pedido. Consultar por otras opciones sin TACC. En caso de compartir un plato, se adicionará un 40% al valor del mismo. Las especialidades del chef no son para compartir."}}, "tags": {"SIN_TACC": {"es": "Sin TACC", "en": "Gluten free", "pt": "Sem glúten"}, "VEGETARIANO": {"es": "Vegetariano", "en": "Vegetarian", "pt": "Vegetariano"}, "VEGANO": {"es": "Vegano", "en": "Vegan", "pt": "Vegano"}, "NUEVO": {"es": "Nuevo", "en": "New", "pt": "Novo"}, "SUGERENCIA_CHEF": {"es": "Sugerencia del chef", "en": "Chef's suggestion", "pt": "Sugestão do chef"}, "PROMO_3X4": {"es": "Promo 3x4", "en": "3x4 promo", "pt": "Promo 3x4"}}, "config": {"moneda": {"es": "ARS", "en": "ARS", "pt": "ARS"}, "simbolo": {"es": "$", "en": "$", "pt": "$"}, "hotel": {"es": "Sheraton Pilar Hotel & Convention Center", "en": "Sheraton Pilar Hotel & Convention Center", "pt": "Sheraton Pilar Hotel & Convention Center"}, "aviso_alergias": {"es": "Si tiene alguna restricción alimentaria, por favor avise a su camarero antes de realizar su pedido.", "en": "If you have any dietary restriction, please let your waiter know before ordering.", "pt": "Se você tem alguma restrição alimentar, avise o garçom antes de fazer o pedido."}}, "secciones": [{"id": "antipasti-freddi", "nombre": {"es": "Antipasti freddi"}, "foto": "dg-antipasti.jpg", "nota": {}, "items": [{"id": "dg-bagel", "nombre": {"es": "Bagel"}, "descripcion": {"es": "Bagels de carbón activado, salmón curado en zumo de cítricos, burratina, rúcula, emulsión de remolacha y cebolla morada encurtida."}, "precio": 22000, "tags": []}, {"id": "dg-piccola", "nombre": {"es": "Piccola"}, "descripcion": {"es": "Piccola en abrigo de prosciutto, cremoso de pistacho, tomates en cuartos y pesto de pistacho."}, "precio": 22000, "tags": ["SUGERENCIA_CHEF"]}, {"id": "dg-salmon-bicolor", "nombre": {"es": "Salmón bicolor"}, "descripcion": {"es": "Salmón bicolor, rulos de zanahoria, zuccinni, remolacha y tomate cherrys asados, aderezo de cabutia y jengibre, crema ácida y oliva en primera prensada."}, "precio": 23000, "tags": []}, {"id": "dg-petalos", "nombre": {"es": "Pétalos"}, "descripcion": {"es": "Símil pétalos rellenos de vegetales frescos y cocidos, cremoso de palta, huevo poché y crocante de queso."}, "precio": 21000, "tags": ["SUGERENCIA_CHEF"]}, {"id": "dg-sushi", "nombre": {"es": "Sushi"}, "descripcion": {"es": "Rolls de langostinos en panko, coco, filadelfia, espárragos, palta y salmón spicy."}, "precio": 23000, "tags": []}]}, {"id": "antipasti-caldi", "nombre": {"es": "Antipasti freddi / caldi"}, "foto": "", "nota": {}, "items": [{"id": "dg-malfatti", "nombre": {"es": "Malfatti"}, "descripcion": {"es": "Malfattis grandes hechos en casa, de espinaca, queso atuel, avellanas tostadas y notas de nuez moscada con pomodoro rústico y centro de albahaca."}, "precio": 22000, "tags": []}, {"id": "dg-arancini", "nombre": {"es": "Arancini"}, "descripcion": {"es": "Esferas de arroz rellenas de langostino con cremoso cítrico, focaccia y micro brotes."}, "precio": 23000, "tags": []}, {"id": "dg-mar-y-tierra", "nombre": {"es": "Mar y tierra"}, "descripcion": {"es": "Trucha en masa filo, hummus de garbanzos, muhammara, yogurt griego y palta."}, "precio": 23000, "tags": ["SUGERENCIA_CHEF"]}]}, {"id": "risotto", "nombre": {"es": "Risotto"}, "foto": "", "nota": {}, "items": [{"id": "dg-risotto-capresse", "nombre": {"es": "Risotto capresse"}, "descripcion": {"es": "Risotto cremoso de tomates secos, boconccinos, tomates ahumados al vacío, escamas de pepato y hojas de albahaca."}, "precio": 30000, "tags": []}, {"id": "dg-risotto-alimonado", "nombre": {"es": "Risotto alimonado"}, "descripcion": {"es": "Emulsionado con oliva, limón y queso ligne noire, calamaretis dorados y provenzal."}, "precio": 32000, "tags": []}]}, {"id": "pastasciutta", "nombre": {"es": "Pastasciutta"}, "foto": "dg-pastas.jpg", "nota": {}, "items": [{"id": "dg-penne-rigatti", "nombre": {"es": "Penne rigatti"}, "descripcion": {"es": "Nuestra fonduta, crema y ricota."}, "precio": 30000, "tags": []}, {"id": "dg-caserecce", "nombre": {"es": "Caserecce"}, "descripcion": {"es": "Con gulasch de lomo, portobellos y cremoso de salvia."}, "precio": 31000, "tags": []}]}, {"id": "pastas-ripienna", "nombre": {"es": "Pastas ripienna"}, "foto": "", "nota": {}, "items": [{"id": "dg-sorrentinos", "nombre": {"es": "Sorrentinos"}, "descripcion": {"es": "Sorrentinos de cabutia al rescoldo y tropezones de queso atuel, sus escamas y pimienta negra, filetto suave y mix de brotes."}, "precio": 32000, "tags": []}, {"id": "dg-cuadretti", "nombre": {"es": "Cuadretti"}, "descripcion": {"es": "Cuadretti de ojo de bife con aceite de oliva y aceite de trufa."}, "precio": 35000, "tags": []}, {"id": "dg-pasta-limone", "nombre": {"es": "Pasta limone"}, "descripcion": {"es": "Pasta rellena de ricota cítrica, crema suave de langostinos y salmón ahumado."}, "precio": 34000, "tags": []}, {"id": "dg-lasagna", "nombre": {"es": "Lasagna"}, "descripcion": {"es": "Nuestra lasagna de papa y salmón, crema de azafrán, cebolla caramelizada y langostinos grillados."}, "precio": 40000, "tags": ["SUGERENCIA_CHEF"]}]}, {"id": "especialidades", "nombre": {"es": "Especialidades"}, "foto": "dg-especialidades.jpg", "nota": {}, "items": [{"id": "dg-ojo-de-bife", "nombre": {"es": "Ojo de bife o lomo"}, "descripcion": {"es": "Puré de arvejas y menta, rostí de coliflor, brócoli y espárragos, cherrys asados."}, "precio": 42000, "tags": []}, {"id": "dg-salmon", "nombre": {"es": "Salmón"}, "descripcion": {"es": "En crudo de almendra, risotto de espinaca, quínoa colorada y vegetales con aliño cítrico."}, "precio": 47000, "tags": []}, {"id": "dg-bisteca", "nombre": {"es": "Bisteca"}, "descripcion": {"es": "Milanesa de ojo de bife rellena de liliáceas, mozzarella y tomate, spaghetti con pesto de brócoli y mix de brotes."}, "precio": 40000, "tags": ["SUGERENCIA_CHEF"]}, {"id": "dg-chernia", "nombre": {"es": "Chernia"}, "descripcion": {"es": "Chernia fresca en tempura, cabutia al rescoldo y perlas de vegetales."}, "precio": 40000, "tags": []}, {"id": "dg-pulpo", "nombre": {"es": "Pulpo"}, "descripcion": {"es": "Tentáculo de pulpo español, puré con notas de langostinos, papines dorados, palta grillada, untuoso de ajo negro y pimentón crocante."}, "precio": 115000, "tags": ["SUGERENCIA_CHEF"]}]}, {"id": "dolce", "nombre": {"es": "Dolce"}, "foto": "dg-dolce.jpg", "nota": {}, "items": [{"id": "dg-chocolate-25", "nombre": {"es": "Chocolate 2.5"}, "descripcion": {"es": "Sin fin de chocolate belga, untuoso de chocolate 100%, cremoso de chocolate blanco, ddl, mousse de chocolate con leche, mousse de nutella y coulis de frambuesa."}, "precio": 20500, "tags": ["SUGERENCIA_CHEF"]}, {"id": "dg-frutal", "nombre": {"es": "Frutal"}, "descripcion": {"es": "Cremoso de maracuyá, frutas de estación, media esfera de coco, mango y manzana verde, sorbet frutal."}, "precio": 20500, "tags": []}, {"id": "dg-citrico", "nombre": {"es": "Cítrico"}, "descripcion": {"es": "Bavaroise de naranja sobre sablée cítrica, helado de limón."}, "precio": 20500, "tags": []}, {"id": "dg-manzana", "nombre": {"es": "Manzana"}, "descripcion": {"es": "Manzana de bavaroise, con centro de compota y frutos secos, virutas de chocolate blanco."}, "precio": 20500, "tags": ["SUGERENCIA_CHEF"]}, {"id": "dg-laminado-dubai", "nombre": {"es": "Laminado dubái"}, "descripcion": {"es": "Laminado de húmedo de chocolate, cremoso Dubái, ganache de chocolate blanco con praliné y su helado de chocolate Dubái."}, "precio": 21000, "tags": []}, {"id": "dg-lingote-pistaccio", "nombre": {"es": "Lingote de pistaccio"}, "descripcion": {"es": "Con centro de arándanos, brownie de pistaccio sobre sablée y helado de arándanos."}, "precio": 21000, "tags": []}, {"id": "dg-ddl", "nombre": {"es": "DDL"}, "descripcion": {"es": "Cheesecake de vainilla con bavaroise de ddl y quenelle de americana."}, "precio": 21000, "tags": []}, {"id": "dg-panna-cotta", "nombre": {"es": "Panna cotta"}, "descripcion": {"es": "De frutos rojos y chocolate blanco con centro de frambuesas."}, "precio": 20500, "tags": []}, {"id": "dg-helados", "nombre": {"es": "Helados"}, "descripcion": {"es": "Crema americana, vainilla, chocolate, ddl, limón, frutilla al agua."}, "precio": 19500, "tags": []}]}, {"id": "menu-menores", "nombre": {"es": "Menú menores"}, "foto": "", "nota": {}, "items": [{"id": "dg-men-cuore-milano", "nombre": {"es": "Cuore Milano"}, "descripcion": {}, "precio": 20500, "tags": []}, {"id": "dg-men-noquis", "nombre": {"es": "Ñoquis filetto o panna"}, "descripcion": {}, "precio": 24500, "tags": []}, {"id": "dg-men-nuils-ave", "nombre": {"es": "Nulis de ave con papas fritas"}, "descripcion": {}, "precio": 27000, "tags": []}, {"id": "dg-men-milanesa", "nombre": {"es": "Milanesa con puré de papa"}, "descripcion": {}, "precio": 29000, "tags": []}]}, {"id": "especiales-dg", "nombre": {"es": "Servicios especiales"}, "foto": "", "nota": {}, "items": [{"id": "dg-menu-romantico", "nombre": {"es": "Menú romántico para 2 personas"}, "descripcion": {"es": "Entrada, principal y postre, con vinos."}, "precio": 185000, "tags": []}, {"id": "dg-cubierto", "nombre": {"es": "Valor del cubierto"}, "descripcion": {"es": "Por persona."}, "precio": 6000, "tags": []}]}]};</script>
+<script>/* ============================================================
+   Cartas digitales — render de una carta
+   No hace joins ni cálculos: el JSON ya viene armado y filtrado.
+   ============================================================ */
+(function () {
+  var qs = new URLSearchParams(location.search);
+  var CARTA = document.body.dataset.carta || qs.get('carta');
+  var BASE = document.body.dataset.base || '';
+  var LANGS = ['es', 'en', 'pt'];
+  var lang = LANGS.indexOf(qs.get('lang')) >= 0 ? qs.get('lang') : 'es';
+  var data = null;
+
+  var app = document.getElementById('app');
+  var bar = document.getElementById('bar');
+
+  var UI = {
+    es: { buscar: 'Buscar un plato…', sin: 'No encontramos nada con eso.', act: 'Actualizado' },
+    en: { buscar: 'Search a dish…', sin: 'Nothing matches that.', act: 'Updated' },
+    pt: { buscar: 'Buscar um prato…', sin: 'Nada encontrado.', act: 'Atualizado' }
+  };
+
+  // Texto con fallback a español: si no hay traducción, se muestra el original.
+  function t(obj) {
+    if (!obj) return '';
+    return obj[lang] || obj.es || '';
+  }
+
+  function precio(v) {
+    if (v === 'CONSULTAR') return t({ es: 'Consultar', en: 'Ask us', pt: 'Consultar' });
+    return '$ ' + Number(v).toLocaleString('es-AR', { maximumFractionDigits: 0 });
+  }
+
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  function norm(s) {
+    return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  }
+
+  if (window.__DATA__) {           // vista previa offline (archivo único)
+    data = window.__DATA__;
+    render();
+  } else {
+    fetch(BASE + 'data/' + CARTA + '.json?v=' + Date.now())
+      .then(function (r) {
+        if (!r.ok) throw new Error(r.status);
+        return r.json();
+      })
+      .then(function (d) { data = d; render(); })
+      .catch(function () {
+        app.innerHTML = '<p class="empty">No pudimos cargar la carta. Probá recargar la página.</p>';
+      });
+  }
+
+  function render() {
+    var c = data.carta;
+    document.body.dataset.tema = c.tema;
+    document.title = c.nombre;
+
+    var idiomas = c.idiomas || ['es'];
+    bar.innerHTML =
+      '<div class="bar__top">' +
+        (c.logo ? '<img class="bar__logo" src="' + BASE + 'assets/img/logos/' + esc(c.logo) + '" alt="">' : '') +
+        '<h1 class="bar__name">' + esc(c.nombre) + '</h1>' +
+        (idiomas.length > 1 ? '<div class="bar__lang">' + idiomas.map(function (l) {
+          return '<button data-lang="' + l + '" aria-pressed="' + (l === lang) + '">' + l + '</button>';
+        }).join('') + '</div>' : '') +
+      '</div>' +
+      '<div class="search"><input id="q" type="search" autocomplete="off" placeholder="' +
+        esc(UI[lang].buscar) + '" aria-label="' + esc(UI[lang].buscar) + '"></div>' +
+      '<nav class="chips" id="chips">' + data.secciones.map(function (s) {
+        return '<a href="#' + s.id + '">' + esc(t(s.nombre)) + '</a>';
+      }).join('') + '</nav>';
+
+    bar.querySelectorAll('.bar__lang button').forEach(function (b) {
+      b.addEventListener('click', function () {
+        lang = b.dataset.lang;
+        qs.set('lang', lang);
+        history.replaceState(null, '', '?' + qs.toString());
+        render();
+      });
+    });
+    bar.querySelector('#q').addEventListener('input', function (e) { filtrar(e.target.value); });
+
+    paint(data.secciones);
+    spy();
+  }
+
+  function paint(secciones) {
+    var fecha = new Date(data.carta.actualizado)
+      .toLocaleDateString(lang === 'en' ? 'en-GB' : lang === 'pt' ? 'pt-BR' : 'es-AR');
+
+    var html = '<div class="wrap">';
+    if (!secciones.length) {
+      html += '<p class="empty">' + esc(UI[lang].sin) + '</p></div>';
+      app.innerHTML = html;
+      return;
+    }
+
+    secciones.forEach(function (s) {
+      html += '<section class="sec" id="' + s.id + '">';
+      if (s.foto) {
+        html += '<img class="sec__foto" src="' + BASE + 'assets/img/secciones/' + esc(s.foto) +
+                '" alt="" loading="lazy" onerror="this.remove()">';
+      }
+      html += '<h2 class="sec__title">' + esc(t(s.nombre)) + '</h2>';
+      if (t(s.nota)) html += '<p class="sec__note">' + esc(t(s.nota)) + '</p>';
+      html += '<hr class="sec__rule">';
+
+      s.items.forEach(function (i) {
+        html += '<article class="item">' +
+          '<div class="item__head">' +
+            '<span class="item__name">' + esc(t(i.nombre)) + '</span>' +
+            '<span class="item__dots"></span>' +
+            '<span class="item__price">' + esc(precio(i.precio)) + '</span>' +
+          '</div>';
+        if (t(i.descripcion)) html += '<p class="item__desc">' + esc(t(i.descripcion)) + '</p>';
+        if (i.tags && i.tags.length) {
+          html += '<div class="item__tags">' + i.tags.map(function (tg) {
+            var lbl = data.tags[tg] ? t(data.tags[tg]) : tg;
+            return '<span class="tag tag--' + tg.toLowerCase() + '">' + esc(lbl) + '</span>';
+          }).join('') + '</div>';
+        }
+        html += '</article>';
+      });
+      html += '</section>';
+    });
+
+    html += '<footer class="foot">' +
+      (t(data.carta.pie) ? '<p>' + esc(t(data.carta.pie)) + '</p>' : '') +
+      '<p>' + esc(UI[lang].act) + ': ' + fecha + '</p>' +
+      '</footer></div>';
+
+    app.innerHTML = html;
+  }
+
+  function filtrar(q) {
+    var n = norm(q.trim());
+    if (!n) { paint(data.secciones); spy(); return; }
+    var res = data.secciones.map(function (s) {
+      var items = s.items.filter(function (i) {
+        return norm(t(i.nombre) + ' ' + t(i.descripcion)).indexOf(n) >= 0;
+      });
+      return items.length ? Object.assign({}, s, { items: items, foto: '' }) : null;
+    }).filter(Boolean);
+    paint(res);
+  }
+
+  // Marca el chip de la sección visible.
+  function spy() {
+    var chips = document.querySelectorAll('#chips a');
+    if (!('IntersectionObserver' in window)) return;
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        chips.forEach(function (a) {
+          var on = a.getAttribute('href') === '#' + e.target.id;
+          a.setAttribute('aria-current', on);
+          if (on) a.scrollIntoView({ block: 'nearest', inline: 'center' });
+        });
+      });
+    }, { rootMargin: '-130px 0px -70% 0px' });
+    document.querySelectorAll('.sec').forEach(function (s) { obs.observe(s); });
+  }
+})();
+</script>
+</body></html>
