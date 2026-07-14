@@ -1,0 +1,218 @@
+/* ============================================================
+   Cartas digitales — base + temas por carta
+   Un solo CSS. El tema se elige con <body data-tema="lb">.
+   ============================================================ */
+
+:root {
+  --paper: #FBFAF8;
+  --ink: #1B1A17;
+  --ink-soft: #6B675E;
+  --rule: #DFDAD0;
+  --accent: #8A6A3B;
+  --accent-soft: #F0E9DC;
+  --display: "Libre Baskerville", Georgia, serif;
+  --body: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --maxw: 720px;
+}
+
+/* Don Giovanni — ristorante, tinta cálida y burdeos */
+[data-tema="dg"] {
+  --paper: #F7F2E9;
+  --ink: #1E1A16;
+  --ink-soft: #756B5C;
+  --rule: #DDD2BE;
+  --accent: #7A2E38;
+  --accent-soft: #EFE2DF;
+  --display: "Cormorant Garamond", Georgia, serif;
+}
+
+/* Lobby Bar — hotel, azul profundo y bronce */
+[data-tema="lb"] {
+  --paper: #FBFAF8;
+  --ink: #16233A;
+  --ink-soft: #6C7789;
+  --rule: #DFE2E8;
+  --accent: #A67C3D;
+  --accent-soft: #F3EADA;
+  --display: "Libre Baskerville", Georgia, serif;
+}
+
+/* Room Service — sobrio, legible de noche */
+[data-tema="rs"] {
+  --paper: #FAFAF9;
+  --ink: #22262B;
+  --ink-soft: #6E747C;
+  --rule: #E2E4E6;
+  --accent: #3F5B70;
+  --accent-soft: #E7EDF2;
+  --display: "Libre Baskerville", Georgia, serif;
+}
+
+/* Pool Snack — luz, agua */
+[data-tema="pool"] {
+  --paper: #FBFCFC;
+  --ink: #12312F;
+  --ink-soft: #5E7370;
+  --rule: #D8E5E2;
+  --accent: #0F7168;
+  --accent-soft: #E0F0ED;
+  --display: "Libre Baskerville", Georgia, serif;
+}
+
+/* La Federala — parrilla, brasa */
+[data-tema="lf"] {
+  --paper: #F6F1E8;
+  --ink: #211E1B;
+  --ink-soft: #6F675E;
+  --rule: #DBD2C4;
+  --accent: #A63D22;
+  --accent-soft: #F1E1DA;
+  --display: "Oswald", Impact, sans-serif;
+}
+
+/* Carta de vinos — bodega */
+[data-tema="vinos"] {
+  --paper: #F5F1EE;
+  --ink: #241A22;
+  --ink-soft: #6E5F69;
+  --rule: #DCD1D6;
+  --accent: #5C2A45;
+  --accent-soft: #EBE0E6;
+  --display: "Cormorant Garamond", Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
+
+/* ---------- barra superior ---------- */
+.bar {
+  position: sticky; top: 0; z-index: 20;
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: saturate(1.4) blur(8px);
+  border-bottom: 1px solid var(--rule);
+}
+.bar__top {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 20px; max-width: var(--maxw); margin: 0 auto;
+}
+.bar__logo { height: 26px; width: auto; }
+.bar__name {
+  font-family: var(--display); font-size: 17px; font-weight: 400;
+  letter-spacing: .01em; margin: 0; flex: 1; white-space: nowrap;
+  overflow: hidden; text-overflow: ellipsis;
+}
+.bar__lang { display: flex; gap: 2px; }
+.bar__lang button {
+  border: 0; background: none; font: inherit; font-size: 12px;
+  text-transform: uppercase; letter-spacing: .06em;
+  color: var(--ink-soft); padding: 4px 6px; cursor: pointer; border-radius: 4px;
+}
+.bar__lang button[aria-pressed="true"] { color: var(--accent); font-weight: 700; }
+
+.search { padding: 0 20px 10px; max-width: var(--maxw); margin: 0 auto; }
+.search input {
+  width: 100%; padding: 9px 12px; font: inherit; font-size: 15px;
+  color: var(--ink); background: transparent;
+  border: 1px solid var(--rule); border-radius: 6px;
+}
+.search input::placeholder { color: var(--ink-soft); }
+.search input:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+
+/* chips de sección */
+.chips {
+  display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none;
+  padding: 0 20px 10px; max-width: var(--maxw); margin: 0 auto;
+  -webkit-overflow-scrolling: touch;
+}
+.chips::-webkit-scrollbar { display: none; }
+.chips a {
+  flex: 0 0 auto; font-size: 13px; text-decoration: none; white-space: nowrap;
+  color: var(--ink-soft); border: 1px solid var(--rule); border-radius: 999px;
+  padding: 5px 12px; transition: background .15s, color .15s, border-color .15s;
+}
+.chips a[aria-current="true"] {
+  color: var(--accent); border-color: var(--accent); background: var(--accent-soft);
+}
+
+/* ---------- portada ---------- */
+.hero { text-align: center; padding: 40px 20px 28px; }
+.hero__logo { height: 54px; width: auto; margin-bottom: 14px; }
+.hero__title {
+  font-family: var(--display); font-weight: 400; font-size: 34px;
+  line-height: 1.15; margin: 0 0 6px;
+}
+.hero__meta { font-size: 12px; color: var(--ink-soft); letter-spacing: .04em; }
+
+/* ---------- secciones ---------- */
+.sec { padding-top: 34px; scroll-margin-top: 118px; }
+.sec__foto {
+  display: block; width: 100%; height: 168px; object-fit: cover;
+  border-radius: 10px; margin-bottom: 18px; background: var(--accent-soft);
+}
+.sec__title {
+  font-family: var(--display); font-weight: 400; font-size: 24px; margin: 0 0 2px;
+  color: var(--accent);
+}
+.sec__note { font-size: 13px; color: var(--ink-soft); margin: 0 0 6px; }
+.sec__rule { border: 0; border-top: 1px solid var(--rule); margin: 12px 0 4px; }
+
+/* ---------- items: la firma es el punteado hasta el precio ---------- */
+.item { padding: 16px 0; border-bottom: 1px solid var(--rule); }
+.item:last-child { border-bottom: 0; }
+.item__head { display: flex; align-items: baseline; gap: 6px; }
+.item__name { font-weight: 700; font-size: 16px; }
+.item__dots {
+  flex: 1; border-bottom: 1px dotted var(--rule);
+  transform: translateY(-4px); min-width: 16px;
+}
+.item__price {
+  font-variant-numeric: tabular-nums; font-size: 16px; white-space: nowrap;
+  color: var(--ink);
+}
+.item__desc { margin: 5px 0 0; font-size: 14px; color: var(--ink-soft); line-height: 1.45; }
+.item__tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 7px; }
+.tag {
+  font-size: 10px; letter-spacing: .07em; text-transform: uppercase;
+  border: 1px solid var(--rule); color: var(--ink-soft);
+  border-radius: 3px; padding: 2px 6px;
+}
+.tag--nuevo, .tag--sugerencia_chef, .tag--promo_3x4 {
+  border-color: var(--accent); color: var(--accent); background: var(--accent-soft);
+}
+
+/* ---------- pie ---------- */
+.foot {
+  margin-top: 44px; padding: 22px 0 48px; border-top: 1px solid var(--rule);
+  font-size: 12px; color: var(--ink-soft); line-height: 1.6;
+}
+.foot a { color: var(--accent); }
+
+.empty { padding: 40px 0; text-align: center; color: var(--ink-soft); font-size: 15px; }
+
+/* ---------- home / selector ---------- */
+.cards { display: grid; gap: 12px; padding: 8px 0 48px; }
+.card {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 18px 20px; text-decoration: none; color: var(--ink);
+  border: 1px solid var(--rule); border-radius: 10px; background: #fff;
+}
+.card:hover, .card:focus-visible { border-color: var(--accent); outline: none; }
+.card__name { font-family: var(--display); font-size: 20px; }
+.card__meta { font-size: 12px; color: var(--ink-soft); }
+.card__arrow { color: var(--accent); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+}
+html { scroll-behavior: smooth; }

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cartas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/menu.css">
+</head>
+<body data-tema="lb">
+<div class="wrap">
+  <header class="hero">
+    <h1 class="hero__title">Nuestras cartas</h1>
+    <p class="hero__meta" id="meta"></p>
+  </header>
+  <nav class="cards" id="cards"></nav>
+</div>
+<script>
+fetch('data/index.json?v=' + Date.now())
+  .then(function (r) { return r.json(); })
+  .then(function (d) {
+    document.getElementById('cards').innerHTML = d.cartas.map(function (c) {
+      return '<a class="card" href="carta/' + c.id + '/">' +
+        '<span><span class="card__name">' + c.nombre + '</span><br>' +
+        '<span class="card__meta">' + c.items + ' productos</span></span>' +
+        '<span class="card__arrow">&rarr;</span></a>';
+    }).join('');
+    document.getElementById('meta').textContent =
+      'Actualizado: ' + new Date(d.actualizado).toLocaleDateString('es-AR');
+  })
+  .catch(function () {
+    document.getElementById('cards').innerHTML = '<p class="empty">No pudimos cargar las cartas.</p>';
+  });
+</script>
+</body>
+</html>

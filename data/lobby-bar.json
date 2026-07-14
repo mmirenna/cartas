@@ -1,0 +1,3421 @@
+{
+ "carta": {
+  "id": "lobby-bar",
+  "nombre": "Lobby Bar",
+  "tema": "lb",
+  "logo": "lobby-bar.svg",
+  "idiomas": [
+   "es",
+   "en",
+   "pt"
+  ],
+  "actualizado": "2026-07-13T23:39:34",
+  "ver_tambien": "",
+  "pie": {
+   "es": "Por favor notifique a nuestros asociados si posee alguna intolerancia alérgica.",
+   "en": "Please let our associates know if you have any food allergy or intolerance.",
+   "pt": "Por favor, informe nossos associados se você tiver alguma alergia ou intolerância alimentar."
+  }
+ },
+ "tags": {
+  "SIN_TACC": {
+   "es": "Sin TACC",
+   "en": "Gluten free",
+   "pt": "Sem glúten"
+  },
+  "VEGETARIANO": {
+   "es": "Vegetariano",
+   "en": "Vegetarian",
+   "pt": "Vegetariano"
+  },
+  "VEGANO": {
+   "es": "Vegano",
+   "en": "Vegan",
+   "pt": "Vegano"
+  },
+  "NUEVO": {
+   "es": "Nuevo",
+   "en": "New",
+   "pt": "Novo"
+  },
+  "SUGERENCIA_CHEF": {
+   "es": "Sugerencia del chef",
+   "en": "Chef's suggestion",
+   "pt": "Sugestão do chef"
+  },
+  "PROMO_3X4": {
+   "es": "Promo 3x4",
+   "en": "3x4 promo",
+   "pt": "Promo 3x4"
+  }
+ },
+ "config": {
+  "moneda": {
+   "es": "ARS",
+   "en": "ARS",
+   "pt": "ARS"
+  },
+  "simbolo": {
+   "es": "$",
+   "en": "$",
+   "pt": "$"
+  },
+  "hotel": {
+   "es": "Sheraton Pilar Hotel & Convention Center",
+   "en": "Sheraton Pilar Hotel & Convention Center",
+   "pt": "Sheraton Pilar Hotel & Convention Center"
+  },
+  "aviso_alergias": {
+   "es": "Si tiene alguna restricción alimentaria, por favor avise a su camarero antes de realizar su pedido.",
+   "en": "If you have any dietary restriction, please let your waiter know before ordering.",
+   "pt": "Se você tem alguma restrição alimentar, avise o garçom antes de fazer o pedido."
+  }
+ },
+ "secciones": [
+  {
+   "id": "campeones",
+   "nombre": {
+    "es": "Menú campeones",
+    "en": "Champions menu",
+    "pt": "Menu campeões"
+   },
+   "foto": "lb-campeones.jpg",
+   "nota": {
+    "es": "Una selección especial de promociones, combos y platos para disfrutar cada encuentro.",
+    "en": "A selection of promotions, combos and dishes to enjoy every match.",
+    "pt": "Uma seleção de promoções, combos e pratos para curtir cada jogo."
+   },
+   "items": [
+    {
+     "id": "camp-punt-e-mes-julep",
+     "nombre": {
+      "es": "Punt e mes julep",
+      "en": "Punt e Mes julep",
+      "pt": "Punt e Mes julep"
+     },
+     "descripcion": {
+      "es": "Vermú Punt e Mes, almíbar, agua con gas, jugo de limón y jugo de pomelo.",
+      "en": "Punt e Mes vermouth, syrup, sparkling water, lemon juice and grapefruit juice.",
+      "pt": "Vermute Punt e Mes, xarope, água com gás, suco de limão e suco de toranja."
+     },
+     "precio": 15000,
+     "tags": [
+      "PROMO_3X4"
+     ]
+    },
+    {
+     "id": "camp-citric-sunset",
+     "nombre": {
+      "es": "Citric sunset",
+      "en": "Citric sunset",
+      "pt": "Citric sunset"
+     },
+     "descripcion": {
+      "es": "Vermú Punt e Mes, naranja, lima y limón macerados en almíbar cítrico.",
+      "en": "Punt e Mes vermouth, orange, lime and lemon macerated in citrus syrup.",
+      "pt": "Vermute Punt e Mes, laranja, lima e limão macerados em xarope cítrico."
+     },
+     "precio": 15000,
+     "tags": [
+      "PROMO_3X4"
+     ]
+    },
+    {
+     "id": "camp-due-mondi",
+     "nombre": {
+      "es": "Due mondi",
+      "en": "Due mondi",
+      "pt": "Due mondi"
+     },
+     "descripcion": {
+      "es": "London Dry Gin, Punt e Mes, almíbar de naranja, jugo de naranja y Bitter Angostura.",
+      "en": "London Dry Gin, Punt e Mes, orange syrup, orange juice and Angostura bitters.",
+      "pt": "London Dry Gin, Punt e Mes, xarope de laranja, suco de laranja e Angostura."
+     },
+     "precio": 15000,
+     "tags": [
+      "PROMO_3X4"
+     ]
+    },
+    {
+     "id": "camp-fernet",
+     "nombre": {
+      "es": "Fernet",
+      "en": "Fernet",
+      "pt": "Fernet"
+     },
+     "descripcion": {
+      "es": "Fernet Branca y Cola.",
+      "en": "Fernet Branca and cola.",
+      "pt": "Fernet Branca e cola."
+     },
+     "precio": 23000,
+     "tags": [
+      "PROMO_3X4"
+     ]
+    },
+    {
+     "id": "camp-copa-trumpeter",
+     "nombre": {
+      "es": "Copa de vino Trumpeter",
+      "en": "Glass of Trumpeter wine",
+      "pt": "Taça de vinho Trumpeter"
+     },
+     "descripcion": {
+      "es": "Cabernet Sauvignon, Malbec, Sauvignon Blanc o Chardonnay.",
+      "en": "Cabernet Sauvignon, Malbec, Sauvignon Blanc or Chardonnay.",
+      "pt": "Cabernet Sauvignon, Malbec, Sauvignon Blanc ou Chardonnay."
+     },
+     "precio": 9000,
+     "tags": [
+      "PROMO_3X4"
+     ]
+    },
+    {
+     "id": "camp-cerveza",
+     "nombre": {
+      "es": "Cerveza",
+      "en": "Beer",
+      "pt": "Cerveja"
+     },
+     "descripcion": {
+      "es": "Patagonia Vera IPA, Patagonia 24.7, Patagonia Amber Lager, Stella Artois, Heineken, Heineken 0.0 o Quilmes Stout.",
+      "en": "Patagonia Vera IPA, Patagonia 24.7, Patagonia Amber Lager, Stella Artois, Heineken, Heineken 0.0 or Quilmes Stout.",
+      "pt": "Patagonia Vera IPA, Patagonia 24.7, Patagonia Amber Lager, Stella Artois, Heineken, Heineken 0.0 ou Quilmes Stout."
+     },
+     "precio": 9000,
+     "tags": [
+      "PROMO_3X4"
+     ]
+    },
+    {
+     "id": "camp-ojo-de-bife",
+     "nombre": {
+      "es": "Ojo de bife",
+      "en": "Rib-eye",
+      "pt": "Ancho"
+     },
+     "descripcion": {
+      "es": "Ojo de bife braseado, crema de vino, corona de papa y hongos, y cherrys asados. Incluye agua o gaseosa + café o alfajor / tableta Freddo.",
+      "en": "Braised rib-eye, wine cream, potato and mushroom crown, roasted cherry tomatoes. Includes water or soft drink + coffee or a Freddo bar.",
+      "pt": "Ancho braseado, creme de vinho, coroa de batata e cogumelos, tomates cereja assados. Inclui água ou refrigerante + café ou alfajor / tablete Freddo."
+     },
+     "precio": 49000,
+     "tags": []
+    },
+    {
+     "id": "camp-ribs",
+     "nombre": {
+      "es": "Ribs de cerdo",
+      "en": "Pork ribs",
+      "pt": "Costelinha de porco"
+     },
+     "descripcion": {
+      "es": "Ribs de cerdo, salsa BBQ, mantecado de batatas toffee y coleslaw. Incluye agua o gaseosa + café o alfajor / tableta Freddo.",
+      "en": "Pork ribs, BBQ sauce, toffee sweet potato mash and coleslaw. Includes water or soft drink + coffee or a Freddo bar.",
+      "pt": "Costelinha de porco, molho BBQ, purê de batata-doce com toffee e coleslaw. Inclui água ou refrigerante + café ou alfajor / tablete Freddo."
+     },
+     "precio": 49000,
+     "tags": []
+    },
+    {
+     "id": "camp-ciabatta",
+     "nombre": {
+      "es": "Ciabatta",
+      "en": "Ciabatta",
+      "pt": "Ciabatta"
+     },
+     "descripcion": {
+      "es": "Lomo grillado, tomates frescos, mozzarella, jamón y lechuga con sus papas fritas. Incluye agua o gaseosa + café o alfajor / tableta Freddo.",
+      "en": "Grilled tenderloin, fresh tomato, mozzarella, ham and lettuce with fries. Includes water or soft drink + coffee or a Freddo bar.",
+      "pt": "Filé grelhado, tomate fresco, mussarela, presunto e alface com batatas fritas. Inclui água ou refrigerante + café ou alfajor / tablete Freddo."
+     },
+     "precio": 42000,
+     "tags": []
+    },
+    {
+     "id": "camp-hamburguesa",
+     "nombre": {
+      "es": "Hamburguesa",
+      "en": "Burger",
+      "pt": "Hambúrguer"
+     },
+     "descripcion": {
+      "es": "Pan de papa, tomate, mix de verdes, cheddar, pepinillos, bacon y papas fritas. Incluye agua o gaseosa + café o alfajor / tableta Freddo.",
+      "en": "Potato bun, tomato, mixed greens, cheddar, pickles, bacon and fries. Includes water or soft drink + coffee or a Freddo bar.",
+      "pt": "Pão de batata, tomate, mix de folhas, cheddar, picles, bacon e batatas fritas. Inclui água ou refrigerante + café ou alfajor / tablete Freddo."
+     },
+     "precio": 42000,
+     "tags": []
+    },
+    {
+     "id": "camp-intenso",
+     "nombre": {
+      "es": "Intenso",
+      "en": "Intenso",
+      "pt": "Intenso"
+     },
+     "descripcion": {
+      "es": "Sablée de chocolate, mousse de banana, crocante de coco, soufflé de ddl con su baño espejo y malvavisco. Incluye una infusión a elección.",
+      "en": "Chocolate sablée, banana mousse, coconut crisp, dulce de leche soufflé with mirror glaze and marshmallow. Includes a hot drink.",
+      "pt": "Sablée de chocolate, mousse de banana, crocante de coco, suflê de doce de leite com cobertura espelhada e marshmallow. Inclui uma infusão."
+     },
+     "precio": 24000,
+     "tags": []
+    },
+    {
+     "id": "camp-cubo-burbuja",
+     "nombre": {
+      "es": "Cubo burbuja",
+      "en": "Bubble cube",
+      "pt": "Cubo bolha"
+     },
+     "descripcion": {
+      "es": "Bavaroise de ddl, centro de toffee con baileys, húmedo de ddl y crocante de chocolate con cereal. Incluye una infusión a elección.",
+      "en": "Dulce de leche bavarois, Baileys toffee centre, moist dulce de leche sponge and chocolate cereal crunch. Includes a hot drink.",
+      "pt": "Bavarois de doce de leite, centro de toffee com Baileys, bolo úmido de doce de leite e crocante de chocolate com cereais. Inclui uma infusão."
+     },
+     "precio": 25000,
+     "tags": []
+    },
+    {
+     "id": "camp-alfajor-freddo",
+     "nombre": {
+      "es": "Alfajor Freddo",
+      "en": "Freddo alfajor",
+      "pt": "Alfajor Freddo"
+     },
+     "descripcion": {
+      "es": "Clásico Argentino (relleno de dulce de leche, cubierto por chocolate negro) o White Dubai (relleno de pistacchio y kadayif, cubierto por chocolate blanco). Incluye una infusión a elección.",
+      "en": "Clásico Argentino (dulce de leche, dark chocolate) or White Dubai (pistachio and kadayif, white chocolate). Includes a hot drink.",
+      "pt": "Clásico Argentino (doce de leite, chocolate meio amargo) ou White Dubai (pistache e kadayif, chocolate branco). Inclui uma infusão."
+     },
+     "precio": 13900,
+     "tags": []
+    },
+    {
+     "id": "camp-franui",
+     "nombre": {
+      "es": "Franui",
+      "en": "Franui",
+      "pt": "Franui"
+     },
+     "descripcion": {
+      "es": "Frambuesas bañadas en chocolate. Chocolate amargo, con leche o Franui Free (sin azúcar añadida y sin lactosa). Incluye una infusión a elección.",
+      "en": "Raspberries coated in chocolate. Dark, milk or Franui Free (no added sugar, lactose free). Includes a hot drink.",
+      "pt": "Framboesas cobertas com chocolate. Meio amargo, ao leite ou Franui Free (sem açúcar e sem lactose). Inclui uma infusão."
+     },
+     "precio": 16000,
+     "tags": []
+    },
+    {
+     "id": "camp-men-milanesa",
+     "nombre": {
+      "es": "Milanesa (mini hinchas)",
+      "en": "Breaded cutlet (kids)",
+      "pt": "Milanesa (infantil)"
+     },
+     "descripcion": {
+      "es": "Milanesa de carne con papas fritas. Incluye agua o gaseosa + café o alfajor / tableta Freddo.",
+      "en": "Breaded beef cutlet with fries. Includes water or soft drink + coffee or a Freddo bar.",
+      "pt": "Milanesa de carne com batatas fritas. Inclui água ou refrigerante + café ou alfajor / tablete Freddo."
+     },
+     "precio": 35000,
+     "tags": []
+    },
+    {
+     "id": "camp-men-noquis",
+     "nombre": {
+      "es": "Ñoquis (mini hinchas)",
+      "en": "Gnocchi (kids)",
+      "pt": "Nhoque (infantil)"
+     },
+     "descripcion": {
+      "es": "Ñoquis de papa con fileto. Incluye agua o gaseosa + café o alfajor / tableta Freddo.",
+      "en": "Potato gnocchi with filetto. Includes water or soft drink + coffee or a Freddo bar.",
+      "pt": "Nhoque de batata ao filetto. Inclui água ou refrigerante + café ou alfajor / tablete Freddo."
+     },
+     "precio": 34000,
+     "tags": [
+      "VEGETARIANO"
+     ]
+    },
+    {
+     "id": "camp-men-hamburguesa",
+     "nombre": {
+      "es": "Hamburguesa (mini hinchas)",
+      "en": "Burger (kids)",
+      "pt": "Hambúrguer (infantil)"
+     },
+     "descripcion": {
+      "es": "Hamburguesa con cheddar y papas fritas. Incluye agua o gaseosa + café o alfajor / tableta Freddo.",
+      "en": "Burger with cheddar and fries. Includes water or soft drink + coffee or a Freddo bar.",
+      "pt": "Hambúrguer com cheddar e batatas fritas. Inclui água ou refrigerante + café ou alfajor / tablete Freddo."
+     },
+     "precio": 44000,
+     "tags": []
+    },
+    {
+     "id": "camp-picada-2",
+     "nombre": {
+      "es": "Picada para 2",
+      "en": "Sharing board for two",
+      "pt": "Tábua para dois"
+     },
+     "descripcion": {
+      "es": "Queso azul, pategrás, boconccinos saborizados, atuel, brie, ligne noire, sardo, nuestra burrata, jamón natural, jamón crudo, lomito ahumado, salame, aceitunas negras, nueces y tomates asados. Acompañada por nuestras papas fritas.",
+      "en": "Blue cheese, pategrás, flavoured bocconcini, atuel, brie, ligne noire, sardo, our burrata, ham, prosciutto, smoked pork loin, salami, black olives, walnuts and roasted tomatoes. Served with our fries.",
+      "pt": "Queijo azul, pategrás, bocconcini temperados, atuel, brie, ligne noire, sardo, nossa burrata, presunto, presunto cru, lombo defumado, salame, azeitonas pretas, nozes e tomates assados. Acompanha nossas batatas fritas."
+     },
+     "precio": 49000,
+     "tags": []
+    },
+    {
+     "id": "camp-pizza-golazo",
+     "nombre": {
+      "es": "Pizza golazo",
+      "en": "Golazo pizza",
+      "pt": "Pizza golaço"
+     },
+     "descripcion": {
+      "es": "De mozzarella, tomate, albahaca y aceitunas negras.",
+      "en": "Mozzarella, tomato, basil and black olives.",
+      "pt": "Mussarela, tomate, manjericão e azeitonas pretas."
+     },
+     "precio": 40000,
+     "tags": [
+      "VEGETARIANO"
+     ]
+    },
+    {
+     "id": "camp-pizza-titular",
+     "nombre": {
+      "es": "Pizza titular",
+      "en": "Starter pizza",
+      "pt": "Pizza titular"
+     },
+     "descripcion": {
+      "es": "De jamón natural, mozzarella, aceitunas y morrón asado.",
+      "en": "Ham, mozzarella, olives and roasted red pepper.",
+      "pt": "Presunto, mussarela, azeitonas e pimentão assado."
+     },
+     "precio": 43000,
+     "tags": []
+    },
+    {
+     "id": "camp-pizza-campeona",
+     "nombre": {
+      "es": "Pizza campeona",
+      "en": "Champion pizza",
+      "pt": "Pizza campeã"
+     },
+     "descripcion": {
+      "es": "De jamón crudo, rúcula, tomates secos, parmesano, mozzarella y aceitunas negras.",
+      "en": "Prosciutto, arugula, sun-dried tomato, parmesan, mozzarella and black olives.",
+      "pt": "Presunto cru, rúcula, tomate seco, parmesão, mussarela e azeitonas pretas."
+     },
+     "precio": 47000,
+     "tags": []
+    },
+    {
+     "id": "camp-alfajor-argentino",
+     "nombre": {
+      "es": "Alfajor argentino",
+      "en": "Argentine alfajor",
+      "pt": "Alfajor argentino"
+     },
+     "descripcion": {
+      "es": "Clásico alfajor blanco de dulce de leche con baño glaseado de azúcar.",
+      "en": "Classic white alfajor with dulce de leche and sugar glaze.",
+      "pt": "Alfajor branco clássico de doce de leite com cobertura de açúcar."
+     },
+     "precio": 9900,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "servicio-te",
+   "nombre": {
+    "es": "Nuestra propuesta de té",
+    "en": "Afternoon tea",
+    "pt": "Chá da tarde"
+   },
+   "foto": "lb-te.jpg",
+   "nota": {
+    "es": "Servicio para 2 personas. Viernes, sábados, domingos y feriados de 16:00 a 18:30. Cupos limitados.",
+    "en": "Service for 2. Fridays, Saturdays, Sundays and holidays, 4:00 to 6:30 pm. Limited availability.",
+    "pt": "Serviço para 2 pessoas. Sextas, sábados, domingos e feriados, das 16h às 18h30. Vagas limitadas."
+   },
+   "items": [
+    {
+     "id": "te-servicio-2",
+     "nombre": {
+      "es": "Servicio de té para 2 personas",
+      "en": "Afternoon tea for two",
+      "pt": "Chá da tarde para dois"
+     },
+     "descripcion": {
+      "es": "Salado: Bavaria (salmón ahumado, tártara y rúcula); Sancricca (jamón crudo 12 meses, pategrás, tomates secos y cremoso de queso azul); Avocado (tostón multicereal, Finlandia, palta, huevo de codorniz y cherrys); scons de queso. Dulce: macarons de frutos rojos con centro de frambuesa; semiesfera cítrica con base de granola casera; tarta de manzanas; húmedo de dulce de leche; rústico de chocolate con centro de ddl bañado de chocolate; croissant flat, untuoso de nutella y chocolate. Bebidas: jugo de naranja e infusión a elección.",
+      "en": "Savoury: Bavaria (smoked salmon, tartare sauce and arugula); Sancricca (12-month prosciutto, pategrás, sun-dried tomato and blue cheese cream); Avocado (multigrain toast, Finlandia cheese, avocado, quail egg and cherry tomatoes); cheese scones. Sweet: red berry macarons with a raspberry centre; citrus dome on homemade granola; apple tart; moist dulce de leche sponge; rustic chocolate with a dulce de leche centre; flat croissant with nutella and chocolate. Drinks: orange juice and a hot drink of your choice.",
+      "pt": "Salgado: Bavaria (salmão defumado, molho tártaro e rúcula); Sancricca (presunto cru de 12 meses, pategrás, tomate seco e creme de queijo azul); Avocado (torrada multigrãos, queijo Finlandia, abacate, ovo de codorna e tomates cereja); scones de queijo. Doce: macarons de frutas vermelhas com centro de framboesa; semiesfera cítrica sobre granola caseira; torta de maçã; bolo úmido de doce de leite; rústico de chocolate com centro de doce de leite; croissant flat com nutella e chocolate. Bebidas: suco de laranja e uma infusão à escolha."
+     },
+     "precio": 62000,
+     "tags": []
+    },
+    {
+     "id": "te-promo-lanzamiento",
+     "nombre": {
+      "es": "Promoción lanzamiento: infusión + alfajor Freddo",
+      "en": "Launch offer: hot drink + Freddo alfajor",
+      "pt": "Promoção de lançamento: infusão + alfajor Freddo"
+     },
+     "descripcion": {
+      "es": "Alfajor a elección: Freddo Clásico Argentino o Freddo White Dubai. Infusión a elección del listado de cafetería, con excepción del café irlandés.",
+      "en": "Alfajor of your choice: Freddo Clásico Argentino or Freddo White Dubai. Any hot drink from the coffee list, except Irish coffee.",
+      "pt": "Alfajor à escolha: Freddo Clásico Argentino ou Freddo White Dubai. Qualquer infusão da lista de cafeteria, exceto café irlandês."
+     },
+     "precio": 13900,
+     "tags": [
+      "NUEVO"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ensaladas",
+   "nombre": {
+    "es": "Ensaladas",
+    "en": "Salads",
+    "pt": "Saladas"
+   },
+   "foto": "lb-ensaladas.jpg",
+   "nota": {},
+   "items": [
+    {
+     "id": "ens-capresse",
+     "nombre": {
+      "es": "Capresse",
+      "en": "Caprese",
+      "pt": "Capresse"
+     },
+     "descripcion": {
+      "es": "Tomates asados y frescos, albahaca y burratina.",
+      "en": "Roasted and fresh tomatoes, basil and burratina.",
+      "pt": "Tomates assados e frescos, manjericão e burratina."
+     },
+     "precio": 33000,
+     "tags": [
+      "VEGETARIANO"
+     ]
+    },
+    {
+     "id": "ens-caesar-tradicional",
+     "nombre": {
+      "es": "Caesar tradicional",
+      "en": "Caesar",
+      "pt": "Caesar tradicional"
+     },
+     "descripcion": {
+      "es": "Mix de verdes, parmesano, bacon, croutons y aderezo caesar.",
+      "en": "Mixed greens, parmesan, bacon, croutons and caesar dressing.",
+      "pt": "Mix de folhas, parmesão, bacon, croutons e molho caesar."
+     },
+     "precio": 26500,
+     "tags": []
+    },
+    {
+     "id": "ens-caesar-ave",
+     "nombre": {
+      "es": "Caesar ave",
+      "en": "Chicken caesar",
+      "pt": "Caesar de frango"
+     },
+     "descripcion": {
+      "es": "Mix de verdes, parmesano, bacon, croutons y aderezo caesar, con ave.",
+      "en": "Mixed greens, parmesan, bacon, croutons and caesar dressing, with chicken.",
+      "pt": "Mix de folhas, parmesão, bacon, croutons e molho caesar, com frango."
+     },
+     "precio": 31000,
+     "tags": []
+    },
+    {
+     "id": "ens-caesar-langostinos",
+     "nombre": {
+      "es": "Caesar langostinos",
+      "en": "Prawn caesar",
+      "pt": "Caesar de camarão"
+     },
+     "descripcion": {
+      "es": "Mix de verdes, parmesano, bacon, croutons y aderezo caesar, con langostinos.",
+      "en": "Mixed greens, parmesan, bacon, croutons and caesar dressing, with prawns.",
+      "pt": "Mix de folhas, parmesão, bacon, croutons e molho caesar, com camarões."
+     },
+     "precio": 37000,
+     "tags": []
+    },
+    {
+     "id": "ens-caesar-salmon",
+     "nombre": {
+      "es": "Caesar salmón ahumado",
+      "en": "Smoked salmon caesar",
+      "pt": "Caesar de salmão defumado"
+     },
+     "descripcion": {
+      "es": "Mix de verdes, parmesano, bacon, croutons y aderezo caesar, con salmón ahumado.",
+      "en": "Mixed greens, parmesan, bacon, croutons and caesar dressing, with smoked salmon.",
+      "pt": "Mix de folhas, parmesão, bacon, croutons e molho caesar, com salmão defumado."
+     },
+     "precio": 39000,
+     "tags": []
+    },
+    {
+     "id": "ens-mar-y-tierra",
+     "nombre": {
+      "es": "Mar y tierra",
+      "en": "Surf and turf salad",
+      "pt": "Salada mar e terra"
+     },
+     "descripcion": {
+      "es": "Salmón ahumado, huevo poché, hummus de garbanzos, mix de verdes, cherrys y cabutia asada, remolacha, almendras tostadas, semillas y su aliño.",
+      "en": "Smoked salmon, poached egg, chickpea hummus, mixed greens, cherry tomatoes and roasted butternut, beetroot, toasted almonds, seeds and dressing.",
+      "pt": "Salmão defumado, ovo poché, homus de grão-de-bico, mix de folhas, tomates cereja e abóbora assada, beterraba, amêndoas tostadas, sementes e molho."
+     },
+     "precio": 34000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "sandwicheria-fria",
+   "nombre": {
+    "es": "Sandwichería fría",
+    "en": "Cold sandwiches",
+    "pt": "Sanduíches frios"
+   },
+   "foto": "lb-sandwicheria.jpg",
+   "nota": {},
+   "items": [
+    {
+     "id": "sfr-avocado-toast",
+     "nombre": {
+      "es": "Avocado toast",
+      "en": "Avocado toast",
+      "pt": "Avocado toast"
+     },
+     "descripcion": {
+      "es": "Pan multicereal, huevo poché, tomates cherry, queso Finlandia, mix de semillas y palta.",
+      "en": "Multigrain bread, poached egg, cherry tomatoes, Finlandia cheese, mixed seeds and avocado.",
+      "pt": "Pão multigrãos, ovo poché, tomates cereja, queijo Finlandia, mix de sementes e abacate."
+     },
+     "precio": 30000,
+     "tags": [
+      "VEGETARIANO"
+     ]
+    },
+    {
+     "id": "sfr-baguette-cabutia",
+     "nombre": {
+      "es": "Baguette de cabutia",
+      "en": "Butternut baguette",
+      "pt": "Baguete de abóbora"
+     },
+     "descripcion": {
+      "es": "Mini baguette de cabutia, cremoso de queso azul y crocante de nuez, albahaca, berenjenas grilladas, queso tybo y tomates grillados.",
+      "en": "Butternut mini baguette, blue cheese cream and walnut crunch, basil, grilled aubergine, tybo cheese and roasted tomatoes.",
+      "pt": "Mini baguete de abóbora, creme de queijo azul e crocante de nozes, manjericão, berinjela grelhada, queijo tybo e tomates assados."
+     },
+     "precio": 29000,
+     "tags": [
+      "VEGETARIANO"
+     ]
+    },
+    {
+     "id": "sfr-bavaria",
+     "nombre": {
+      "es": "Bavaria",
+      "en": "Bavaria",
+      "pt": "Bavaria"
+     },
+     "descripcion": {
+      "es": "Sándwich de salmón ahumado, crema tártara, tomates secos, pepino y rúcula.",
+      "en": "Smoked salmon sandwich, tartare sauce, sun-dried tomato, cucumber and arugula.",
+      "pt": "Sanduíche de salmão defumado, molho tártaro, tomate seco, pepino e rúcula."
+     },
+     "precio": 30000,
+     "tags": []
+    },
+    {
+     "id": "sfr-brioche",
+     "nombre": {
+      "es": "Brioche",
+      "en": "Brioche",
+      "pt": "Brioche"
+     },
+     "descripcion": {
+      "es": "Pan de brioche, jamón crudo, burrata, manteca de hierbas, tomates horneados, reducción de aceto y rúcula.",
+      "en": "Brioche bun, prosciutto, burrata, herb butter, roasted tomatoes, balsamic reduction and arugula.",
+      "pt": "Pão brioche, presunto cru, burrata, manteiga de ervas, tomates assados, redução de aceto e rúcula."
+     },
+     "precio": 31000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "sandwicheria-caliente",
+   "nombre": {
+    "es": "Sandwichería caliente",
+    "en": "Hot sandwiches",
+    "pt": "Sanduíches quentes"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "sca-tostado-jq",
+     "nombre": {
+      "es": "Tostado de jamón y queso",
+      "en": "Ham and cheese toastie",
+      "pt": "Misto quente"
+     },
+     "descripcion": {
+      "es": "En pan árabe o inglés.",
+      "en": "On pita or white bread.",
+      "pt": "Em pão árabe ou de forma."
+     },
+     "precio": 17000,
+     "tags": []
+    },
+    {
+     "id": "sca-tostado-jqt",
+     "nombre": {
+      "es": "Tostado de jamón, queso y tomate",
+      "en": "Ham, cheese and tomato toastie",
+      "pt": "Misto quente com tomate"
+     },
+     "descripcion": {
+      "es": "En pan árabe o inglés.",
+      "en": "On pita or white bread.",
+      "pt": "Em pão árabe ou de forma."
+     },
+     "precio": 17000,
+     "tags": []
+    },
+    {
+     "id": "sca-tostado-crudo",
+     "nombre": {
+      "es": "Tostado de jamón crudo y queso",
+      "en": "Prosciutto and cheese toastie",
+      "pt": "Tostado de presunto cru e queijo"
+     },
+     "descripcion": {
+      "es": "En pan árabe o inglés.",
+      "en": "On pita or white bread.",
+      "pt": "Em pão árabe ou de forma."
+     },
+     "precio": 17000,
+     "tags": []
+    },
+    {
+     "id": "sca-tostado-qt",
+     "nombre": {
+      "es": "Tostado de queso y tomate",
+      "en": "Cheese and tomato toastie",
+      "pt": "Tostado de queijo e tomate"
+     },
+     "descripcion": {
+      "es": "En pan árabe o inglés.",
+      "en": "On pita or white bread.",
+      "pt": "Em pão árabe ou de forma."
+     },
+     "precio": 17000,
+     "tags": [
+      "VEGETARIANO"
+     ]
+    },
+    {
+     "id": "sca-croissant",
+     "nombre": {
+      "es": "Croissant",
+      "en": "Croissant",
+      "pt": "Croissant"
+     },
+     "descripcion": {
+      "es": "Croissant de jamón natural y queso.",
+      "en": "Ham and cheese croissant.",
+      "pt": "Croissant de presunto e queijo."
+     },
+     "precio": 21000,
+     "tags": []
+    },
+    {
+     "id": "sca-ciabatta",
+     "nombre": {
+      "es": "Ciabatta",
+      "en": "Ciabatta",
+      "pt": "Ciabatta"
+     },
+     "descripcion": {
+      "es": "Lomo grillado, tomates frescos, mozzarella, jamón y lechuga con sus papas fritas.",
+      "en": "Grilled tenderloin, fresh tomato, mozzarella, ham and lettuce with fries.",
+      "pt": "Filé grelhado, tomate fresco, mussarela, presunto e alface com batatas fritas."
+     },
+     "precio": 36000,
+     "tags": []
+    },
+    {
+     "id": "sca-ave",
+     "nombre": {
+      "es": "Ave",
+      "en": "Chicken sandwich",
+      "pt": "Sanduíche de frango"
+     },
+     "descripcion": {
+      "es": "Sándwich de pollo desmenuzado, con queso, cremoso de albahaca, tomates secos, lechuga y cebollas caramelizadas.",
+      "en": "Pulled chicken with cheese, basil cream, sun-dried tomato, lettuce and caramelised onion.",
+      "pt": "Frango desfiado com queijo, creme de manjericão, tomate seco, alface e cebola caramelizada."
+     },
+     "precio": 33000,
+     "tags": []
+    },
+    {
+     "id": "sca-hamburguesa",
+     "nombre": {
+      "es": "Hamburguesa",
+      "en": "Burger",
+      "pt": "Hambúrguer"
+     },
+     "descripcion": {
+      "es": "Pan de papa, tomate, mix de verdes, cheddar, pepinillos, bacon y papas fritas.",
+      "en": "Potato bun, tomato, mixed greens, cheddar, pickles, bacon and fries.",
+      "pt": "Pão de batata, tomate, mix de folhas, cheddar, picles, bacon e batatas fritas."
+     },
+     "precio": 36000,
+     "tags": []
+    },
+    {
+     "id": "sca-pizza-mozzarella",
+     "nombre": {
+      "es": "Pizza individual de mozzarella",
+      "en": "Mozzarella pizza",
+      "pt": "Pizza de mussarela"
+     },
+     "descripcion": {
+      "es": "Mozzarella, jamón natural, huevo y pimientos asados.",
+      "en": "Mozzarella, ham, egg and roasted peppers.",
+      "pt": "Mussarela, presunto, ovo e pimentões assados."
+     },
+     "precio": 29000,
+     "tags": []
+    },
+    {
+     "id": "sca-pizza-integral",
+     "nombre": {
+      "es": "Pizza individual integral",
+      "en": "Wholemeal pizza",
+      "pt": "Pizza integral"
+     },
+     "descripcion": {
+      "es": "Masa integral, mozzarella, vegetales grillados, brie y pesto de rúcula.",
+      "en": "Wholemeal base, mozzarella, grilled vegetables, brie and arugula pesto.",
+      "pt": "Massa integral, mussarela, legumes grelhados, brie e pesto de rúcula."
+     },
+     "precio": 29000,
+     "tags": [
+      "VEGETARIANO"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cocina",
+   "nombre": {
+    "es": "Cocina",
+    "en": "Main courses",
+    "pt": "Pratos principais"
+   },
+   "foto": "lb-cocina.jpg",
+   "nota": {},
+   "items": [
+    {
+     "id": "coc-salmon",
+     "nombre": {
+      "es": "Salmón",
+      "en": "Salmon",
+      "pt": "Salmão"
+     },
+     "descripcion": {
+      "es": "Salmón rosado grillado, risotto cítrico, jengibre y vegetales de estación.",
+      "en": "Grilled salmon, citrus risotto, ginger and seasonal vegetables.",
+      "pt": "Salmão grelhado, risoto cítrico, gengibre e legumes da estação."
+     },
+     "precio": 47000,
+     "tags": []
+    },
+    {
+     "id": "coc-ojo-de-bife",
+     "nombre": {
+      "es": "Ojo de bife",
+      "en": "Rib-eye",
+      "pt": "Ancho"
+     },
+     "descripcion": {
+      "es": "Ojo de bife braseado, crema de vino, corona de papa y hongos, y cherrys asados.",
+      "en": "Braised rib-eye, wine cream, potato and mushroom crown, roasted cherry tomatoes.",
+      "pt": "Ancho braseado, creme de vinho, coroa de batata e cogumelos, tomates cereja assados."
+     },
+     "precio": 43000,
+     "tags": []
+    },
+    {
+     "id": "coc-ribs",
+     "nombre": {
+      "es": "Ribs de cerdo",
+      "en": "Pork ribs",
+      "pt": "Costelinha de porco"
+     },
+     "descripcion": {
+      "es": "Ribs de cerdo, salsa BBQ, mantecado de batatas toffee y coleslaw.",
+      "en": "Pork ribs, BBQ sauce, toffee sweet potato mash and coleslaw.",
+      "pt": "Costelinha de porco, molho BBQ, purê de batata-doce com toffee e coleslaw."
+     },
+     "precio": 43000,
+     "tags": []
+    },
+    {
+     "id": "coc-pollo-grillado",
+     "nombre": {
+      "es": "Pollo grillado",
+      "en": "Grilled chicken",
+      "pt": "Frango grelhado"
+     },
+     "descripcion": {
+      "es": "Pollo grillado con puré de calabazas y sus vegetales de estación.",
+      "en": "Grilled chicken with butternut purée and seasonal vegetables.",
+      "pt": "Frango grelhado com purê de abóbora e legumes da estação."
+     },
+     "precio": 37000,
+     "tags": []
+    },
+    {
+     "id": "coc-noquis",
+     "nombre": {
+      "es": "Ñoquis",
+      "en": "Gnocchi",
+      "pt": "Nhoque"
+     },
+     "descripcion": {
+      "es": "Ñoquis de boniato con crema de puerro y crocante de almendra.",
+      "en": "Sweet potato gnocchi with leek cream and almond crunch.",
+      "pt": "Nhoque de batata-doce com creme de alho-poró e crocante de amêndoa."
+     },
+     "precio": 37000,
+     "tags": [
+      "VEGETARIANO"
+     ]
+    },
+    {
+     "id": "coc-mini-conchiglione",
+     "nombre": {
+      "es": "Mini conchiglione",
+      "en": "Mini conchiglione",
+      "pt": "Mini conchiglione"
+     },
+     "descripcion": {
+      "es": "Mini conchiglione con crema cuatro quesos, tomates horneados y crocante multicereal.",
+      "en": "Mini conchiglione with four-cheese cream, baked tomatoes and multigrain crunch.",
+      "pt": "Mini conchiglione com creme de quatro queijos, tomates assados e crocante multigrãos."
+     },
+     "precio": 37000,
+     "tags": [
+      "VEGETARIANO"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "menores",
+   "nombre": {
+    "es": "Menores",
+    "en": "Kids",
+    "pt": "Infantil"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "men-milanesa",
+     "nombre": {
+      "es": "Milanesa de carne con papas fritas",
+      "en": "Breaded beef cutlet with fries",
+      "pt": "Milanesa de carne com batatas fritas"
+     },
+     "descripcion": {},
+     "precio": 27500,
+     "tags": []
+    },
+    {
+     "id": "men-nuggets",
+     "nombre": {
+      "es": "Nuggets con papas fritas",
+      "en": "Chicken nuggets with fries",
+      "pt": "Nuggets com batatas fritas"
+     },
+     "descripcion": {},
+     "precio": 30000,
+     "tags": []
+    },
+    {
+     "id": "men-penne-fileto",
+     "nombre": {
+      "es": "Penne fileto",
+      "en": "Penne with tomato sauce",
+      "pt": "Penne ao filetto"
+     },
+     "descripcion": {},
+     "precio": 26500,
+     "tags": [
+      "VEGETARIANO"
+     ]
+    },
+    {
+     "id": "men-tallarin-crema",
+     "nombre": {
+      "es": "Tallarín con crema",
+      "en": "Tagliatelle with cream",
+      "pt": "Talharim ao creme"
+     },
+     "descripcion": {},
+     "precio": 26500,
+     "tags": [
+      "VEGETARIANO"
+     ]
+    },
+    {
+     "id": "men-hamburguesa",
+     "nombre": {
+      "es": "Hamburguesa con cheddar y papas fritas",
+      "en": "Burger with cheddar and fries",
+      "pt": "Hambúrguer com cheddar e batatas fritas"
+     },
+     "descripcion": {},
+     "precio": 26500,
+     "tags": []
+    },
+    {
+     "id": "men-noquis",
+     "nombre": {
+      "es": "Ñoquis de papa con fileto",
+      "en": "Potato gnocchi with tomato sauce",
+      "pt": "Nhoque de batata ao filetto"
+     },
+     "descripcion": {},
+     "precio": 26500,
+     "tags": [
+      "VEGETARIANO"
+     ]
+    },
+    {
+     "id": "men-pasta-seca",
+     "nombre": {
+      "es": "Pasta seca con crema",
+      "en": "Pasta with cream",
+      "pt": "Massa ao creme"
+     },
+     "descripcion": {},
+     "precio": 26500,
+     "tags": [
+      "VEGETARIANO"
+     ]
+    },
+    {
+     "id": "men-helados",
+     "nombre": {
+      "es": "Variedad de helados",
+      "en": "Ice cream",
+      "pt": "Sorvetes"
+     },
+     "descripcion": {},
+     "precio": 19500,
+     "tags": []
+    },
+    {
+     "id": "men-flan",
+     "nombre": {
+      "es": "Flan con dulce de leche",
+      "en": "Crème caramel with dulce de leche",
+      "pt": "Pudim com doce de leite"
+     },
+     "descripcion": {},
+     "precio": 19500,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "postres",
+   "nombre": {
+    "es": "Postres",
+    "en": "Desserts",
+    "pt": "Sobremesas"
+   },
+   "foto": "lb-postres.jpg",
+   "nota": {},
+   "items": [
+    {
+     "id": "pos-frutas-fileteadas",
+     "nombre": {
+      "es": "Frutas fileteadas",
+      "en": "Sliced fruit",
+      "pt": "Frutas fatiadas"
+     },
+     "descripcion": {},
+     "precio": 20000,
+     "tags": [
+      "VEGANO"
+     ]
+    },
+    {
+     "id": "pos-frutos-rojos",
+     "nombre": {
+      "es": "Mix de frutos rojos con helado",
+      "en": "Red berries with ice cream",
+      "pt": "Frutas vermelhas com sorvete"
+     },
+     "descripcion": {},
+     "precio": 20000,
+     "tags": []
+    },
+    {
+     "id": "pos-helados",
+     "nombre": {
+      "es": "Variedad de helados",
+      "en": "Ice cream",
+      "pt": "Sorvetes"
+     },
+     "descripcion": {},
+     "precio": 19500,
+     "tags": []
+    },
+    {
+     "id": "pos-franui",
+     "nombre": {
+      "es": "Franui",
+      "en": "Franui",
+      "pt": "Franui"
+     },
+     "descripcion": {
+      "es": "Con leche o amargo.",
+      "en": "Milk or dark chocolate.",
+      "pt": "Ao leite ou meio amargo."
+     },
+     "precio": 12000,
+     "tags": []
+    },
+    {
+     "id": "pos-franui-free",
+     "nombre": {
+      "es": "Franui Free",
+      "en": "Franui Free",
+      "pt": "Franui Free"
+     },
+     "descripcion": {
+      "es": "Sin azúcar añadida y sin lactosa.",
+      "en": "No added sugar, lactose free.",
+      "pt": "Sem açúcar adicionado e sem lactose."
+     },
+     "precio": 12000,
+     "tags": [
+      "NUEVO"
+     ]
+    },
+    {
+     "id": "pos-tableta-freddo",
+     "nombre": {
+      "es": "Tableta Freddo",
+      "en": "Freddo chocolate bar",
+      "pt": "Tablete Freddo"
+     },
+     "descripcion": {},
+     "precio": 6800,
+     "tags": [
+      "NUEVO"
+     ]
+    },
+    {
+     "id": "pos-alfajor-freddo-clasico",
+     "nombre": {
+      "es": "Alfajor Freddo Clásico Argentino",
+      "en": "Freddo Clásico Argentino alfajor",
+      "pt": "Alfajor Freddo Clásico Argentino"
+     },
+     "descripcion": {
+      "es": "Relleno de dulce de leche, cubierto por chocolate negro.",
+      "en": "Dulce de leche filling, dark chocolate coating.",
+      "pt": "Recheio de doce de leite, cobertura de chocolate meio amargo."
+     },
+     "precio": 7200,
+     "tags": [
+      "NUEVO"
+     ]
+    },
+    {
+     "id": "pos-alfajor-freddo-dubai",
+     "nombre": {
+      "es": "Alfajor Freddo White Dubai",
+      "en": "Freddo White Dubai alfajor",
+      "pt": "Alfajor Freddo White Dubai"
+     },
+     "descripcion": {
+      "es": "Relleno de pistacchio y kadayif, cubierto por chocolate blanco.",
+      "en": "Pistachio and kadayif filling, white chocolate coating.",
+      "pt": "Recheio de pistache e kadayif, cobertura de chocolate branco."
+     },
+     "precio": 9000,
+     "tags": [
+      "NUEVO"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pasteleria",
+   "nombre": {
+    "es": "Pastelería",
+    "en": "Pastry",
+    "pt": "Confeitaria"
+   },
+   "foto": "lb-pasteleria.jpg",
+   "nota": {},
+   "items": [
+    {
+     "id": "pas-cookie-xl",
+     "nombre": {
+      "es": "Cookie XL",
+      "en": "XL cookie",
+      "pt": "Cookie XL"
+     },
+     "descripcion": {
+      "es": "Cookies de maní con centro de nutella, cremoso de maní, choco-marroc, crocante de merengue y salsa de ddl.",
+      "en": "Peanut cookies with a nutella centre, peanut cream, choco-marroc, meringue crunch and dulce de leche sauce.",
+      "pt": "Cookies de amendoim com centro de nutella, creme de amendoim, choco-marroc, crocante de merengue e calda de doce de leite."
+     },
+     "precio": 19000,
+     "tags": []
+    },
+    {
+     "id": "pas-triple-chocolate",
+     "nombre": {
+      "es": "Triple chocolate",
+      "en": "Triple chocolate",
+      "pt": "Triplo chocolate"
+     },
+     "descripcion": {
+      "es": "Bavaroise de chocolate con leche, semiamargo y espiral de chocolate blanco sobre brownie y centro líquido de frambuesas.",
+      "en": "Milk and dark chocolate bavarois with a white chocolate spiral on brownie and a liquid raspberry centre.",
+      "pt": "Bavarois de chocolate ao leite e meio amargo com espiral de chocolate branco sobre brownie e centro líquido de framboesa."
+     },
+     "precio": 18000,
+     "tags": []
+    },
+    {
+     "id": "pas-key-lime-pie",
+     "nombre": {
+      "es": "Key lime pie",
+      "en": "Key lime pie",
+      "pt": "Key lime pie"
+     },
+     "descripcion": {
+      "es": "Masa sablée, curd de lima y crema cítrica.",
+      "en": "Sablée crust, lime curd and citrus cream.",
+      "pt": "Massa sablée, curd de limão e creme cítrico."
+     },
+     "precio": 18000,
+     "tags": []
+    },
+    {
+     "id": "pas-intenso",
+     "nombre": {
+      "es": "Intenso",
+      "en": "Intenso",
+      "pt": "Intenso"
+     },
+     "descripcion": {
+      "es": "Sablée de chocolate, mousse de banana, crocante de coco, soufflé de ddl con su baño espejo y malvavisco.",
+      "en": "Chocolate sablée, banana mousse, coconut crisp, dulce de leche soufflé with mirror glaze and marshmallow.",
+      "pt": "Sablée de chocolate, mousse de banana, crocante de coco, suflê de doce de leite com cobertura espelhada e marshmallow."
+     },
+     "precio": 20000,
+     "tags": []
+    },
+    {
+     "id": "pas-manzana",
+     "nombre": {
+      "es": "Manzana",
+      "en": "Apple",
+      "pt": "Maçã"
+     },
+     "descripcion": {
+      "es": "Crumble de manzana, compota de manzana y arenado con frutos secos.",
+      "en": "Apple crumble, apple compote and nut streusel.",
+      "pt": "Crumble de maçã, compota de maçã e farofa de frutas secas."
+     },
+     "precio": 18000,
+     "tags": []
+    },
+    {
+     "id": "pas-alfajor-dubai",
+     "nombre": {
+      "es": "Alfajor Dubái",
+      "en": "Dubai alfajor",
+      "pt": "Alfajor Dubai"
+     },
+     "descripcion": {
+      "es": "Capas de brownie relleno de cremoso de pistaccio y crujiente de masa kataifi, baño de chocolate con leche.",
+      "en": "Brownie layers filled with pistachio cream and crisp kataifi, milk chocolate coating.",
+      "pt": "Camadas de brownie recheadas com creme de pistache e kataifi crocante, cobertura de chocolate ao leite."
+     },
+     "precio": 19000,
+     "tags": []
+    },
+    {
+     "id": "pas-cubo-burbuja",
+     "nombre": {
+      "es": "Cubo burbuja",
+      "en": "Bubble cube",
+      "pt": "Cubo bolha"
+     },
+     "descripcion": {
+      "es": "Bavaroise de ddl, centro de toffee con baileys, húmedo de ddl y crocante de chocolate con cereal.",
+      "en": "Dulce de leche bavarois, Baileys toffee centre, moist dulce de leche sponge and chocolate cereal crunch.",
+      "pt": "Bavarois de doce de leite, centro de toffee com Baileys, bolo úmido de doce de leite e crocante de chocolate com cereais."
+     },
+     "precio": 21000,
+     "tags": []
+    },
+    {
+     "id": "pas-lingote",
+     "nombre": {
+      "es": "Lingote",
+      "en": "Ingot",
+      "pt": "Lingote"
+     },
+     "descripcion": {
+      "es": "Brownie de chocolate, almendra, coco, garrapiñada y frutas de estación.",
+      "en": "Chocolate brownie, almond, coconut, praline and seasonal fruit.",
+      "pt": "Brownie de chocolate, amêndoa, coco, praliné e frutas da estação."
+     },
+     "precio": 18000,
+     "tags": []
+    },
+    {
+     "id": "pas-budin-citrico",
+     "nombre": {
+      "es": "Budín cítrico",
+      "en": "Citrus loaf cake",
+      "pt": "Bolo cítrico"
+     },
+     "descripcion": {
+      "es": "Porción de budín cítrico, glaseado de limas y amapolas.",
+      "en": "Lime and poppy seed glaze.",
+      "pt": "Glacê de limão e sementes de papoula."
+     },
+     "precio": 14000,
+     "tags": []
+    },
+    {
+     "id": "pas-macarons",
+     "nombre": {
+      "es": "Variedad de macarons x 3 u.",
+      "en": "Macarons, 3 pieces",
+      "pt": "Macarons, 3 unidades"
+     },
+     "descripcion": {
+      "es": "Gustos surtidos: chocolate Dubái, nutella, frutos rojos con centro de frambuesa.",
+      "en": "Assorted: Dubai chocolate, nutella, red berries with a raspberry centre.",
+      "pt": "Sortidos: chocolate Dubai, nutella, frutas vermelhas com centro de framboesa."
+     },
+     "precio": 20000,
+     "tags": []
+    },
+    {
+     "id": "pas-scons",
+     "nombre": {
+      "es": "Scons x 2 u.",
+      "en": "Scones, 2 pieces",
+      "pt": "Scones, 2 unidades"
+     },
+     "descripcion": {},
+     "precio": 11000,
+     "tags": []
+    },
+    {
+     "id": "pas-medialuna",
+     "nombre": {
+      "es": "Medialuna",
+      "en": "Croissant",
+      "pt": "Croissant argentino"
+     },
+     "descripcion": {
+      "es": "De grasa o de manteca.",
+      "en": "Butter or lard.",
+      "pt": "De manteiga ou banha."
+     },
+     "precio": 3000,
+     "tags": []
+    },
+    {
+     "id": "pas-alfajores-maicena",
+     "nombre": {
+      "es": "Alfajores de maicena x 3 u.",
+      "en": "Cornstarch alfajores, 3 pieces",
+      "pt": "Alfajores de maisena, 3 unidades"
+     },
+     "descripcion": {},
+     "precio": 13500,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "cafeteria",
+   "nombre": {
+    "es": "Cafetería",
+    "en": "Coffee & tea",
+    "pt": "Cafeteria"
+   },
+   "foto": "lb-cafeteria.jpg",
+   "nota": {},
+   "items": [
+    {
+     "id": "caf-expreso",
+     "nombre": {
+      "es": "Café expreso",
+      "en": "Espresso",
+      "pt": "Café expresso"
+     },
+     "descripcion": {
+      "es": "Regular o descafeinado.",
+      "en": "Regular or decaf.",
+      "pt": "Comum ou descafeinado."
+     },
+     "precio": 6000,
+     "tags": []
+    },
+    {
+     "id": "caf-expreso-doble",
+     "nombre": {
+      "es": "Café expreso doble / con leche",
+      "en": "Double espresso / with milk",
+      "pt": "Café expresso duplo / com leite"
+     },
+     "descripcion": {},
+     "precio": 9500,
+     "tags": []
+    },
+    {
+     "id": "caf-jarrito",
+     "nombre": {
+      "es": "Café en jarrito",
+      "en": "Small coffee with milk",
+      "pt": "Café em jarrinho"
+     },
+     "descripcion": {},
+     "precio": 8000,
+     "tags": []
+    },
+    {
+     "id": "caf-cappuccino",
+     "nombre": {
+      "es": "Cappuccino",
+      "en": "Cappuccino",
+      "pt": "Cappuccino"
+     },
+     "descripcion": {
+      "es": "Con canela, crema y chocolate.",
+      "en": "With cinnamon, cream and chocolate.",
+      "pt": "Com canela, chantilly e chocolate."
+     },
+     "precio": 9500,
+     "tags": []
+    },
+    {
+     "id": "caf-ristretto",
+     "nombre": {
+      "es": "Café ristretto",
+      "en": "Ristretto",
+      "pt": "Ristretto"
+     },
+     "descripcion": {},
+     "precio": 6000,
+     "tags": []
+    },
+    {
+     "id": "caf-irlandes",
+     "nombre": {
+      "es": "Café irlandés",
+      "en": "Irish coffee",
+      "pt": "Café irlandês"
+     },
+     "descripcion": {
+      "es": "Whisky irlandés, azúcar y crema.",
+      "en": "Irish whiskey, sugar and cream.",
+      "pt": "Uísque irlandês, açúcar e creme."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "caf-chocolatada",
+     "nombre": {
+      "es": "Chocolatada",
+      "en": "Chocolate milk",
+      "pt": "Achocolatado"
+     },
+     "descripcion": {},
+     "precio": 8000,
+     "tags": []
+    },
+    {
+     "id": "caf-submarino",
+     "nombre": {
+      "es": "Submarino",
+      "en": "Submarino",
+      "pt": "Submarino"
+     },
+     "descripcion": {
+      "en": "Hot milk with a chocolate bar to melt in.",
+      "pt": "Leite quente com barra de chocolate para derreter."
+     },
+     "precio": 9900,
+     "tags": []
+    },
+    {
+     "id": "caf-te-hierbas",
+     "nombre": {
+      "es": "Selección de té de hierbas",
+      "en": "Herbal tea selection",
+      "pt": "Seleção de chás de ervas"
+     },
+     "descripcion": {},
+     "precio": 5500,
+     "tags": []
+    },
+    {
+     "id": "caf-te-twinings",
+     "nombre": {
+      "es": "Selección de té Twinings",
+      "en": "Twinings tea selection",
+      "pt": "Seleção de chás Twinings"
+     },
+     "descripcion": {},
+     "precio": 6500,
+     "tags": []
+    },
+    {
+     "id": "caf-te-hebras",
+     "nombre": {
+      "es": "Té en hebras",
+      "en": "Loose leaf tea",
+      "pt": "Chá em folhas"
+     },
+     "descripcion": {
+      "es": "Negro; verde; blend lovely chai; blend amelie; blend chocolat; blend patagonia in love.",
+      "en": "Black; green; lovely chai blend; amelie blend; chocolat blend; patagonia in love blend.",
+      "pt": "Preto; verde; blend lovely chai; blend amelie; blend chocolat; blend patagonia in love."
+     },
+     "precio": 7200,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "sin-alcohol",
+   "nombre": {
+    "es": "Bebidas sin alcohol",
+    "en": "Soft drinks",
+    "pt": "Bebidas sem álcool"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "bsa-agua",
+     "nombre": {
+      "es": "Agua mineral con gas / sin gas",
+      "en": "Mineral water, sparkling or still",
+      "pt": "Água mineral com ou sem gás"
+     },
+     "descripcion": {},
+     "precio": 5900,
+     "tags": [
+      "VEGANO"
+     ]
+    },
+    {
+     "id": "bsa-agua-saborizada",
+     "nombre": {
+      "es": "Agua mineral saborizada",
+      "en": "Flavoured mineral water",
+      "pt": "Água mineral saborizada"
+     },
+     "descripcion": {},
+     "precio": 5900,
+     "tags": []
+    },
+    {
+     "id": "bsa-gaseosas",
+     "nombre": {
+      "es": "Pepsi / 7Up / Paso de los Toros",
+      "en": "Pepsi / 7Up / Paso de los Toros",
+      "pt": "Pepsi / 7Up / Paso de los Toros"
+     },
+     "descripcion": {},
+     "precio": 5900,
+     "tags": []
+    },
+    {
+     "id": "bsa-jugo-naranja",
+     "nombre": {
+      "es": "Jugo exprimido de naranja",
+      "en": "Freshly squeezed orange juice",
+      "pt": "Suco de laranja natural"
+     },
+     "descripcion": {},
+     "precio": 9900,
+     "tags": [
+      "VEGANO"
+     ]
+    },
+    {
+     "id": "bsa-limonada",
+     "nombre": {
+      "es": "Limonada con menta y jengibre",
+      "en": "Lemonade with mint and ginger",
+      "pt": "Limonada com hortelã e gengibre"
+     },
+     "descripcion": {},
+     "precio": 9900,
+     "tags": [
+      "VEGANO"
+     ]
+    },
+    {
+     "id": "bsa-licuado-leche",
+     "nombre": {
+      "es": "Licuado de frutas con leche",
+      "en": "Fruit smoothie with milk",
+      "pt": "Vitamina de frutas com leite"
+     },
+     "descripcion": {},
+     "precio": 12000,
+     "tags": []
+    },
+    {
+     "id": "bsa-licuado-agua",
+     "nombre": {
+      "es": "Licuado de frutas con agua",
+      "en": "Fruit smoothie with water",
+      "pt": "Vitamina de frutas com água"
+     },
+     "descripcion": {},
+     "precio": 11000,
+     "tags": [
+      "VEGANO"
+     ]
+    },
+    {
+     "id": "bsa-milkshake",
+     "nombre": {
+      "es": "Milk shake",
+      "en": "Milkshake",
+      "pt": "Milk shake"
+     },
+     "descripcion": {},
+     "precio": 12500,
+     "tags": []
+    },
+    {
+     "id": "bsa-yogurt",
+     "nombre": {
+      "es": "Yogourt bebible",
+      "en": "Drinking yoghurt",
+      "pt": "Iogurte para beber"
+     },
+     "descripcion": {},
+     "precio": 8000,
+     "tags": []
+    },
+    {
+     "id": "bsa-gatorade",
+     "nombre": {
+      "es": "Gatorade",
+      "en": "Gatorade",
+      "pt": "Gatorade"
+     },
+     "descripcion": {},
+     "precio": 9900,
+     "tags": []
+    },
+    {
+     "id": "bsa-jugo-pepino-pera",
+     "nombre": {
+      "es": "Jugo natural de pepino y pera",
+      "en": "Cucumber and pear juice",
+      "pt": "Suco de pepino e pera"
+     },
+     "descripcion": {},
+     "precio": 16000,
+     "tags": [
+      "VEGANO"
+     ]
+    },
+    {
+     "id": "bsa-jugo-zanahoria-manzana",
+     "nombre": {
+      "es": "Jugo natural de zanahoria y manzana",
+      "en": "Carrot and apple juice",
+      "pt": "Suco de cenoura e maçã"
+     },
+     "descripcion": {},
+     "precio": 16000,
+     "tags": [
+      "VEGANO"
+     ]
+    },
+    {
+     "id": "bsa-jugo-zanahoria-naranja",
+     "nombre": {
+      "es": "Jugo natural de zanahoria y naranja",
+      "en": "Carrot and orange juice",
+      "pt": "Suco de cenoura e laranja"
+     },
+     "descripcion": {},
+     "precio": 16000,
+     "tags": [
+      "VEGANO"
+     ]
+    },
+    {
+     "id": "ene-red-bull",
+     "nombre": {
+      "es": "Red bull"
+     },
+     "descripcion": {},
+     "precio": 8600,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "cocktails",
+   "nombre": {
+    "es": "Cocktails clásicos",
+    "en": "Classic cocktails",
+    "pt": "Coquetéis clássicos"
+   },
+   "foto": "lb-cocktails.jpg",
+   "nota": {},
+   "items": [
+    {
+     "id": "ckt-aperol-spritz",
+     "nombre": {
+      "es": "Aperol spritz",
+      "en": "Aperol spritz",
+      "pt": "Aperol spritz"
+     },
+     "descripcion": {
+      "es": "Aperol, espumoso y agua con gas.",
+      "en": "Aperol, sparkling wine and soda.",
+      "pt": "Aperol, espumante e água com gás."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-bacardi",
+     "nombre": {
+      "es": "Bacardi cocktail",
+      "en": "Bacardi cocktail",
+      "pt": "Bacardi cocktail"
+     },
+     "descripcion": {
+      "es": "Ron, jugo de limón y granadina.",
+      "en": "Rum, lemon juice and grenadine.",
+      "pt": "Rum, suco de limão e granadina."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-bellini",
+     "nombre": {
+      "es": "Bellini",
+      "en": "Bellini",
+      "pt": "Bellini"
+     },
+     "descripcion": {
+      "es": "Champagne y pulpa de durazno.",
+      "en": "Champagne and peach purée.",
+      "pt": "Champanhe e polpa de pêssego."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-bloody-mary",
+     "nombre": {
+      "es": "Bloody Mary",
+      "en": "Bloody Mary",
+      "pt": "Bloody Mary"
+     },
+     "descripcion": {
+      "es": "Vodka, jugo de limón, jugo de tomate, sal, pimienta, tabasco y salsa inglesa.",
+      "en": "Vodka, lemon juice, tomato juice, salt, pepper, tabasco and Worcestershire sauce.",
+      "pt": "Vodca, suco de limão, suco de tomate, sal, pimenta, tabasco e molho inglês."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-campari-orange",
+     "nombre": {
+      "es": "Campari orange",
+      "en": "Campari orange",
+      "pt": "Campari orange"
+     },
+     "descripcion": {
+      "es": "Campari y jugo de naranja.",
+      "en": "Campari and orange juice.",
+      "pt": "Campari e suco de laranja."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-caipirinha",
+     "nombre": {
+      "es": "Caipirinha",
+      "en": "Caipirinha",
+      "pt": "Caipirinha"
+     },
+     "descripcion": {
+      "es": "Cachaça y limas maceradas.",
+      "en": "Cachaça and muddled limes.",
+      "pt": "Cachaça e limas maceradas."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-caipirovska",
+     "nombre": {
+      "es": "Caipirovska",
+      "en": "Caipirovska",
+      "pt": "Caipivodka"
+     },
+     "descripcion": {
+      "es": "Vodka y limas maceradas.",
+      "en": "Vodka and muddled limes.",
+      "pt": "Vodca e limas maceradas."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-cuba-libre",
+     "nombre": {
+      "es": "Cuba libre",
+      "en": "Cuba libre",
+      "pt": "Cuba libre"
+     },
+     "descripcion": {
+      "es": "Ron Bacardi oro, cola y limón.",
+      "en": "Bacardi gold rum, cola and lime.",
+      "pt": "Rum Bacardi ouro, cola e limão."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-daikiri",
+     "nombre": {
+      "es": "Daikiri frutal",
+      "en": "Fruit daiquiri",
+      "pt": "Daiquiri de frutas"
+     },
+     "descripcion": {
+      "es": "Ron, jugo de limón, azúcar y fruta natural.",
+      "en": "Rum, lemon juice, sugar and fresh fruit.",
+      "pt": "Rum, suco de limão, açúcar e fruta natural."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-dry-martini",
+     "nombre": {
+      "es": "Dry martini",
+      "en": "Dry martini",
+      "pt": "Dry martini"
+     },
+     "descripcion": {
+      "es": "Gin, Dry Martini y oliva verde.",
+      "en": "Gin, dry vermouth and a green olive.",
+      "pt": "Gim, vermute seco e azeitona verde."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-gin-tonic",
+     "nombre": {
+      "es": "Gin tonic",
+      "en": "Gin and tonic",
+      "pt": "Gin tônica"
+     },
+     "descripcion": {
+      "es": "Gin Bombay, agua tónica y limón.",
+      "en": "Bombay gin, tonic water and lemon.",
+      "pt": "Gim Bombay, água tônica e limão."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-margarita",
+     "nombre": {
+      "es": "Margarita",
+      "en": "Margarita",
+      "pt": "Margarita"
+     },
+     "descripcion": {
+      "es": "Tequila, Cointreau y jugo de limón.",
+      "en": "Tequila, Cointreau and lemon juice.",
+      "pt": "Tequila, Cointreau e suco de limão."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-negroni",
+     "nombre": {
+      "es": "Negroni",
+      "en": "Negroni",
+      "pt": "Negroni"
+     },
+     "descripcion": {
+      "es": "Campari, Gin Bombay y Martini Rosso.",
+      "en": "Campari, Bombay gin and Martini Rosso.",
+      "pt": "Campari, gim Bombay e Martini Rosso."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-pisco-sour",
+     "nombre": {
+      "es": "Pisco sour",
+      "en": "Pisco sour",
+      "pt": "Pisco sour"
+     },
+     "descripcion": {
+      "es": "Pisco, jugo de limón, clara de huevo y Angostura.",
+      "en": "Pisco, lemon juice, egg white and Angostura.",
+      "pt": "Pisco, suco de limão, clara de ovo e Angostura."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-tom-collins",
+     "nombre": {
+      "es": "Tom Collins",
+      "en": "Tom Collins",
+      "pt": "Tom Collins"
+     },
+     "descripcion": {
+      "es": "Gin Bombay, soda y jugo de limón.",
+      "en": "Bombay gin, soda and lemon juice.",
+      "pt": "Gim Bombay, soda e suco de limão."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-fernet-cola",
+     "nombre": {
+      "es": "Fernet cola",
+      "en": "Fernet and cola",
+      "pt": "Fernet com cola"
+     },
+     "descripcion": {
+      "es": "Fernet Branca y Coca Cola.",
+      "en": "Fernet Branca and Coca-Cola.",
+      "pt": "Fernet Branca e Coca-Cola."
+     },
+     "precio": 23000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "cervezas",
+   "nombre": {
+    "es": "Cervezas",
+    "en": "Beers",
+    "pt": "Cervejas"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "cerv-patagonia-vera-ipa-lata-x410cc",
+     "nombre": {
+      "es": "Patagonia vera ipa lata x410cc"
+     },
+     "descripcion": {},
+     "precio": 9900,
+     "tags": []
+    },
+    {
+     "id": "cerv-patagonia-24-7-lata-x410cc",
+     "nombre": {
+      "es": "Patagonia 24.7 lata x410cc"
+     },
+     "descripcion": {},
+     "precio": 9900,
+     "tags": []
+    },
+    {
+     "id": "cerv-patagonia-amber-lager-lata-x410cc",
+     "nombre": {
+      "es": "Patagonia amber lager lata x410cc"
+     },
+     "descripcion": {},
+     "precio": 9900,
+     "tags": []
+    },
+    {
+     "id": "cerv-stella-artois-lata-x473cc",
+     "nombre": {
+      "es": "Stella Artois lata x473cc"
+     },
+     "descripcion": {},
+     "precio": 8700,
+     "tags": []
+    },
+    {
+     "id": "cerv-heineken-lata-x473cc",
+     "nombre": {
+      "es": "Heineken lata x473cc"
+     },
+     "descripcion": {},
+     "precio": 8700,
+     "tags": []
+    },
+    {
+     "id": "cerv-quilmes-stout-lata-x473cc",
+     "nombre": {
+      "es": "Quilmes stout lata x473cc"
+     },
+     "descripcion": {},
+     "precio": 8200,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "tinto-cabernet-sauvignon",
+   "nombre": {
+    "es": "Cabernet Sauvignon",
+    "en": "Cabernet Sauvignon",
+    "pt": "Cabernet Sauvignon"
+   },
+   "foto": "",
+   "nota": {
+    "es": "Tiene su origen en Burdeos, Francia, donde conforma en altos porcentajes la base de los grandes vinos de esta región. Quizás la cepa más expandida del mundo.",
+    "en": "Originally from Bordeaux, France, where it forms the backbone of the region's great wines. Perhaps the most widely planted grape in the world.",
+    "pt": "Originária de Bordeaux, na França, onde forma a base dos grandes vinhos da região. Talvez a cepa mais difundida do mundo."
+   },
+   "items": [
+    {
+     "id": "cs-rutini-coleccion",
+     "nombre": {
+      "es": "Rutini Colección"
+     },
+     "descripcion": {},
+     "precio": 49000,
+     "tags": []
+    },
+    {
+     "id": "cs-encuentro",
+     "nombre": {
+      "es": "Encuentro"
+     },
+     "descripcion": {},
+     "precio": 43000,
+     "tags": []
+    },
+    {
+     "id": "cs-trumpeter-reserve",
+     "nombre": {
+      "es": "Trumpeter Reserve"
+     },
+     "descripcion": {},
+     "precio": 22000,
+     "tags": []
+    },
+    {
+     "id": "cs-trumpeter",
+     "nombre": {
+      "es": "Trumpeter"
+     },
+     "descripcion": {},
+     "precio": 17000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "tinto-merlot",
+   "nombre": {
+    "es": "Merlot",
+    "en": "Merlot",
+    "pt": "Merlot"
+   },
+   "foto": "",
+   "nota": {
+    "es": "Su origen está en la región de Burdeos, Francia. Brilla con luz propia en Pomerol, es muy apreciada en Napa Valley y se destaca en Chile.",
+    "en": "From Bordeaux, France. It shines in Pomerol, is prized in Napa Valley and stands out in Chile.",
+    "pt": "De Bordeaux, na França. Brilha em Pomerol, é apreciada no Napa Valley e se destaca no Chile."
+   },
+   "items": [
+    {
+     "id": "mer-rutini-coleccion",
+     "nombre": {
+      "es": "Rutini Colección"
+     },
+     "descripcion": {},
+     "precio": 47000,
+     "tags": []
+    },
+    {
+     "id": "mer-trumpeter",
+     "nombre": {
+      "es": "Trumpeter"
+     },
+     "descripcion": {},
+     "precio": 18000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "tinto-syrah",
+   "nombre": {
+    "es": "Syrah",
+    "en": "Syrah",
+    "pt": "Syrah"
+   },
+   "foto": "",
+   "nota": {
+    "es": "Conocida como Syrah o Shiraz, especialmente apreciada en el Valle del Ródano y en Australia, donde es la variedad tinta más implantada.",
+    "en": "Known as Syrah or Shiraz. Especially prized in the Rhône Valley and in Australia, where it is the most planted red variety.",
+    "pt": "Conhecida como Syrah ou Shiraz. Muito apreciada no Vale do Ródano e na Austrália, onde é a tinta mais plantada."
+   },
+   "items": [
+    {
+     "id": "syr-rutini-coleccion",
+     "nombre": {
+      "es": "Rutini Colección"
+     },
+     "descripcion": {},
+     "precio": 47000,
+     "tags": []
+    },
+    {
+     "id": "syr-trumpeter",
+     "nombre": {
+      "es": "Trumpeter"
+     },
+     "descripcion": {},
+     "precio": 19000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "tinto-cabernet-franc",
+   "nombre": {
+    "es": "Cabernet Franc",
+    "en": "Cabernet Franc",
+    "pt": "Cabernet Franc"
+   },
+   "foto": "",
+   "nota": {
+    "es": "Originaria del sudoeste de Francia, región de Burdeos. Tiene gran adaptación en climas fríos y es muy requerida para la elaboración de vinos de corte.",
+    "en": "From south-western France, Bordeaux region. It adapts well to cool climates and is much sought after for blends.",
+    "pt": "Do sudoeste da França, região de Bordeaux. Adapta-se bem a climas frios e é muito usada em cortes."
+   },
+   "items": [
+    {
+     "id": "cf-rutini-coleccion",
+     "nombre": {
+      "es": "Rutini Colección"
+     },
+     "descripcion": {},
+     "precio": 52000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "tinto-pinot-noir",
+   "nombre": {
+    "es": "Pinot Noir",
+    "en": "Pinot Noir",
+    "pt": "Pinot Noir"
+   },
+   "foto": "",
+   "nota": {
+    "es": "Tiene la reputación de originar uno de los grandes vinos tintos de Borgoña, en las célebres Côtes d'Or. Es también una de las principales cepas para elaborar champagne y espumosos.",
+    "en": "Behind some of the great red wines of Burgundy. It is also one of the main grapes for champagne and sparkling wines.",
+    "pt": "Por trás de alguns dos grandes tintos da Borgonha. É também uma das principais uvas para champanhe e espumantes."
+   },
+   "items": [
+    {
+     "id": "pn-rutini-coleccion",
+     "nombre": {
+      "es": "Rutini Colección"
+     },
+     "descripcion": {},
+     "precio": 58000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "tinto-malbec",
+   "nombre": {
+    "es": "Malbec",
+    "en": "Malbec",
+    "pt": "Malbec"
+   },
+   "foto": "",
+   "nota": {
+    "es": "Nuestra cepa emblemática, de origen francés donde también se la llama Côt. Ha encontrado en el terruño argentino su lugar en el mundo, adaptándose muy bien en Salta, Mendoza, San Juan, Río Negro y Neuquén.",
+    "en": "Our flagship grape. French in origin, it found its home in Argentina, thriving in Salta, Mendoza, San Juan, Río Negro and Neuquén.",
+    "pt": "Nossa cepa emblemática. De origem francesa, encontrou seu lugar na Argentina, adaptando-se muito bem em Salta, Mendoza, San Juan, Río Negro e Neuquén."
+   },
+   "items": [
+    {
+     "id": "mal-rutini-coleccion",
+     "nombre": {
+      "es": "Rutini Colección"
+     },
+     "descripcion": {},
+     "precio": 57000,
+     "tags": []
+    },
+    {
+     "id": "mal-encuentro",
+     "nombre": {
+      "es": "Encuentro"
+     },
+     "descripcion": {},
+     "precio": 37000,
+     "tags": []
+    },
+    {
+     "id": "mal-trumpeter-reserve",
+     "nombre": {
+      "es": "Trumpeter Reserve"
+     },
+     "descripcion": {},
+     "precio": 22000,
+     "tags": []
+    },
+    {
+     "id": "mal-trumpeter",
+     "nombre": {
+      "es": "Trumpeter"
+     },
+     "descripcion": {},
+     "precio": 18500,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "tinto-genericos",
+   "nombre": {
+    "es": "Genéricos / Blend",
+    "en": "Blends",
+    "pt": "Blends"
+   },
+   "foto": "",
+   "nota": {
+    "es": "Vinos elaborados con más de una cepa, también llamados de corte o assemblage.",
+    "en": "Wines made from more than one grape variety.",
+    "pt": "Vinhos elaborados com mais de uma cepa."
+   },
+   "items": [
+    {
+     "id": "gen-rutini-cabernet-malbec",
+     "nombre": {
+      "es": "Rutini Cabernet-Malbec"
+     },
+     "descripcion": {},
+     "precio": 35000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "blanco-sauvignon-blanc",
+   "nombre": {
+    "es": "Sauvignon Blanc",
+    "en": "Sauvignon Blanc",
+    "pt": "Sauvignon Blanc"
+   },
+   "foto": "",
+   "nota": {
+    "es": "Originaria de Francia, es cultivada en el Valle del Loira y Bordeaux, dando excelentes vinos frutados.",
+    "en": "French in origin, grown in the Loire Valley and Bordeaux, giving excellent fruity wines.",
+    "pt": "De origem francesa, cultivada no Vale do Loire e em Bordeaux, dando excelentes vinhos frutados."
+   },
+   "items": [
+    {
+     "id": "sb-rutini-coleccion",
+     "nombre": {
+      "es": "Rutini Colección"
+     },
+     "descripcion": {},
+     "precio": 39000,
+     "tags": []
+    },
+    {
+     "id": "sb-trumpeter",
+     "nombre": {
+      "es": "Trumpeter"
+     },
+     "descripcion": {},
+     "precio": 19000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "blanco-viognier",
+   "nombre": {
+    "es": "Viognier",
+    "en": "Viognier",
+    "pt": "Viognier"
+   },
+   "foto": "",
+   "nota": {
+    "es": "Es de la zona septentrional del Ródano, pero con ella se hacen algunos de los vinos blancos más prestigiosos y escasos de Francia.",
+    "en": "From the northern Rhône, behind some of the most prestigious and scarce white wines of France.",
+    "pt": "Do norte do Ródano, origem de alguns dos brancos mais prestigiados e escassos da França."
+   },
+   "items": [
+    {
+     "id": "vio-trumpeter-reserve",
+     "nombre": {
+      "es": "Trumpeter Reserve"
+     },
+     "descripcion": {},
+     "precio": 22000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "blanco-chardonnay",
+   "nombre": {
+    "es": "Chardonnay",
+    "en": "Chardonnay",
+    "pt": "Chardonnay"
+   },
+   "foto": "",
+   "nota": {
+    "es": "La reina de las uvas blancas. Principal cepa blanca francesa, se cultiva en Chablis, Borgoña y Champagne. En nuestro país se da muy bien en Tupungato y Las Paredes.",
+    "en": "The queen of white grapes. France's main white variety, grown in Chablis, Burgundy and Champagne.",
+    "pt": "A rainha das uvas brancas. Principal cepa branca francesa, cultivada em Chablis, Borgonha e Champagne."
+   },
+   "items": [
+    {
+     "id": "cha-rutini-coleccion",
+     "nombre": {
+      "es": "Rutini Colección"
+     },
+     "descripcion": {},
+     "precio": 46000,
+     "tags": []
+    },
+    {
+     "id": "cha-encuentro",
+     "nombre": {
+      "es": "Encuentro"
+     },
+     "descripcion": {},
+     "precio": 34000,
+     "tags": []
+    },
+    {
+     "id": "cha-trumpeter",
+     "nombre": {
+      "es": "Trumpeter"
+     },
+     "descripcion": {},
+     "precio": 18500,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "blanco-torrontes",
+   "nombre": {
+    "es": "Torrontés",
+    "en": "Torrontés",
+    "pt": "Torrontés"
+   },
+   "foto": "",
+   "nota": {
+    "es": "De origen desconocido. En nuestro país existen diferentes tipos, siendo el riojano el que mejor expresa las cualidades para elaborar vinos de calidad.",
+    "en": "Of unknown origin. In Argentina the Riojano type best expresses its quality.",
+    "pt": "De origem desconhecida. Na Argentina, o tipo riojano é o que melhor expressa sua qualidade."
+   },
+   "items": [
+    {
+     "id": "tor-trumpeter-reserve",
+     "nombre": {
+      "es": "Trumpeter Reserve"
+     },
+     "descripcion": {},
+     "precio": 23000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "blanco-gewurztraminer",
+   "nombre": {
+    "es": "Gewürztraminer",
+    "en": "Gewürztraminer",
+    "pt": "Gewürztraminer"
+   },
+   "foto": "",
+   "nota": {
+    "es": "Según algunos, originaria de Alsacia. Es muy característico su perfume exuberante.",
+    "en": "Said to come from Alsace. Its exuberant perfume is unmistakable.",
+    "pt": "Diz-se originária da Alsácia. Seu perfume exuberante é inconfundível."
+   },
+   "items": [
+    {
+     "id": "gew-rutini-coleccion",
+     "nombre": {
+      "es": "Rutini Colección"
+     },
+     "descripcion": {},
+     "precio": 53000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "rosados",
+   "nombre": {
+    "es": "Vinos rosados",
+    "en": "Rosé wines",
+    "pt": "Vinhos rosés"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "ros-trumpeter-reserve",
+     "nombre": {
+      "es": "Trumpeter Reserve"
+     },
+     "descripcion": {},
+     "precio": 22000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "espumantes",
+   "nombre": {
+    "es": "Espumantes",
+    "en": "Sparkling wines",
+    "pt": "Espumantes"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "esp-rutini-brut-nature",
+     "nombre": {
+      "es": "Rutini Brut Nature"
+     },
+     "descripcion": {},
+     "precio": 67000,
+     "tags": []
+    },
+    {
+     "id": "esp-rutini-extra-brut",
+     "nombre": {
+      "es": "Rutini Extra Brut"
+     },
+     "descripcion": {},
+     "precio": 57000,
+     "tags": []
+    },
+    {
+     "id": "esp-trumpeter-brut-nature",
+     "nombre": {
+      "es": "Trumpeter Brut Nature"
+     },
+     "descripcion": {},
+     "precio": 33000,
+     "tags": []
+    },
+    {
+     "id": "esp-trumpeter-rose-malbec",
+     "nombre": {
+      "es": "Trumpeter Rosé Malbec"
+     },
+     "descripcion": {},
+     "precio": 29000,
+     "tags": []
+    },
+    {
+     "id": "esp-trumpeter-extra-brut",
+     "nombre": {
+      "es": "Trumpeter Extra Brut"
+     },
+     "descripcion": {},
+     "precio": 29000,
+     "tags": []
+    },
+    {
+     "id": "esp-dom-perignon",
+     "nombre": {
+      "es": "Dom Perignon"
+     },
+     "descripcion": {},
+     "precio": 890000,
+     "tags": []
+    },
+    {
+     "id": "esp-moet-ice-imperial",
+     "nombre": {
+      "es": "Moet Ice Imperial"
+     },
+     "descripcion": {},
+     "precio": 390000,
+     "tags": []
+    },
+    {
+     "id": "esp-veuve-clicquot-yellow-label",
+     "nombre": {
+      "es": "Veuve Clicquot Yellow Label"
+     },
+     "descripcion": {},
+     "precio": 380000,
+     "tags": []
+    },
+    {
+     "id": "esp-veuve-clicquot-rich",
+     "nombre": {
+      "es": "Veuve Clicquot Rich"
+     },
+     "descripcion": {},
+     "precio": 420000,
+     "tags": []
+    },
+    {
+     "id": "esp-veuve-clicquot-rose",
+     "nombre": {
+      "es": "Veuve Clicquot Rose"
+     },
+     "descripcion": {},
+     "precio": 400000,
+     "tags": []
+    },
+    {
+     "id": "esp-baron-b-brut-nature",
+     "nombre": {
+      "es": "Baron B Brut Nature"
+     },
+     "descripcion": {},
+     "precio": 57000,
+     "tags": []
+    },
+    {
+     "id": "esp-baron-b-rose",
+     "nombre": {
+      "es": "Baron B Rosé"
+     },
+     "descripcion": {},
+     "precio": 57000,
+     "tags": []
+    },
+    {
+     "id": "esp-baron-b-extra-brut",
+     "nombre": {
+      "es": "Baron B Extra Brut"
+     },
+     "descripcion": {},
+     "precio": 49000,
+     "tags": []
+    },
+    {
+     "id": "esp-chandon-brut-nature",
+     "nombre": {
+      "es": "Chandon Brut Nature"
+     },
+     "descripcion": {},
+     "precio": 33000,
+     "tags": []
+    },
+    {
+     "id": "esp-chandon-brut-rose",
+     "nombre": {
+      "es": "Chandon Brut Rosé"
+     },
+     "descripcion": {},
+     "precio": 30000,
+     "tags": []
+    },
+    {
+     "id": "esp-chandon-extra-brut",
+     "nombre": {
+      "es": "Chandon Extra Brut"
+     },
+     "descripcion": {},
+     "precio": 30000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "aperitivos",
+   "nombre": {
+    "es": "Aperitivos",
+    "en": "Aperitifs",
+    "pt": "Aperitivos"
+   },
+   "foto": "",
+   "nota": {
+    "es": "Por medida.",
+    "en": "By the measure.",
+    "pt": "Por dose."
+   },
+   "items": [
+    {
+     "id": "ape-carpano-antica-formula",
+     "nombre": {
+      "es": "Carpano Antica Formula"
+     },
+     "descripcion": {},
+     "precio": 22000,
+     "tags": []
+    },
+    {
+     "id": "ape-fernet-branca-fernet-branca-menta",
+     "nombre": {
+      "es": "Fernet Branca/ Fernet Branca Menta"
+     },
+     "descripcion": {},
+     "precio": 17000,
+     "tags": []
+    },
+    {
+     "id": "ape-campari-aperol",
+     "nombre": {
+      "es": "Campari/Aperol"
+     },
+     "descripcion": {},
+     "precio": 7700,
+     "tags": []
+    },
+    {
+     "id": "ape-martini-bianco-rosso-extra-dry-bitter",
+     "nombre": {
+      "es": "Martini Bianco, Rosso, Extra Dry, Bitter"
+     },
+     "descripcion": {},
+     "precio": 7700,
+     "tags": []
+    },
+    {
+     "id": "ape-americano-gancia-punt-e-mes",
+     "nombre": {
+      "es": "Americano Gancia / Punt E Mes"
+     },
+     "descripcion": {},
+     "precio": 7700,
+     "tags": []
+    },
+    {
+     "id": "ape-cinzano-bianco-rosso",
+     "nombre": {
+      "es": "Cinzano Bianco, Rosso"
+     },
+     "descripcion": {},
+     "precio": 7000,
+     "tags": []
+    },
+    {
+     "id": "ape-carpano-rosso-bianco-dry",
+     "nombre": {
+      "es": "Carpano Rosso/Bianco/Dry"
+     },
+     "descripcion": {},
+     "precio": 7000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "oporto",
+   "nombre": {
+    "es": "Oporto y jerez",
+    "en": "Port and sherry",
+    "pt": "Vinho do Porto e xerez"
+   },
+   "foto": "",
+   "nota": {
+    "es": "Por medida.",
+    "en": "By the measure.",
+    "pt": "Por dose."
+   },
+   "items": [
+    {
+     "id": "opo-jerez-tio-pepe",
+     "nombre": {
+      "es": "Jerez Tío Pepe"
+     },
+     "descripcion": {},
+     "precio": 12900,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "digestivos",
+   "nombre": {
+    "es": "Digestivos y licores",
+    "en": "Digestifs and liqueurs",
+    "pt": "Digestivos e licores"
+   },
+   "foto": "",
+   "nota": {
+    "es": "Por medida.",
+    "en": "By the measure.",
+    "pt": "Por dose."
+   },
+   "items": [
+    {
+     "id": "dig-drambuie",
+     "nombre": {
+      "es": "Drambuie"
+     },
+     "descripcion": {},
+     "precio": 17000,
+     "tags": []
+    },
+    {
+     "id": "dig-garnd-marnier-cointreau-grappa-candolini",
+     "nombre": {
+      "es": "Garnd Marnier /Cointreau /Grappa Candolini"
+     },
+     "descripcion": {},
+     "precio": 17000,
+     "tags": []
+    },
+    {
+     "id": "dig-amaretto-sambuca-oro",
+     "nombre": {
+      "es": "Amaretto/ Sambuca Oro"
+     },
+     "descripcion": {},
+     "precio": 15000,
+     "tags": []
+    },
+    {
+     "id": "dig-jagermaister-baileys-frangelico",
+     "nombre": {
+      "es": "Jagermaister/Bailey´s /Frangelico"
+     },
+     "descripcion": {},
+     "precio": 15000,
+     "tags": []
+    },
+    {
+     "id": "dig-lemoncello-strega",
+     "nombre": {
+      "es": "Lemoncello Strega"
+     },
+     "descripcion": {},
+     "precio": 11000,
+     "tags": []
+    },
+    {
+     "id": "dig-amarula-khalua",
+     "nombre": {
+      "es": "Amarula/Khalua"
+     },
+     "descripcion": {},
+     "precio": 13000,
+     "tags": []
+    },
+    {
+     "id": "dig-tia-maria",
+     "nombre": {
+      "es": "Tía María"
+     },
+     "descripcion": {},
+     "precio": 6500,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "vodkas",
+   "nombre": {
+    "es": "Vodkas",
+    "en": "Vodka",
+    "pt": "Vodca"
+   },
+   "foto": "",
+   "nota": {
+    "es": "Por medida.",
+    "en": "By the measure.",
+    "pt": "Por dose."
+   },
+   "items": [
+    {
+     "id": "vod-grey-goose",
+     "nombre": {
+      "es": "Grey Goose"
+     },
+     "descripcion": {},
+     "precio": 33000,
+     "tags": []
+    },
+    {
+     "id": "vod-belvedere",
+     "nombre": {
+      "es": "Belvedere"
+     },
+     "descripcion": {},
+     "precio": 27000,
+     "tags": []
+    },
+    {
+     "id": "vod-absolut-flavors",
+     "nombre": {
+      "es": "Absolut Flavors"
+     },
+     "descripcion": {},
+     "precio": 10500,
+     "tags": []
+    },
+    {
+     "id": "vod-absolut",
+     "nombre": {
+      "es": "Absolut"
+     },
+     "descripcion": {},
+     "precio": 10000,
+     "tags": []
+    },
+    {
+     "id": "vod-ketel-one",
+     "nombre": {
+      "es": "Ketel One"
+     },
+     "descripcion": {},
+     "precio": 9000,
+     "tags": []
+    },
+    {
+     "id": "vod-smirnoff",
+     "nombre": {
+      "es": "Smirnoff"
+     },
+     "descripcion": {},
+     "precio": 5900,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "gin",
+   "nombre": {
+    "es": "Gin",
+    "en": "Gin",
+    "pt": "Gim"
+   },
+   "foto": "",
+   "nota": {
+    "es": "Por medida.",
+    "en": "By the measure.",
+    "pt": "Por dose."
+   },
+   "items": [
+    {
+     "id": "gin-bombay",
+     "nombre": {
+      "es": "Bombay"
+     },
+     "descripcion": {},
+     "precio": 20000,
+     "tags": []
+    },
+    {
+     "id": "gin-beefeater-saborizado",
+     "nombre": {
+      "es": "Beefeater saborizado"
+     },
+     "descripcion": {},
+     "precio": 19000,
+     "tags": []
+    },
+    {
+     "id": "gin-bull-dog",
+     "nombre": {
+      "es": "Bull Dog"
+     },
+     "descripcion": {},
+     "precio": 19000,
+     "tags": []
+    },
+    {
+     "id": "gin-beefeater-tanqueray",
+     "nombre": {
+      "es": "Beefeater/Tanqueray"
+     },
+     "descripcion": {},
+     "precio": 19000,
+     "tags": []
+    },
+    {
+     "id": "gin-gordons-merle",
+     "nombre": {
+      "es": "Gordon´s / Merle"
+     },
+     "descripcion": {},
+     "precio": 6500,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "tequila",
+   "nombre": {
+    "es": "Tequila",
+    "en": "Tequila",
+    "pt": "Tequila"
+   },
+   "foto": "",
+   "nota": {
+    "es": "Por medida.",
+    "en": "By the measure.",
+    "pt": "Por dose."
+   },
+   "items": [
+    {
+     "id": "teq-jose-cuervo-oro-especial",
+     "nombre": {
+      "es": "José Cuervo oro especial"
+     },
+     "descripcion": {},
+     "precio": 13000,
+     "tags": []
+    },
+    {
+     "id": "teq-jose-cuervo-blanco-especial",
+     "nombre": {
+      "es": "José Cuervo Blanco especial"
+     },
+     "descripcion": {},
+     "precio": 13000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "cognacs",
+   "nombre": {
+    "es": "Cognacs y brandys",
+    "en": "Cognac and brandy",
+    "pt": "Conhaque e brandy"
+   },
+   "foto": "",
+   "nota": {
+    "es": "Por medida.",
+    "en": "By the measure.",
+    "pt": "Por dose."
+   },
+   "items": [
+    {
+     "id": "cog-hennessy-v-s-o-p",
+     "nombre": {
+      "es": "Hennessy V.S.O.P"
+     },
+     "descripcion": {},
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "cog-remmy-martin-v-s-o-p",
+     "nombre": {
+      "es": "Remmy Martin V.S.O.P"
+     },
+     "descripcion": {},
+     "precio": 54000,
+     "tags": []
+    },
+    {
+     "id": "cog-hennessy-v-s",
+     "nombre": {
+      "es": "Hennessy V.S"
+     },
+     "descripcion": {},
+     "precio": 17000,
+     "tags": []
+    },
+    {
+     "id": "cog-reserva-san-juan",
+     "nombre": {
+      "es": "Reserva San Juan"
+     },
+     "descripcion": {},
+     "precio": 7200,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "pisco",
+   "nombre": {
+    "es": "Pisco",
+    "en": "Pisco",
+    "pt": "Pisco"
+   },
+   "foto": "",
+   "nota": {
+    "es": "Por medida.",
+    "en": "By the measure.",
+    "pt": "Por dose."
+   },
+   "items": [
+    {
+     "id": "pis-mistral",
+     "nombre": {
+      "es": "Mistral"
+     },
+     "descripcion": {},
+     "precio": 8400,
+     "tags": []
+    },
+    {
+     "id": "pis-sour-capel",
+     "nombre": {
+      "es": "Sour Capel"
+     },
+     "descripcion": {},
+     "precio": 9500,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "cachaca",
+   "nombre": {
+    "es": "Cachaça",
+    "en": "Cachaça",
+    "pt": "Cachaça"
+   },
+   "foto": "",
+   "nota": {
+    "es": "Por medida.",
+    "en": "By the measure.",
+    "pt": "Por dose."
+   },
+   "items": [
+    {
+     "id": "cac-velho-barreiro",
+     "nombre": {
+      "es": "Velho Barreiro"
+     },
+     "descripcion": {},
+     "precio": 8000,
+     "tags": []
+    },
+    {
+     "id": "cac-velho-pitu",
+     "nombre": {
+      "es": "Velho Pitú"
+     },
+     "descripcion": {},
+     "precio": 8000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "ron",
+   "nombre": {
+    "es": "Ron",
+    "en": "Rum",
+    "pt": "Rum"
+   },
+   "foto": "",
+   "nota": {
+    "es": "Por medida.",
+    "en": "By the measure.",
+    "pt": "Por dose."
+   },
+   "items": [
+    {
+     "id": "ron-ron-bacardi-8-anos",
+     "nombre": {
+      "es": "Ron Bacardi 8 años"
+     },
+     "descripcion": {},
+     "precio": 14000,
+     "tags": []
+    },
+    {
+     "id": "ron-havana-club-7-anos",
+     "nombre": {
+      "es": "Havana Club 7 años"
+     },
+     "descripcion": {},
+     "precio": 14000,
+     "tags": []
+    },
+    {
+     "id": "ron-havana-club-3-anos-bacardi-carta-blanca",
+     "nombre": {
+      "es": "Havana Club 3 años/Bacardi Carta Blanca"
+     },
+     "descripcion": {},
+     "precio": 9500,
+     "tags": []
+    },
+    {
+     "id": "ron-havana-especial",
+     "nombre": {
+      "es": "Havana Especial"
+     },
+     "descripcion": {},
+     "precio": 8500,
+     "tags": []
+    },
+    {
+     "id": "ron-bacardi-oro",
+     "nombre": {
+      "es": "Bacardi oro"
+     },
+     "descripcion": {},
+     "precio": 11000,
+     "tags": []
+    },
+    {
+     "id": "ron-bacardi-carta-blanca",
+     "nombre": {
+      "es": "Bacardi carta blanca"
+     },
+     "descripcion": {},
+     "precio": 11000,
+     "tags": []
+    },
+    {
+     "id": "ron-malibu",
+     "nombre": {
+      "es": "Malibú"
+     },
+     "descripcion": {},
+     "precio": 8200,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "whiskies",
+   "nombre": {
+    "es": "Whiskies",
+    "en": "Whisky",
+    "pt": "Uísque"
+   },
+   "foto": "",
+   "nota": {
+    "es": "Por medida.",
+    "en": "By the measure.",
+    "pt": "Por dose."
+   },
+   "items": [
+    {
+     "id": "wh-macallan-double-cask-15-anos",
+     "nombre": {
+      "es": "Macallan Double Cask 15 años"
+     },
+     "descripcion": {},
+     "precio": 110000,
+     "tags": []
+    },
+    {
+     "id": "wh-royal-salute-21-anos",
+     "nombre": {
+      "es": "Royal Salute 21 años"
+     },
+     "descripcion": {},
+     "precio": 80000,
+     "tags": []
+    },
+    {
+     "id": "wh-j-w-blue-label",
+     "nombre": {
+      "es": "J.W. Blue Label"
+     },
+     "descripcion": {},
+     "precio": 83000,
+     "tags": []
+    },
+    {
+     "id": "wh-macallan-double-cask-12-anos",
+     "nombre": {
+      "es": "Macallan Double Cask 12 años"
+     },
+     "descripcion": {},
+     "precio": 55000,
+     "tags": []
+    },
+    {
+     "id": "wh-chivas-regal-18-anos",
+     "nombre": {
+      "es": "Chivas Regal 18 años"
+     },
+     "descripcion": {},
+     "precio": 40000,
+     "tags": []
+    },
+    {
+     "id": "wh-glemoriange",
+     "nombre": {
+      "es": "Glemoriange"
+     },
+     "descripcion": {},
+     "precio": 40000,
+     "tags": []
+    },
+    {
+     "id": "wh-j-w-platinum-j-w-18-anos",
+     "nombre": {
+      "es": "J.W. Platinum / J.W. 18 años"
+     },
+     "descripcion": {},
+     "precio": 55000,
+     "tags": []
+    },
+    {
+     "id": "wh-j-w-green",
+     "nombre": {
+      "es": "J.W. Green"
+     },
+     "descripcion": {},
+     "precio": 33000,
+     "tags": []
+    },
+    {
+     "id": "wh-caol-ila-12",
+     "nombre": {
+      "es": "Caol ila 12"
+     },
+     "descripcion": {},
+     "precio": 31000,
+     "tags": []
+    },
+    {
+     "id": "wh-the-glenlivet-15-anos",
+     "nombre": {
+      "es": "The Glenlivet 15 años"
+     },
+     "descripcion": {},
+     "precio": 29000,
+     "tags": []
+    },
+    {
+     "id": "wh-glenfiddich-12-anos",
+     "nombre": {
+      "es": "Glenfiddich 12 años"
+     },
+     "descripcion": {},
+     "precio": 29000,
+     "tags": []
+    },
+    {
+     "id": "wh-j-w-gold",
+     "nombre": {
+      "es": "J.W. Gold"
+     },
+     "descripcion": {},
+     "precio": 21000,
+     "tags": []
+    },
+    {
+     "id": "wh-cardhu-12-anos",
+     "nombre": {
+      "es": "Cardhú 12 años"
+     },
+     "descripcion": {},
+     "precio": 27000,
+     "tags": []
+    },
+    {
+     "id": "wh-highland-park-12-anos",
+     "nombre": {
+      "es": "Highland Park 12 años"
+     },
+     "descripcion": {},
+     "precio": 44000,
+     "tags": []
+    },
+    {
+     "id": "wh-j-w-double-black",
+     "nombre": {
+      "es": "J.W. Double Black"
+     },
+     "descripcion": {},
+     "precio": 17500,
+     "tags": []
+    },
+    {
+     "id": "wh-j-w-black-label",
+     "nombre": {
+      "es": "J.W. Black Label"
+     },
+     "descripcion": {},
+     "precio": 16500,
+     "tags": []
+    },
+    {
+     "id": "wh-the-glenlivet-reserve",
+     "nombre": {
+      "es": "The Glenlivet Reserve"
+     },
+     "descripcion": {},
+     "precio": 16500,
+     "tags": []
+    },
+    {
+     "id": "wh-jameson",
+     "nombre": {
+      "es": "Jameson"
+     },
+     "descripcion": {},
+     "precio": 14500,
+     "tags": []
+    },
+    {
+     "id": "wh-jim-bean-black",
+     "nombre": {
+      "es": "Jim Bean Black"
+     },
+     "descripcion": {},
+     "precio": 14500,
+     "tags": []
+    },
+    {
+     "id": "wh-ballantines-finest",
+     "nombre": {
+      "es": "Ballantine’s Finest"
+     },
+     "descripcion": {},
+     "precio": 12000,
+     "tags": []
+    },
+    {
+     "id": "wh-famous-grouse",
+     "nombre": {
+      "es": "Famous Grouse"
+     },
+     "descripcion": {},
+     "precio": 15000,
+     "tags": []
+    },
+    {
+     "id": "wh-jack-daniels",
+     "nombre": {
+      "es": "Jack Daniels"
+     },
+     "descripcion": {},
+     "precio": 13500,
+     "tags": []
+    },
+    {
+     "id": "wh-chivas-regal-12-anos",
+     "nombre": {
+      "es": "Chivas Regal 12 años"
+     },
+     "descripcion": {},
+     "precio": 13500,
+     "tags": []
+    },
+    {
+     "id": "wh-ballantines-blue",
+     "nombre": {
+      "es": "Ballantine’s Blue"
+     },
+     "descripcion": {},
+     "precio": 12000,
+     "tags": []
+    },
+    {
+     "id": "wh-grants",
+     "nombre": {
+      "es": "Grant’s"
+     },
+     "descripcion": {},
+     "precio": 12000,
+     "tags": []
+    },
+    {
+     "id": "wh-jim-bean-white",
+     "nombre": {
+      "es": "Jim Bean White"
+     },
+     "descripcion": {},
+     "precio": 10000,
+     "tags": []
+    },
+    {
+     "id": "wh-j-w-red-label",
+     "nombre": {
+      "es": "J.W. Red Label"
+     },
+     "descripcion": {},
+     "precio": 10000,
+     "tags": []
+    },
+    {
+     "id": "wh-j-b",
+     "nombre": {
+      "es": "J&B"
+     },
+     "descripcion": {},
+     "precio": 8400,
+     "tags": []
+    }
+   ]
+  }
+ ]
+}

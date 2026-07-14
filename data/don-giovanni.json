@@ -1,0 +1,1117 @@
+{
+ "carta": {
+  "id": "don-giovanni",
+  "nombre": "Don Giovanni Ristorante",
+  "tema": "dg",
+  "logo": "don-giovanni.svg",
+  "idiomas": [
+   "es",
+   "en",
+   "pt"
+  ],
+  "actualizado": "2026-07-13T23:39:34",
+  "ver_tambien": "carta-vinos",
+  "pie": {
+   "es": "Apto celíacos / *Sugerencia del chef / Vegetariano. Si tiene alguna restricción alimentaria, por favor avise a su camarero antes de realizar su pedido. Consultar por otras opciones sin TACC. En caso de compartir un plato, se adicionará un 40% al valor del mismo. Las especialidades del chef no son para compartir.",
+   "en": "Gluten free / *Chef's suggestion / Vegetarian. If you have any dietary restriction, please let your waiter know before ordering. Ask us about other gluten-free options. Sharing a dish adds 40% to its price. Chef's specialities are not for sharing.",
+   "pt": "Sem glúten / *Sugestão do chef / Vegetariano. Se você tem alguma restrição alimentar, avise o garçom antes de fazer o pedido. Consulte outras opções sem glúten. Compartilhar um prato acrescenta 40% ao seu valor. As especialidades do chef não são para compartilhar."
+  }
+ },
+ "tags": {
+  "SIN_TACC": {
+   "es": "Sin TACC",
+   "en": "Gluten free",
+   "pt": "Sem glúten"
+  },
+  "VEGETARIANO": {
+   "es": "Vegetariano",
+   "en": "Vegetarian",
+   "pt": "Vegetariano"
+  },
+  "VEGANO": {
+   "es": "Vegano",
+   "en": "Vegan",
+   "pt": "Vegano"
+  },
+  "NUEVO": {
+   "es": "Nuevo",
+   "en": "New",
+   "pt": "Novo"
+  },
+  "SUGERENCIA_CHEF": {
+   "es": "Sugerencia del chef",
+   "en": "Chef's suggestion",
+   "pt": "Sugestão do chef"
+  },
+  "PROMO_3X4": {
+   "es": "Promo 3x4",
+   "en": "3x4 promo",
+   "pt": "Promo 3x4"
+  }
+ },
+ "config": {
+  "moneda": {
+   "es": "ARS",
+   "en": "ARS",
+   "pt": "ARS"
+  },
+  "simbolo": {
+   "es": "$",
+   "en": "$",
+   "pt": "$"
+  },
+  "hotel": {
+   "es": "Sheraton Pilar Hotel & Convention Center",
+   "en": "Sheraton Pilar Hotel & Convention Center",
+   "pt": "Sheraton Pilar Hotel & Convention Center"
+  },
+  "aviso_alergias": {
+   "es": "Si tiene alguna restricción alimentaria, por favor avise a su camarero antes de realizar su pedido.",
+   "en": "If you have any dietary restriction, please let your waiter know before ordering.",
+   "pt": "Se você tem alguma restrição alimentar, avise o garçom antes de fazer o pedido."
+  }
+ },
+ "secciones": [
+  {
+   "id": "antipasti-freddi",
+   "nombre": {
+    "es": "Antipasti freddi",
+    "en": "Cold antipasti",
+    "pt": "Antipasti frios"
+   },
+   "foto": "dg-antipasti.jpg",
+   "nota": {},
+   "items": [
+    {
+     "id": "dg-bagel",
+     "nombre": {
+      "es": "Bagel",
+      "en": "Bagel",
+      "pt": "Bagel"
+     },
+     "descripcion": {
+      "es": "Bagels de carbón activado, salmón curado en zumo de cítricos, burratina, rúcula, emulsión de remolacha y cebolla morada encurtida.",
+      "en": "Activated charcoal bagels, citrus-cured salmon, burratina, arugula, beetroot emulsion and pickled red onion.",
+      "pt": "Bagels de carvão ativado, salmão curado em cítricos, burratina, rúcula, emulsão de beterraba e cebola roxa em conserva."
+     },
+     "precio": 22000,
+     "tags": []
+    },
+    {
+     "id": "dg-piccola",
+     "nombre": {
+      "es": "Piccola",
+      "en": "Piccola",
+      "pt": "Piccola"
+     },
+     "descripcion": {
+      "es": "Piccola en abrigo de prosciutto, cremoso de pistacho, tomates en cuartos y pesto de pistacho.",
+      "en": "Piccola wrapped in prosciutto, pistachio cream, quartered tomatoes and pistachio pesto.",
+      "pt": "Piccola envolta em presunto cru, creme de pistache, tomates em quartos e pesto de pistache."
+     },
+     "precio": 22000,
+     "tags": [
+      "SUGERENCIA_CHEF"
+     ]
+    },
+    {
+     "id": "dg-salmon-bicolor",
+     "nombre": {
+      "es": "Salmón bicolor",
+      "en": "Two-tone salmon",
+      "pt": "Salmão bicolor"
+     },
+     "descripcion": {
+      "es": "Salmón bicolor, rulos de zanahoria, zuccinni, remolacha y tomate cherrys asados, aderezo de cabutia y jengibre, crema ácida y oliva en primera prensada.",
+      "en": "Two-tone salmon, carrot, zucchini and beetroot curls, roasted cherry tomatoes, butternut and ginger dressing, sour cream and first-press olive oil.",
+      "pt": "Salmão bicolor, tiras de cenoura, abobrinha e beterraba, tomates cereja assados, molho de abóbora e gengibre, creme azedo e azeite de primeira prensagem."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "dg-petalos",
+     "nombre": {
+      "es": "Pétalos",
+      "en": "Petals",
+      "pt": "Pétalas"
+     },
+     "descripcion": {
+      "es": "Símil pétalos rellenos de vegetales frescos y cocidos, cremoso de palta, huevo poché y crocante de queso.",
+      "en": "Petal-shaped rolls filled with fresh and cooked vegetables, avocado cream, poached egg and a cheese crisp.",
+      "pt": "Pétalas recheadas com legumes frescos e cozidos, creme de abacate, ovo poché e crocante de queijo."
+     },
+     "precio": 21000,
+     "tags": [
+      "SUGERENCIA_CHEF"
+     ]
+    },
+    {
+     "id": "dg-sushi",
+     "nombre": {
+      "es": "Sushi",
+      "en": "Sushi",
+      "pt": "Sushi"
+     },
+     "descripcion": {
+      "es": "Rolls de langostinos en panko, coco, filadelfia, espárragos, palta y salmón spicy.",
+      "en": "Prawn rolls in panko, coconut, cream cheese, asparagus, avocado and spicy salmon.",
+      "pt": "Rolinhos de camarão em panko, coco, cream cheese, aspargos, abacate e salmão picante."
+     },
+     "precio": 23000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "antipasti-caldi",
+   "nombre": {
+    "es": "Antipasti freddi / caldi",
+    "en": "Cold & hot antipasti",
+    "pt": "Antipasti frios e quentes"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "dg-malfatti",
+     "nombre": {
+      "es": "Malfatti",
+      "en": "Malfatti",
+      "pt": "Malfatti"
+     },
+     "descripcion": {
+      "es": "Malfattis grandes hechos en casa, de espinaca, queso atuel, avellanas tostadas y notas de nuez moscada con pomodoro rústico y centro de albahaca.",
+      "en": "Large house-made spinach malfatti with atuel cheese, toasted hazelnuts and nutmeg, rustic pomodoro and a basil centre.",
+      "pt": "Malfatti grandes feitos em casa, de espinafre, queijo atuel, avelãs tostadas e noz-moscada, pomodoro rústico e centro de manjericão."
+     },
+     "precio": 22000,
+     "tags": []
+    },
+    {
+     "id": "dg-arancini",
+     "nombre": {
+      "es": "Arancini",
+      "en": "Arancini",
+      "pt": "Arancini"
+     },
+     "descripcion": {
+      "es": "Esferas de arroz rellenas de langostino con cremoso cítrico, focaccia y micro brotes.",
+      "en": "Rice spheres filled with prawn, citrus cream, focaccia and micro sprouts.",
+      "pt": "Bolinhos de arroz recheados com camarão, creme cítrico, focaccia e microbrotos."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "dg-mar-y-tierra",
+     "nombre": {
+      "es": "Mar y tierra",
+      "en": "Surf and turf",
+      "pt": "Mar e terra"
+     },
+     "descripcion": {
+      "es": "Trucha en masa filo, hummus de garbanzos, muhammara, yogurt griego y palta.",
+      "en": "Trout in filo pastry, chickpea hummus, muhammara, Greek yoghurt and avocado.",
+      "pt": "Truta em massa filo, homus de grão-de-bico, muhammara, iogurte grego e abacate."
+     },
+     "precio": 23000,
+     "tags": [
+      "SUGERENCIA_CHEF"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "risotto",
+   "nombre": {
+    "es": "Risotto",
+    "en": "Risotto",
+    "pt": "Risoto"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "dg-risotto-capresse",
+     "nombre": {
+      "es": "Risotto capresse",
+      "en": "Caprese risotto",
+      "pt": "Risoto capresse"
+     },
+     "descripcion": {
+      "es": "Risotto cremoso de tomates secos, boconccinos, tomates ahumados al vacío, escamas de pepato y hojas de albahaca.",
+      "en": "Creamy sun-dried tomato risotto, bocconcini, vacuum-smoked tomatoes, pepato flakes and basil leaves.",
+      "pt": "Risoto cremoso de tomate seco, bocconcini, tomates defumados a vácuo, lascas de pepato e folhas de manjericão."
+     },
+     "precio": 30000,
+     "tags": []
+    },
+    {
+     "id": "dg-risotto-alimonado",
+     "nombre": {
+      "es": "Risotto alimonado",
+      "en": "Lemon risotto",
+      "pt": "Risoto ao limão"
+     },
+     "descripcion": {
+      "es": "Emulsionado con oliva, limón y queso ligne noire, calamaretis dorados y provenzal.",
+      "en": "Emulsified with olive oil, lemon and ligne noire cheese, golden baby squid and provençal.",
+      "pt": "Emulsionado com azeite, limão e queijo ligne noire, lulinhas douradas e provençal."
+     },
+     "precio": 32000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "pastasciutta",
+   "nombre": {
+    "es": "Pastasciutta",
+    "en": "Pastasciutta",
+    "pt": "Pastasciutta"
+   },
+   "foto": "dg-pastas.jpg",
+   "nota": {},
+   "items": [
+    {
+     "id": "dg-penne-rigatti",
+     "nombre": {
+      "es": "Penne rigatti",
+      "en": "Penne rigate",
+      "pt": "Penne rigate"
+     },
+     "descripcion": {
+      "es": "Nuestra fonduta, crema y ricota.",
+      "en": "Our fonduta, cream and ricotta.",
+      "pt": "Nossa fonduta, creme e ricota."
+     },
+     "precio": 30000,
+     "tags": []
+    },
+    {
+     "id": "dg-caserecce",
+     "nombre": {
+      "es": "Caserecce",
+      "en": "Caserecce",
+      "pt": "Caserecce"
+     },
+     "descripcion": {
+      "es": "Con gulasch de lomo, portobellos y cremoso de salvia.",
+      "en": "With beef goulash, portobello mushrooms and sage cream.",
+      "pt": "Com goulash de filé, cogumelos portobello e creme de sálvia."
+     },
+     "precio": 31000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "pastas-ripienna",
+   "nombre": {
+    "es": "Pastas ripienna",
+    "en": "Filled pasta",
+    "pt": "Massas recheadas"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "dg-sorrentinos",
+     "nombre": {
+      "es": "Sorrentinos",
+      "en": "Sorrentinos",
+      "pt": "Sorrentinos"
+     },
+     "descripcion": {
+      "es": "Sorrentinos de cabutia al rescoldo y tropezones de queso atuel, sus escamas y pimienta negra, filetto suave y mix de brotes.",
+      "en": "Ember-roasted butternut sorrentinos with atuel cheese, its flakes and black pepper, light filetto and mixed sprouts.",
+      "pt": "Sorrentinos de abóbora assada na brasa com queijo atuel, suas lascas e pimenta-do-reino, filetto suave e microbrotos."
+     },
+     "precio": 32000,
+     "tags": []
+    },
+    {
+     "id": "dg-cuadretti",
+     "nombre": {
+      "es": "Cuadretti",
+      "en": "Cuadretti",
+      "pt": "Cuadretti"
+     },
+     "descripcion": {
+      "es": "Cuadretti de ojo de bife con aceite de oliva y aceite de trufa.",
+      "en": "Rib-eye cuadretti with olive oil and truffle oil.",
+      "pt": "Cuadretti de ancho com azeite e óleo de trufa."
+     },
+     "precio": 35000,
+     "tags": []
+    },
+    {
+     "id": "dg-pasta-limone",
+     "nombre": {
+      "es": "Pasta limone",
+      "en": "Pasta limone",
+      "pt": "Pasta limone"
+     },
+     "descripcion": {
+      "es": "Pasta rellena de ricota cítrica, crema suave de langostinos y salmón ahumado.",
+      "en": "Pasta filled with citrus ricotta, light prawn cream and smoked salmon.",
+      "pt": "Massa recheada com ricota cítrica, creme suave de camarão e salmão defumado."
+     },
+     "precio": 34000,
+     "tags": []
+    },
+    {
+     "id": "dg-lasagna",
+     "nombre": {
+      "es": "Lasagna",
+      "en": "Lasagna",
+      "pt": "Lasanha"
+     },
+     "descripcion": {
+      "es": "Nuestra lasagna de papa y salmón, crema de azafrán, cebolla caramelizada y langostinos grillados.",
+      "en": "Our potato and salmon lasagna, saffron cream, caramelised onion and grilled prawns.",
+      "pt": "Nossa lasanha de batata e salmão, creme de açafrão, cebola caramelizada e camarões grelhados."
+     },
+     "precio": 40000,
+     "tags": [
+      "SUGERENCIA_CHEF"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "especialidades",
+   "nombre": {
+    "es": "Especialidades",
+    "en": "Chef's specialities",
+    "pt": "Especialidades"
+   },
+   "foto": "dg-especialidades.jpg",
+   "nota": {},
+   "items": [
+    {
+     "id": "dg-ojo-de-bife",
+     "nombre": {
+      "es": "Ojo de bife o lomo",
+      "en": "Rib-eye or tenderloin",
+      "pt": "Ancho ou filé mignon"
+     },
+     "descripcion": {
+      "es": "Puré de arvejas y menta, rostí de coliflor, brócoli y espárragos, cherrys asados.",
+      "en": "Pea and mint purée, cauliflower rösti, broccoli and asparagus, roasted cherry tomatoes.",
+      "pt": "Purê de ervilha e hortelã, rösti de couve-flor, brócolis e aspargos, tomates cereja assados."
+     },
+     "precio": 42000,
+     "tags": []
+    },
+    {
+     "id": "dg-salmon",
+     "nombre": {
+      "es": "Salmón",
+      "en": "Salmon",
+      "pt": "Salmão"
+     },
+     "descripcion": {
+      "es": "En crudo de almendra, risotto de espinaca, quínoa colorada y vegetales con aliño cítrico.",
+      "en": "In almond crust, spinach risotto, red quinoa and vegetables with citrus dressing.",
+      "pt": "Em crosta de amêndoa, risoto de espinafre, quinoa vermelha e legumes com molho cítrico."
+     },
+     "precio": 47000,
+     "tags": []
+    },
+    {
+     "id": "dg-bisteca",
+     "nombre": {
+      "es": "Bisteca",
+      "en": "Bisteca",
+      "pt": "Bisteca"
+     },
+     "descripcion": {
+      "es": "Milanesa de ojo de bife rellena de liliáceas, mozzarella y tomate, spaghetti con pesto de brócoli y mix de brotes.",
+      "en": "Breaded rib-eye filled with alliums, mozzarella and tomato, spaghetti with broccoli pesto and mixed sprouts.",
+      "pt": "Milanesa de ancho recheada com liliáceas, mussarela e tomate, espaguete com pesto de brócolis e microbrotos."
+     },
+     "precio": 40000,
+     "tags": [
+      "SUGERENCIA_CHEF"
+     ]
+    },
+    {
+     "id": "dg-chernia",
+     "nombre": {
+      "es": "Chernia",
+      "en": "Grouper",
+      "pt": "Cherne"
+     },
+     "descripcion": {
+      "es": "Chernia fresca en tempura, cabutia al rescoldo y perlas de vegetales.",
+      "en": "Fresh grouper in tempura, ember-roasted butternut and vegetable pearls.",
+      "pt": "Cherne fresco em tempurá, abóbora assada na brasa e pérolas de legumes."
+     },
+     "precio": 40000,
+     "tags": []
+    },
+    {
+     "id": "dg-pulpo",
+     "nombre": {
+      "es": "Pulpo",
+      "en": "Octopus",
+      "pt": "Polvo"
+     },
+     "descripcion": {
+      "es": "Tentáculo de pulpo español, puré con notas de langostinos, papines dorados, palta grillada, untuoso de ajo negro y pimentón crocante.",
+      "en": "Spanish octopus tentacle, prawn-scented purée, golden baby potatoes, grilled avocado, black garlic cream and crisp paprika.",
+      "pt": "Tentáculo de polvo espanhol, purê com notas de camarão, batatas douradas, abacate grelhado, creme de alho negro e páprica crocante."
+     },
+     "precio": 115000,
+     "tags": [
+      "SUGERENCIA_CHEF"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dolce",
+   "nombre": {
+    "es": "Dolce",
+    "en": "Desserts",
+    "pt": "Sobremesas"
+   },
+   "foto": "dg-dolce.jpg",
+   "nota": {},
+   "items": [
+    {
+     "id": "dg-chocolate-25",
+     "nombre": {
+      "es": "Chocolate 2.5",
+      "en": "Chocolate 2.5",
+      "pt": "Chocolate 2.5"
+     },
+     "descripcion": {
+      "es": "Sin fin de chocolate belga, untuoso de chocolate 100%, cremoso de chocolate blanco, ddl, mousse de chocolate con leche, mousse de nutella y coulis de frambuesa.",
+      "en": "Belgian chocolate, 100% chocolate cream, white chocolate cream, dulce de leche, milk chocolate mousse, nutella mousse and raspberry coulis.",
+      "pt": "Chocolate belga, creme de chocolate 100%, creme de chocolate branco, doce de leite, mousse de chocolate ao leite, mousse de nutella e coulis de framboesa."
+     },
+     "precio": 20500,
+     "tags": [
+      "SUGERENCIA_CHEF"
+     ]
+    },
+    {
+     "id": "dg-frutal",
+     "nombre": {
+      "es": "Frutal",
+      "en": "Fruit",
+      "pt": "Frutal"
+     },
+     "descripcion": {
+      "es": "Cremoso de maracuyá, frutas de estación, media esfera de coco, mango y manzana verde, sorbet frutal.",
+      "en": "Passion fruit cream, seasonal fruit, coconut, mango and green apple dome, fruit sorbet.",
+      "pt": "Creme de maracujá, frutas da estação, semiesfera de coco, manga e maçã verde, sorbet de frutas."
+     },
+     "precio": 20500,
+     "tags": []
+    },
+    {
+     "id": "dg-citrico",
+     "nombre": {
+      "es": "Cítrico",
+      "en": "Citrus",
+      "pt": "Cítrico"
+     },
+     "descripcion": {
+      "es": "Bavaroise de naranja sobre sablée cítrica, helado de limón.",
+      "en": "Orange bavarois on citrus sablée, lemon ice cream.",
+      "pt": "Bavarois de laranja sobre sablée cítrica, sorvete de limão."
+     },
+     "precio": 20500,
+     "tags": []
+    },
+    {
+     "id": "dg-manzana",
+     "nombre": {
+      "es": "Manzana",
+      "en": "Apple",
+      "pt": "Maçã"
+     },
+     "descripcion": {
+      "es": "Manzana de bavaroise, con centro de compota y frutos secos, virutas de chocolate blanco.",
+      "en": "Apple bavarois with compote and nut centre, white chocolate shavings.",
+      "pt": "Bavarois de maçã com centro de compota e frutas secas, raspas de chocolate branco."
+     },
+     "precio": 20500,
+     "tags": [
+      "SUGERENCIA_CHEF"
+     ]
+    },
+    {
+     "id": "dg-laminado-dubai",
+     "nombre": {
+      "es": "Laminado dubái",
+      "en": "Dubai layers",
+      "pt": "Laminado Dubai"
+     },
+     "descripcion": {
+      "es": "Laminado de húmedo de chocolate, cremoso Dubái, ganache de chocolate blanco con praliné y su helado de chocolate Dubái.",
+      "en": "Layered moist chocolate, Dubai cream, white chocolate ganache with praline and Dubai chocolate ice cream.",
+      "pt": "Camadas de bolo úmido de chocolate, creme Dubai, ganache de chocolate branco com praliné e sorvete de chocolate Dubai."
+     },
+     "precio": 21000,
+     "tags": []
+    },
+    {
+     "id": "dg-lingote-pistaccio",
+     "nombre": {
+      "es": "Lingote de pistaccio",
+      "en": "Pistachio ingot",
+      "pt": "Lingote de pistache"
+     },
+     "descripcion": {
+      "es": "Con centro de arándanos, brownie de pistaccio sobre sablée y helado de arándanos.",
+      "en": "With a blueberry centre, pistachio brownie on sablée and blueberry ice cream.",
+      "pt": "Com centro de mirtilo, brownie de pistache sobre sablée e sorvete de mirtilo."
+     },
+     "precio": 21000,
+     "tags": []
+    },
+    {
+     "id": "dg-ddl",
+     "nombre": {
+      "es": "DDL",
+      "en": "Dulce de leche",
+      "pt": "Doce de leite"
+     },
+     "descripcion": {
+      "es": "Cheesecake de vainilla con bavaroise de ddl y quenelle de americana.",
+      "en": "Vanilla cheesecake with dulce de leche bavarois and a quenelle of cream.",
+      "pt": "Cheesecake de baunilha com bavarois de doce de leite e quenelle de creme."
+     },
+     "precio": 21000,
+     "tags": []
+    },
+    {
+     "id": "dg-panna-cotta",
+     "nombre": {
+      "es": "Panna cotta",
+      "en": "Panna cotta",
+      "pt": "Panna cotta"
+     },
+     "descripcion": {
+      "es": "De frutos rojos y chocolate blanco con centro de frambuesas.",
+      "en": "Red berries and white chocolate with a raspberry centre.",
+      "pt": "De frutas vermelhas e chocolate branco com centro de framboesa."
+     },
+     "precio": 20500,
+     "tags": []
+    },
+    {
+     "id": "dg-helados",
+     "nombre": {
+      "es": "Helados",
+      "en": "Ice cream",
+      "pt": "Sorvetes"
+     },
+     "descripcion": {
+      "es": "Crema americana, vainilla, chocolate, ddl, limón, frutilla al agua.",
+      "en": "Cream, vanilla, chocolate, dulce de leche, lemon, strawberry sorbet.",
+      "pt": "Creme, baunilha, chocolate, doce de leite, limão, morango."
+     },
+     "precio": 19500,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "menu-menores",
+   "nombre": {
+    "es": "Menú menores",
+    "en": "Kids' menu",
+    "pt": "Menu infantil"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "dg-men-cuore-milano",
+     "nombre": {
+      "es": "Cuore Milano",
+      "en": "Cuore Milano",
+      "pt": "Cuore Milano"
+     },
+     "descripcion": {},
+     "precio": 20500,
+     "tags": []
+    },
+    {
+     "id": "dg-men-noquis",
+     "nombre": {
+      "es": "Ñoquis filetto o panna",
+      "en": "Gnocchi with filetto or cream",
+      "pt": "Nhoque ao filetto ou creme"
+     },
+     "descripcion": {},
+     "precio": 24500,
+     "tags": []
+    },
+    {
+     "id": "dg-men-nuils-ave",
+     "nombre": {
+      "es": "Nulis de ave con papas fritas",
+      "en": "Chicken nuggets with fries",
+      "pt": "Nuggets de frango com batatas fritas"
+     },
+     "descripcion": {},
+     "precio": 27000,
+     "tags": []
+    },
+    {
+     "id": "dg-men-milanesa",
+     "nombre": {
+      "es": "Milanesa con puré de papa",
+      "en": "Breaded cutlet with mashed potato",
+      "pt": "Milanesa com purê de batata"
+     },
+     "descripcion": {},
+     "precio": 29000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "especiales-dg",
+   "nombre": {
+    "es": "Servicios especiales",
+    "en": "Special services",
+    "pt": "Serviços especiais"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "dg-menu-romantico",
+     "nombre": {
+      "es": "Menú romántico para 2 personas",
+      "en": "Romantic menu for two",
+      "pt": "Menu romântico para dois"
+     },
+     "descripcion": {
+      "es": "Entrada, principal y postre, con vinos.",
+      "en": "Starter, main course and dessert, with wine.",
+      "pt": "Entrada, prato principal e sobremesa, com vinhos."
+     },
+     "precio": 185000,
+     "tags": []
+    },
+    {
+     "id": "dg-cubierto",
+     "nombre": {
+      "es": "Valor del cubierto",
+      "en": "Cover charge",
+      "pt": "Couvert"
+     },
+     "descripcion": {
+      "es": "Por persona.",
+      "en": "Per person.",
+      "pt": "Por pessoa."
+     },
+     "precio": 6000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "cervezas",
+   "nombre": {
+    "es": "Cervezas",
+    "en": "Beers",
+    "pt": "Cervejas"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "cerv-patagonia-vera-ipa-lata-x410cc",
+     "nombre": {
+      "es": "Patagonia vera ipa lata x410cc"
+     },
+     "descripcion": {},
+     "precio": 9900,
+     "tags": []
+    },
+    {
+     "id": "cerv-patagonia-24-7-lata-x410cc",
+     "nombre": {
+      "es": "Patagonia 24.7 lata x410cc"
+     },
+     "descripcion": {},
+     "precio": 9900,
+     "tags": []
+    },
+    {
+     "id": "cerv-patagonia-amber-lager-lata-x410cc",
+     "nombre": {
+      "es": "Patagonia amber lager lata x410cc"
+     },
+     "descripcion": {},
+     "precio": 9900,
+     "tags": []
+    },
+    {
+     "id": "cerv-stella-artois-lata-x473cc",
+     "nombre": {
+      "es": "Stella Artois lata x473cc"
+     },
+     "descripcion": {},
+     "precio": 8700,
+     "tags": []
+    },
+    {
+     "id": "cerv-heineken-lata-x473cc",
+     "nombre": {
+      "es": "Heineken lata x473cc"
+     },
+     "descripcion": {},
+     "precio": 8700,
+     "tags": []
+    },
+    {
+     "id": "cerv-quilmes-stout-lata-x473cc",
+     "nombre": {
+      "es": "Quilmes stout lata x473cc"
+     },
+     "descripcion": {},
+     "precio": 8200,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "vinos-por-copa",
+   "nombre": {
+    "es": "Vinos y espumantes por copa",
+    "en": "Wines and sparkling by the glass",
+    "pt": "Vinhos e espumantes em taça"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "copa-copa-vino-trumpeter-malbec-cabernet-sauvi",
+     "nombre": {
+      "es": "Copa Vino Trumpeter Malbec/Cabernet Sauvignon"
+     },
+     "descripcion": {},
+     "precio": 9000,
+     "tags": []
+    },
+    {
+     "id": "copa-copa-vino-encuentro-malbec",
+     "nombre": {
+      "es": "Copa Vino Encuentro Malbec"
+     },
+     "descripcion": {},
+     "precio": 15500,
+     "tags": []
+    },
+    {
+     "id": "copa-copa-vino-rutini-cabernet-malbec",
+     "nombre": {
+      "es": "Copa Vino Rutini Cabernet-Malbec"
+     },
+     "descripcion": {},
+     "precio": 15500,
+     "tags": []
+    },
+    {
+     "id": "copa-copa-vino-trumpeter-suavignon-blanc-chard",
+     "nombre": {
+      "es": "Copa Vino Trumpeter Suavignon Blanc/Chardonnay"
+     },
+     "descripcion": {},
+     "precio": 9000,
+     "tags": []
+    },
+    {
+     "id": "copa-copa-vino-dv-catena-chardonnay",
+     "nombre": {
+      "es": "Copa Vino Dv Catena Chardonnay"
+     },
+     "descripcion": {},
+     "precio": 9000,
+     "tags": []
+    },
+    {
+     "id": "copa-copa-vino-rutini-sauvignon-blanc",
+     "nombre": {
+      "es": "Copa Vino Rutini Sauvignon Blanc"
+     },
+     "descripcion": {},
+     "precio": 15500,
+     "tags": []
+    },
+    {
+     "id": "copa-copa-vino-rutini-malbec",
+     "nombre": {
+      "es": "Copa Vino Rutini Malbec"
+     },
+     "descripcion": {},
+     "precio": 21000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "cocktails",
+   "nombre": {
+    "es": "Cocktails clásicos",
+    "en": "Classic cocktails",
+    "pt": "Coquetéis clássicos"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "ckt-aperol-spritz",
+     "nombre": {
+      "es": "Aperol spritz",
+      "en": "Aperol spritz",
+      "pt": "Aperol spritz"
+     },
+     "descripcion": {
+      "es": "Aperol, espumoso y agua con gas.",
+      "en": "Aperol, sparkling wine and soda.",
+      "pt": "Aperol, espumante e água com gás."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-bacardi",
+     "nombre": {
+      "es": "Bacardi cocktail",
+      "en": "Bacardi cocktail",
+      "pt": "Bacardi cocktail"
+     },
+     "descripcion": {
+      "es": "Ron, jugo de limón y granadina.",
+      "en": "Rum, lemon juice and grenadine.",
+      "pt": "Rum, suco de limão e granadina."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-bellini",
+     "nombre": {
+      "es": "Bellini",
+      "en": "Bellini",
+      "pt": "Bellini"
+     },
+     "descripcion": {
+      "es": "Champagne y pulpa de durazno.",
+      "en": "Champagne and peach purée.",
+      "pt": "Champanhe e polpa de pêssego."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-bloody-mary",
+     "nombre": {
+      "es": "Bloody Mary",
+      "en": "Bloody Mary",
+      "pt": "Bloody Mary"
+     },
+     "descripcion": {
+      "es": "Vodka, jugo de limón, jugo de tomate, sal, pimienta, tabasco y salsa inglesa.",
+      "en": "Vodka, lemon juice, tomato juice, salt, pepper, tabasco and Worcestershire sauce.",
+      "pt": "Vodca, suco de limão, suco de tomate, sal, pimenta, tabasco e molho inglês."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-campari-orange",
+     "nombre": {
+      "es": "Campari orange",
+      "en": "Campari orange",
+      "pt": "Campari orange"
+     },
+     "descripcion": {
+      "es": "Campari y jugo de naranja.",
+      "en": "Campari and orange juice.",
+      "pt": "Campari e suco de laranja."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-caipirinha",
+     "nombre": {
+      "es": "Caipirinha",
+      "en": "Caipirinha",
+      "pt": "Caipirinha"
+     },
+     "descripcion": {
+      "es": "Cachaça y limas maceradas.",
+      "en": "Cachaça and muddled limes.",
+      "pt": "Cachaça e limas maceradas."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-caipirovska",
+     "nombre": {
+      "es": "Caipirovska",
+      "en": "Caipirovska",
+      "pt": "Caipivodka"
+     },
+     "descripcion": {
+      "es": "Vodka y limas maceradas.",
+      "en": "Vodka and muddled limes.",
+      "pt": "Vodca e limas maceradas."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-cuba-libre",
+     "nombre": {
+      "es": "Cuba libre",
+      "en": "Cuba libre",
+      "pt": "Cuba libre"
+     },
+     "descripcion": {
+      "es": "Ron Bacardi oro, cola y limón.",
+      "en": "Bacardi gold rum, cola and lime.",
+      "pt": "Rum Bacardi ouro, cola e limão."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-daikiri",
+     "nombre": {
+      "es": "Daikiri frutal",
+      "en": "Fruit daiquiri",
+      "pt": "Daiquiri de frutas"
+     },
+     "descripcion": {
+      "es": "Ron, jugo de limón, azúcar y fruta natural.",
+      "en": "Rum, lemon juice, sugar and fresh fruit.",
+      "pt": "Rum, suco de limão, açúcar e fruta natural."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-dry-martini",
+     "nombre": {
+      "es": "Dry martini",
+      "en": "Dry martini",
+      "pt": "Dry martini"
+     },
+     "descripcion": {
+      "es": "Gin, Dry Martini y oliva verde.",
+      "en": "Gin, dry vermouth and a green olive.",
+      "pt": "Gim, vermute seco e azeitona verde."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-gin-tonic",
+     "nombre": {
+      "es": "Gin tonic",
+      "en": "Gin and tonic",
+      "pt": "Gin tônica"
+     },
+     "descripcion": {
+      "es": "Gin Bombay, agua tónica y limón.",
+      "en": "Bombay gin, tonic water and lemon.",
+      "pt": "Gim Bombay, água tônica e limão."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-margarita",
+     "nombre": {
+      "es": "Margarita",
+      "en": "Margarita",
+      "pt": "Margarita"
+     },
+     "descripcion": {
+      "es": "Tequila, Cointreau y jugo de limón.",
+      "en": "Tequila, Cointreau and lemon juice.",
+      "pt": "Tequila, Cointreau e suco de limão."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-negroni",
+     "nombre": {
+      "es": "Negroni",
+      "en": "Negroni",
+      "pt": "Negroni"
+     },
+     "descripcion": {
+      "es": "Campari, Gin Bombay y Martini Rosso.",
+      "en": "Campari, Bombay gin and Martini Rosso.",
+      "pt": "Campari, gim Bombay e Martini Rosso."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-pisco-sour",
+     "nombre": {
+      "es": "Pisco sour",
+      "en": "Pisco sour",
+      "pt": "Pisco sour"
+     },
+     "descripcion": {
+      "es": "Pisco, jugo de limón, clara de huevo y Angostura.",
+      "en": "Pisco, lemon juice, egg white and Angostura.",
+      "pt": "Pisco, suco de limão, clara de ovo e Angostura."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-tom-collins",
+     "nombre": {
+      "es": "Tom Collins",
+      "en": "Tom Collins",
+      "pt": "Tom Collins"
+     },
+     "descripcion": {
+      "es": "Gin Bombay, soda y jugo de limón.",
+      "en": "Bombay gin, soda and lemon juice.",
+      "pt": "Gim Bombay, soda e suco de limão."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-fernet-cola",
+     "nombre": {
+      "es": "Fernet cola",
+      "en": "Fernet and cola",
+      "pt": "Fernet com cola"
+     },
+     "descripcion": {
+      "es": "Fernet Branca y Coca Cola.",
+      "en": "Fernet Branca and Coca-Cola.",
+      "pt": "Fernet Branca e Coca-Cola."
+     },
+     "precio": 23000,
+     "tags": []
+    }
+   ]
+  }
+ ]
+}

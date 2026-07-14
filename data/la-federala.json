@@ -1,0 +1,954 @@
+{
+ "carta": {
+  "id": "la-federala",
+  "nombre": "La Federala",
+  "tema": "lf",
+  "logo": "la-federala.svg",
+  "idiomas": [
+   "es",
+   "en",
+   "pt"
+  ],
+  "actualizado": "2026-07-13T23:39:34",
+  "ver_tambien": "",
+  "pie": {
+   "es": "Por favor notifique a nuestros asociados si posee alguna intolerancia alérgica.",
+   "en": "Please let our associates know if you have any food allergy or intolerance.",
+   "pt": "Por favor, informe nossos associados se você tiver alguma alergia ou intolerância alimentar."
+  }
+ },
+ "tags": {
+  "SIN_TACC": {
+   "es": "Sin TACC",
+   "en": "Gluten free",
+   "pt": "Sem glúten"
+  },
+  "VEGETARIANO": {
+   "es": "Vegetariano",
+   "en": "Vegetarian",
+   "pt": "Vegetariano"
+  },
+  "VEGANO": {
+   "es": "Vegano",
+   "en": "Vegan",
+   "pt": "Vegano"
+  },
+  "NUEVO": {
+   "es": "Nuevo",
+   "en": "New",
+   "pt": "Novo"
+  },
+  "SUGERENCIA_CHEF": {
+   "es": "Sugerencia del chef",
+   "en": "Chef's suggestion",
+   "pt": "Sugestão do chef"
+  },
+  "PROMO_3X4": {
+   "es": "Promo 3x4",
+   "en": "3x4 promo",
+   "pt": "Promo 3x4"
+  }
+ },
+ "config": {
+  "moneda": {
+   "es": "ARS",
+   "en": "ARS",
+   "pt": "ARS"
+  },
+  "simbolo": {
+   "es": "$",
+   "en": "$",
+   "pt": "$"
+  },
+  "hotel": {
+   "es": "Sheraton Pilar Hotel & Convention Center",
+   "en": "Sheraton Pilar Hotel & Convention Center",
+   "pt": "Sheraton Pilar Hotel & Convention Center"
+  },
+  "aviso_alergias": {
+   "es": "Si tiene alguna restricción alimentaria, por favor avise a su camarero antes de realizar su pedido.",
+   "en": "If you have any dietary restriction, please let your waiter know before ordering.",
+   "pt": "Se você tem alguma restrição alimentar, avise o garçom antes de fazer o pedido."
+  }
+ },
+ "secciones": [
+  {
+   "id": "lf-entradas",
+   "nombre": {
+    "es": "Entradas",
+    "en": "Starters",
+    "pt": "Entradas"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "lf-chorizo-puro-cerdo",
+     "nombre": {
+      "es": "Chorizo puro cerdo",
+      "en": "Pork sausage",
+      "pt": "Linguiça de porco"
+     },
+     "descripcion": {},
+     "precio": 15000,
+     "tags": []
+    },
+    {
+     "id": "lf-mollejas-al-limon",
+     "nombre": {
+      "es": "Mollejas al limón",
+      "en": "Sweetbreads with lemon",
+      "pt": "Moleja ao limão"
+     },
+     "descripcion": {},
+     "precio": 43000,
+     "tags": []
+    },
+    {
+     "id": "lf-provoleta-tradicional",
+     "nombre": {
+      "es": "Provoleta tradicional",
+      "en": "Grilled provolone",
+      "pt": "Provoleta tradicional"
+     },
+     "descripcion": {},
+     "precio": 22000,
+     "tags": []
+    },
+    {
+     "id": "lf-provoleta-capresse",
+     "nombre": {
+      "es": "Provoleta capresse",
+      "en": "Caprese grilled provolone",
+      "pt": "Provoleta capresse"
+     },
+     "descripcion": {},
+     "precio": 28000,
+     "tags": []
+    },
+    {
+     "id": "lf-empanadas",
+     "nombre": {
+      "es": "Empanadas",
+      "en": "Empanadas",
+      "pt": "Empanadas"
+     },
+     "descripcion": {},
+     "precio": 15500,
+     "tags": []
+    },
+    {
+     "id": "lf-achuras-para-compartir",
+     "nombre": {
+      "es": "Achuras (para compartir)",
+      "en": "Offal platter to share",
+      "pt": "Miúdos para compartilhar"
+     },
+     "descripcion": {},
+     "precio": 70000,
+     "tags": []
+    },
+    {
+     "id": "lf-papas-fritas",
+     "nombre": {
+      "es": "Papas fritas",
+      "en": "Fries",
+      "pt": "Batatas fritas"
+     },
+     "descripcion": {},
+     "precio": 12000,
+     "tags": []
+    },
+    {
+     "id": "lf-papas-fritas-provenzal",
+     "nombre": {
+      "es": "Papas fritas provenzal",
+      "en": "Fries with garlic and parsley",
+      "pt": "Batatas fritas à provençal"
+     },
+     "descripcion": {},
+     "precio": 14000,
+     "tags": []
+    },
+    {
+     "id": "lf-batatas-fritas",
+     "nombre": {
+      "es": "Batatas fritas",
+      "en": "Sweet potato fries",
+      "pt": "Batata-doce frita"
+     },
+     "descripcion": {},
+     "precio": 15000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "lf-ensaladas",
+   "nombre": {
+    "es": "Ensaladas",
+    "en": "Salads",
+    "pt": "Saladas"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "lf-papas-huevo-y-mayonesa-de-hierbas",
+     "nombre": {
+      "es": "Papas, huevo y mayonesa de hierbas",
+      "en": "Potato, egg and herb mayonnaise",
+      "pt": "Batata, ovo e maionese de ervas"
+     },
+     "descripcion": {},
+     "precio": 19000,
+     "tags": []
+    },
+    {
+     "id": "lf-nuestra-capresse",
+     "nombre": {
+      "es": "Nuestra capresse",
+      "en": "Our caprese",
+      "pt": "Nossa capresse"
+     },
+     "descripcion": {},
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "lf-ensalada-a-eleccion",
+     "nombre": {
+      "es": "Ensalada a elección",
+      "en": "Salad of your choice",
+      "pt": "Salada à escolha"
+     },
+     "descripcion": {},
+     "precio": 22000,
+     "tags": []
+    },
+    {
+     "id": "lf-caesar-tradicional",
+     "nombre": {
+      "es": "Caesar Tradicional",
+      "en": "Caesar",
+      "pt": "Caesar tradicional"
+     },
+     "descripcion": {},
+     "precio": 20000,
+     "tags": []
+    },
+    {
+     "id": "lf-caesar-ave",
+     "nombre": {
+      "es": "Caesar Ave",
+      "en": "Chicken caesar",
+      "pt": "Caesar de frango"
+     },
+     "descripcion": {},
+     "precio": 24000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "lf-principales",
+   "nombre": {
+    "es": "Platos principales",
+    "en": "Main courses",
+    "pt": "Pratos principais"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "lf-ojo-de-bife",
+     "nombre": {
+      "es": "Ojo de bife",
+      "en": "Rib-eye",
+      "pt": "Ancho"
+     },
+     "descripcion": {},
+     "precio": 49000,
+     "tags": []
+    },
+    {
+     "id": "lf-asado-de-tira",
+     "nombre": {
+      "es": "Asado de tira",
+      "en": "Short ribs",
+      "pt": "Costela"
+     },
+     "descripcion": {},
+     "precio": 39000,
+     "tags": []
+    },
+    {
+     "id": "lf-vacio",
+     "nombre": {
+      "es": "Vacío",
+      "en": "Flank steak",
+      "pt": "Vazio"
+     },
+     "descripcion": {},
+     "precio": 43000,
+     "tags": []
+    },
+    {
+     "id": "lf-matambrito-de-cerdo",
+     "nombre": {
+      "es": "Matambrito de cerdo",
+      "en": "Pork matambre",
+      "pt": "Matambre de porco"
+     },
+     "descripcion": {},
+     "precio": 38000,
+     "tags": []
+    },
+    {
+     "id": "lf-pata-y-muslo-rellena",
+     "nombre": {
+      "es": "Pata y muslo rellena",
+      "en": "Stuffed chicken leg and thigh",
+      "pt": "Coxa e sobrecoxa recheadas"
+     },
+     "descripcion": {},
+     "precio": 34000,
+     "tags": []
+    },
+    {
+     "id": "lf-nuestra-degustacion",
+     "nombre": {
+      "es": "Nuestra degustación",
+      "en": "Our tasting platter",
+      "pt": "Nossa degustação"
+     },
+     "descripcion": {},
+     "precio": 95000,
+     "tags": []
+    },
+    {
+     "id": "lf-salmon-rosado",
+     "nombre": {
+      "es": "Salmón rosado",
+      "en": "Salmon",
+      "pt": "Salmão"
+     },
+     "descripcion": {},
+     "precio": 41000,
+     "tags": []
+    },
+    {
+     "id": "lf-brochette-de-lomo",
+     "nombre": {
+      "es": "Brochette de lomo",
+      "en": "Beef skewer",
+      "pt": "Espetinho de filé"
+     },
+     "descripcion": {},
+     "precio": 44000,
+     "tags": []
+    },
+    {
+     "id": "lf-brochette-vegetariano",
+     "nombre": {
+      "es": "Brochette vegetariano",
+      "en": "Vegetable skewer",
+      "pt": "Espetinho vegetariano"
+     },
+     "descripcion": {},
+     "precio": 39000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "lf-menores",
+   "nombre": {
+    "es": "Menores",
+    "en": "Kids",
+    "pt": "Infantil"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "lf-hamburguesa",
+     "nombre": {
+      "es": "Hamburguesa",
+      "en": "Burger",
+      "pt": "Hambúrguer"
+     },
+     "descripcion": {},
+     "precio": 21000,
+     "tags": []
+    },
+    {
+     "id": "lf-nuggets",
+     "nombre": {
+      "es": "Nuggets",
+      "en": "Nuggets",
+      "pt": "Nuggets"
+     },
+     "descripcion": {},
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "lf-milanesa-de-ternera",
+     "nombre": {
+      "es": "Milanesa de ternera",
+      "en": "Breaded veal cutlet",
+      "pt": "Milanesa de vitela"
+     },
+     "descripcion": {},
+     "precio": 21000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "lf-postres",
+   "nombre": {
+    "es": "Postres",
+    "en": "Desserts",
+    "pt": "Sobremesas"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "lf-macedonia-de-fruta-con-helado",
+     "nombre": {
+      "es": "Macedonia de fruta con helado",
+      "en": "Fruit salad with ice cream",
+      "pt": "Salada de frutas com sorvete"
+     },
+     "descripcion": {},
+     "precio": 15000,
+     "tags": []
+    },
+    {
+     "id": "lf-clasico-flan",
+     "nombre": {
+      "es": "Clásico flan",
+      "en": "Classic crème caramel",
+      "pt": "Pudim clássico"
+     },
+     "descripcion": {},
+     "precio": 16000,
+     "tags": []
+    },
+    {
+     "id": "lf-frutos-rojos",
+     "nombre": {
+      "es": "Frutos rojos",
+      "en": "Red berries",
+      "pt": "Frutas vermelhas"
+     },
+     "descripcion": {},
+     "precio": 17000,
+     "tags": []
+    },
+    {
+     "id": "lf-crepes-de-manzana",
+     "nombre": {
+      "es": "Crepes de manzana",
+      "en": "Apple crêpes",
+      "pt": "Crepes de maçã"
+     },
+     "descripcion": {},
+     "precio": 17000,
+     "tags": []
+    },
+    {
+     "id": "lf-chocotorta",
+     "nombre": {
+      "es": "Chocotorta",
+      "en": "Chocotorta",
+      "pt": "Chocotorta"
+     },
+     "descripcion": {},
+     "precio": 17000,
+     "tags": []
+    },
+    {
+     "id": "lf-helado-a-eleccion-2-bochas",
+     "nombre": {
+      "es": "Helado a elección (2 bochas)"
+     },
+     "descripcion": {},
+     "precio": 16000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "lf-extras",
+   "nombre": {
+    "es": "Extras",
+    "en": "Extras",
+    "pt": "Extras"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "lf-menu-roman",
+     "nombre": {
+      "es": "Menú Roman"
+     },
+     "descripcion": {},
+     "precio": 142000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "cafeteria",
+   "nombre": {
+    "es": "Cafetería",
+    "en": "Coffee & tea",
+    "pt": "Cafeteria"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "caf-expreso",
+     "nombre": {
+      "es": "Café expreso",
+      "en": "Espresso",
+      "pt": "Café expresso"
+     },
+     "descripcion": {
+      "es": "Regular o descafeinado.",
+      "en": "Regular or decaf.",
+      "pt": "Comum ou descafeinado."
+     },
+     "precio": 6000,
+     "tags": []
+    },
+    {
+     "id": "caf-expreso-doble",
+     "nombre": {
+      "es": "Café expreso doble / con leche",
+      "en": "Double espresso / with milk",
+      "pt": "Café expresso duplo / com leite"
+     },
+     "descripcion": {},
+     "precio": 9500,
+     "tags": []
+    },
+    {
+     "id": "caf-te-hierbas",
+     "nombre": {
+      "es": "Selección de té de hierbas",
+      "en": "Herbal tea selection",
+      "pt": "Seleção de chás de ervas"
+     },
+     "descripcion": {},
+     "precio": 5500,
+     "tags": []
+    },
+    {
+     "id": "caf-te-twinings",
+     "nombre": {
+      "es": "Selección de té Twinings",
+      "en": "Twinings tea selection",
+      "pt": "Seleção de chás Twinings"
+     },
+     "descripcion": {},
+     "precio": 6500,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "sin-alcohol",
+   "nombre": {
+    "es": "Bebidas sin alcohol",
+    "en": "Soft drinks",
+    "pt": "Bebidas sem álcool"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "bsa-agua",
+     "nombre": {
+      "es": "Agua mineral con gas / sin gas",
+      "en": "Mineral water, sparkling or still",
+      "pt": "Água mineral com ou sem gás"
+     },
+     "descripcion": {},
+     "precio": 5900,
+     "tags": [
+      "VEGANO"
+     ]
+    },
+    {
+     "id": "bsa-agua-saborizada",
+     "nombre": {
+      "es": "Agua mineral saborizada",
+      "en": "Flavoured mineral water",
+      "pt": "Água mineral saborizada"
+     },
+     "descripcion": {},
+     "precio": 5900,
+     "tags": []
+    },
+    {
+     "id": "bsa-gaseosas",
+     "nombre": {
+      "es": "Pepsi / 7Up / Paso de los Toros",
+      "en": "Pepsi / 7Up / Paso de los Toros",
+      "pt": "Pepsi / 7Up / Paso de los Toros"
+     },
+     "descripcion": {},
+     "precio": 5900,
+     "tags": []
+    },
+    {
+     "id": "bsa-limonada",
+     "nombre": {
+      "es": "Limonada con menta y jengibre",
+      "en": "Lemonade with mint and ginger",
+      "pt": "Limonada com hortelã e gengibre"
+     },
+     "descripcion": {},
+     "precio": 9900,
+     "tags": [
+      "VEGANO"
+     ]
+    },
+    {
+     "id": "ene-red-bull",
+     "nombre": {
+      "es": "Red bull"
+     },
+     "descripcion": {},
+     "precio": 8600,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "cervezas",
+   "nombre": {
+    "es": "Cervezas",
+    "en": "Beers",
+    "pt": "Cervejas"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "cerv-patagonia-vera-ipa-lata-x410cc",
+     "nombre": {
+      "es": "Patagonia vera ipa lata x410cc"
+     },
+     "descripcion": {},
+     "precio": 9900,
+     "tags": []
+    },
+    {
+     "id": "cerv-patagonia-24-7-lata-x410cc",
+     "nombre": {
+      "es": "Patagonia 24.7 lata x410cc"
+     },
+     "descripcion": {},
+     "precio": 9900,
+     "tags": []
+    },
+    {
+     "id": "cerv-patagonia-amber-lager-lata-x410cc",
+     "nombre": {
+      "es": "Patagonia amber lager lata x410cc"
+     },
+     "descripcion": {},
+     "precio": 9900,
+     "tags": []
+    },
+    {
+     "id": "cerv-stella-artois-lata-x473cc",
+     "nombre": {
+      "es": "Stella Artois lata x473cc"
+     },
+     "descripcion": {},
+     "precio": 8700,
+     "tags": []
+    },
+    {
+     "id": "cerv-heineken-lata-x473cc",
+     "nombre": {
+      "es": "Heineken lata x473cc"
+     },
+     "descripcion": {},
+     "precio": 8700,
+     "tags": []
+    },
+    {
+     "id": "cerv-quilmes-stout-lata-x473cc",
+     "nombre": {
+      "es": "Quilmes stout lata x473cc"
+     },
+     "descripcion": {},
+     "precio": 8200,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "cocktails",
+   "nombre": {
+    "es": "Cocktails clásicos",
+    "en": "Classic cocktails",
+    "pt": "Coquetéis clássicos"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "ckt-aperol-spritz",
+     "nombre": {
+      "es": "Aperol spritz",
+      "en": "Aperol spritz",
+      "pt": "Aperol spritz"
+     },
+     "descripcion": {
+      "es": "Aperol, espumoso y agua con gas.",
+      "en": "Aperol, sparkling wine and soda.",
+      "pt": "Aperol, espumante e água com gás."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-bacardi",
+     "nombre": {
+      "es": "Bacardi cocktail",
+      "en": "Bacardi cocktail",
+      "pt": "Bacardi cocktail"
+     },
+     "descripcion": {
+      "es": "Ron, jugo de limón y granadina.",
+      "en": "Rum, lemon juice and grenadine.",
+      "pt": "Rum, suco de limão e granadina."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-bellini",
+     "nombre": {
+      "es": "Bellini",
+      "en": "Bellini",
+      "pt": "Bellini"
+     },
+     "descripcion": {
+      "es": "Champagne y pulpa de durazno.",
+      "en": "Champagne and peach purée.",
+      "pt": "Champanhe e polpa de pêssego."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-bloody-mary",
+     "nombre": {
+      "es": "Bloody Mary",
+      "en": "Bloody Mary",
+      "pt": "Bloody Mary"
+     },
+     "descripcion": {
+      "es": "Vodka, jugo de limón, jugo de tomate, sal, pimienta, tabasco y salsa inglesa.",
+      "en": "Vodka, lemon juice, tomato juice, salt, pepper, tabasco and Worcestershire sauce.",
+      "pt": "Vodca, suco de limão, suco de tomate, sal, pimenta, tabasco e molho inglês."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-campari-orange",
+     "nombre": {
+      "es": "Campari orange",
+      "en": "Campari orange",
+      "pt": "Campari orange"
+     },
+     "descripcion": {
+      "es": "Campari y jugo de naranja.",
+      "en": "Campari and orange juice.",
+      "pt": "Campari e suco de laranja."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-caipirinha",
+     "nombre": {
+      "es": "Caipirinha",
+      "en": "Caipirinha",
+      "pt": "Caipirinha"
+     },
+     "descripcion": {
+      "es": "Cachaça y limas maceradas.",
+      "en": "Cachaça and muddled limes.",
+      "pt": "Cachaça e limas maceradas."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-caipirovska",
+     "nombre": {
+      "es": "Caipirovska",
+      "en": "Caipirovska",
+      "pt": "Caipivodka"
+     },
+     "descripcion": {
+      "es": "Vodka y limas maceradas.",
+      "en": "Vodka and muddled limes.",
+      "pt": "Vodca e limas maceradas."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-cuba-libre",
+     "nombre": {
+      "es": "Cuba libre",
+      "en": "Cuba libre",
+      "pt": "Cuba libre"
+     },
+     "descripcion": {
+      "es": "Ron Bacardi oro, cola y limón.",
+      "en": "Bacardi gold rum, cola and lime.",
+      "pt": "Rum Bacardi ouro, cola e limão."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-daikiri",
+     "nombre": {
+      "es": "Daikiri frutal",
+      "en": "Fruit daiquiri",
+      "pt": "Daiquiri de frutas"
+     },
+     "descripcion": {
+      "es": "Ron, jugo de limón, azúcar y fruta natural.",
+      "en": "Rum, lemon juice, sugar and fresh fruit.",
+      "pt": "Rum, suco de limão, açúcar e fruta natural."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-dry-martini",
+     "nombre": {
+      "es": "Dry martini",
+      "en": "Dry martini",
+      "pt": "Dry martini"
+     },
+     "descripcion": {
+      "es": "Gin, Dry Martini y oliva verde.",
+      "en": "Gin, dry vermouth and a green olive.",
+      "pt": "Gim, vermute seco e azeitona verde."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-gin-tonic",
+     "nombre": {
+      "es": "Gin tonic",
+      "en": "Gin and tonic",
+      "pt": "Gin tônica"
+     },
+     "descripcion": {
+      "es": "Gin Bombay, agua tónica y limón.",
+      "en": "Bombay gin, tonic water and lemon.",
+      "pt": "Gim Bombay, água tônica e limão."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-margarita",
+     "nombre": {
+      "es": "Margarita",
+      "en": "Margarita",
+      "pt": "Margarita"
+     },
+     "descripcion": {
+      "es": "Tequila, Cointreau y jugo de limón.",
+      "en": "Tequila, Cointreau and lemon juice.",
+      "pt": "Tequila, Cointreau e suco de limão."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-negroni",
+     "nombre": {
+      "es": "Negroni",
+      "en": "Negroni",
+      "pt": "Negroni"
+     },
+     "descripcion": {
+      "es": "Campari, Gin Bombay y Martini Rosso.",
+      "en": "Campari, Bombay gin and Martini Rosso.",
+      "pt": "Campari, gim Bombay e Martini Rosso."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-pisco-sour",
+     "nombre": {
+      "es": "Pisco sour",
+      "en": "Pisco sour",
+      "pt": "Pisco sour"
+     },
+     "descripcion": {
+      "es": "Pisco, jugo de limón, clara de huevo y Angostura.",
+      "en": "Pisco, lemon juice, egg white and Angostura.",
+      "pt": "Pisco, suco de limão, clara de ovo e Angostura."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-tom-collins",
+     "nombre": {
+      "es": "Tom Collins",
+      "en": "Tom Collins",
+      "pt": "Tom Collins"
+     },
+     "descripcion": {
+      "es": "Gin Bombay, soda y jugo de limón.",
+      "en": "Bombay gin, soda and lemon juice.",
+      "pt": "Gim Bombay, soda e suco de limão."
+     },
+     "precio": 23000,
+     "tags": []
+    },
+    {
+     "id": "ckt-fernet-cola",
+     "nombre": {
+      "es": "Fernet cola",
+      "en": "Fernet and cola",
+      "pt": "Fernet com cola"
+     },
+     "descripcion": {
+      "es": "Fernet Branca y Coca Cola.",
+      "en": "Fernet Branca and Coca-Cola.",
+      "pt": "Fernet Branca e Coca-Cola."
+     },
+     "precio": 23000,
+     "tags": []
+    }
+   ]
+  }
+ ]
+}
