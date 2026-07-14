@@ -9,7 +9,7 @@
    "en",
    "pt"
   ],
-  "actualizado": "2026-07-14T16:24:07.283Z",
+  "actualizado": "2026-07-14T16:36:34.541Z",
   "ver_tambien": "carta-vinos",
   "pie": {
    "es": "Apto celíacos / *Sugerencia del chef / Vegetariano. Si tiene alguna restricción alimentaria, por favor avise a su camarero antes de realizar su pedido. Consultar por otras opciones sin TACC. En caso de compartir un plato, se adicionará un 40% al valor del mismo. Las especialidades del chef no son para compartir.",
@@ -716,6 +716,117 @@
       "pt": "Por pessoa."
      },
      "precio": 6000,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "sin-alcohol",
+   "nombre": {
+    "es": "Bebidas sin alcohol",
+    "en": "Soft drinks",
+    "pt": "Bebidas sem álcool"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "bsa-agua",
+     "nombre": {
+      "es": "Agua mineral con gas / sin gas",
+      "en": "Mineral water, sparkling or still",
+      "pt": "Água mineral com ou sem gás"
+     },
+     "descripcion": {},
+     "precio": 5900,
+     "tags": [
+      "VEGANO"
+     ]
+    },
+    {
+     "id": "bsa-agua-saborizada",
+     "nombre": {
+      "es": "Agua mineral saborizada",
+      "en": "Flavoured mineral water",
+      "pt": "Água mineral saborizada"
+     },
+     "descripcion": {},
+     "precio": 5900,
+     "tags": []
+    },
+    {
+     "id": "bsa-gaseosas",
+     "nombre": {
+      "es": "Pepsi / 7Up / Paso de los Toros",
+      "en": "Pepsi / 7Up / Paso de los Toros",
+      "pt": "Pepsi / 7Up / Paso de los Toros"
+     },
+     "descripcion": {},
+     "precio": 5300,
+     "tags": []
+    }
+   ]
+  },
+  {
+   "id": "cafeteria",
+   "nombre": {
+    "es": "Bebidas sin alcohol",
+    "en": "Soft drinks",
+    "pt": "Bebidas sem álcool"
+   },
+   "foto": "",
+   "nota": {},
+   "items": [
+    {
+     "id": "caf-expreso",
+     "nombre": {
+      "es": "Café expreso",
+      "en": "Espresso",
+      "pt": "Café expresso"
+     },
+     "descripcion": {
+      "es": "Regular o descafeinado.",
+      "en": "Regular or decaf.",
+      "pt": "Comum ou descafeinado."
+     },
+     "precio": 6000,
+     "tags": []
+    },
+    {
+     "id": "caf-expreso-doble",
+     "nombre": {
+      "es": "Café expreso doble / con leche",
+      "en": "Double espresso / with milk",
+      "pt": "Café expresso duplo / com leite"
+     },
+     "descripcion": {},
+     "precio": 9500,
+     "tags": []
+    },
+    {
+     "id": "caf-jarrito",
+     "nombre": {
+      "es": "Café en jarrito",
+      "en": "Small coffee with milk",
+      "pt": "Café em jarrinho"
+     },
+     "descripcion": {},
+     "precio": 8000,
+     "tags": []
+    },
+    {
+     "id": "caf-te-hebras",
+     "nombre": {
+      "es": "Té en hebras",
+      "en": "Loose leaf tea",
+      "pt": "Chá em folhas"
+     },
+     "descripcion": {
+      "es": "Negro; verde; blend lovely chai; blend amelie; blend chocolat; blend patagonia in love.",
+      "en": "Black; green; lovely chai blend; amelie blend; chocolat blend; patagonia in love blend.",
+      "pt": "Preto; verde; blend lovely chai; blend amelie; blend chocolat; blend patagonia in love."
+     },
+     "precio": 5500,
      "tags": []
     }
    ]
