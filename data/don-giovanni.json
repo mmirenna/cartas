@@ -9,7 +9,7 @@
    "en",
    "pt"
   ],
-  "actualizado": "2026-07-14T16:36:34.541Z",
+  "actualizado": "2026-07-14T16:38:35.379Z",
   "ver_tambien": "carta-vinos",
   "pie": {
    "es": "Apto celíacos / *Sugerencia del chef / Vegetariano. Si tiene alguna restricción alimentaria, por favor avise a su camarero antes de realizar su pedido. Consultar por otras opciones sin TACC. En caso de compartir un plato, se adicionará un 40% al valor del mismo. Las especialidades del chef no son para compartir.",
@@ -770,9 +770,9 @@
   {
    "id": "cafeteria",
    "nombre": {
-    "es": "Bebidas sin alcohol",
-    "en": "Soft drinks",
-    "pt": "Bebidas sem álcool"
+    "es": "Cafetería",
+    "en": "Coffee & tea",
+    "pt": "Cafeteria"
    },
    "foto": "",
    "nota": {},
