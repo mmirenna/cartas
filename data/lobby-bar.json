@@ -9,7 +9,7 @@
    "en",
    "pt"
   ],
-  "actualizado": "2026-08-20T17:05:39.109Z",
+  "actualizado": "2026-08-21T17:30:30.967Z",
   "ver_tambien": "",
   "pie": {
    "es": "Por favor notifique a nuestros asociados si posee alguna intolerancia alérgica.",
@@ -72,54 +72,6 @@
   }
  },
  "secciones": [
-  {
-   "id": "servicio-te",
-   "nombre": {
-    "es": "Nuestra propuesta de té",
-    "en": "Afternoon tea",
-    "pt": "Chá da tarde"
-   },
-   "foto": "lb-te.jpg",
-   "nota": {
-    "es": "Servicio para 2 personas. Viernes, sábados, domingos y feriados de 16:00 a 18:30. Cupos limitados.",
-    "en": "Service for 2. Fridays, Saturdays, Sundays and holidays, 4:00 to 6:30 pm. Limited availability.",
-    "pt": "Serviço para 2 pessoas. Sextas, sábados, domingos e feriados, das 16h às 18h30. Vagas limitadas."
-   },
-   "items": [
-    {
-     "id": "te-servicio-2",
-     "nombre": {
-      "es": "Servicio de té para 2 personas",
-      "en": "Afternoon tea for two",
-      "pt": "Chá da tarde para dois"
-     },
-     "descripcion": {
-      "es": "Salado: Bavaria (salmón ahumado, tártara y rúcula); Sancricca (jamón crudo 12 meses, pategrás, tomates secos y cremoso de queso azul); Avocado (tostón multicereal, Finlandia, palta, huevo de codorniz y cherrys); scons de queso. Dulce: macarons de frutos rojos con centro de frambuesa; semiesfera cítrica con base de granola casera; tarta de manzanas; húmedo de dulce de leche; rústico de chocolate con centro de ddl bañado de chocolate; croissant flat, untuoso de nutella y chocolate. Bebidas: jugo de naranja e infusión a elección.",
-      "en": "Savoury: Bavaria (smoked salmon, tartare sauce and arugula); Sancricca (12-month prosciutto, pategrás, sun-dried tomato and blue cheese cream); Avocado (multigrain toast, Finlandia cheese, avocado, quail egg and cherry tomatoes); cheese scones. Sweet: red berry macarons with a raspberry centre; citrus dome on homemade granola; apple tart; moist dulce de leche sponge; rustic chocolate with a dulce de leche centre; flat croissant with nutella and chocolate. Drinks: orange juice and a hot drink of your choice.",
-      "pt": "Salgado: Bavaria (salmão defumado, molho tártaro e rúcula); Sancricca (presunto cru de 12 meses, pategrás, tomate seco e creme de queijo azul); Avocado (torrada multigrãos, queijo Finlandia, abacate, ovo de codorna e tomates cereja); scones de queijo. Doce: macarons de frutas vermelhas com centro de framboesa; semiesfera cítrica sobre granola caseira; torta de maçã; bolo úmido de doce de leite; rústico de chocolate com centro de doce de leite; croissant flat com nutella e chocolate. Bebidas: suco de laranja e uma infusão à escolha."
-     },
-     "precio": 62000,
-     "tags": []
-    },
-    {
-     "id": "te-promo-lanzamiento",
-     "nombre": {
-      "es": "Promoción lanzamiento: infusión + alfajor Freddo",
-      "en": "Launch offer: hot drink + Freddo alfajor",
-      "pt": "Promoção de lançamento: infusão + alfajor Freddo"
-     },
-     "descripcion": {
-      "es": "Alfajor a elección: Freddo Clásico Argentino o Freddo White Dubai. Infusión a elección del listado de cafetería, con excepción del café irlandés.",
-      "en": "Alfajor of your choice: Freddo Clásico Argentino or Freddo White Dubai. Any hot drink from the coffee list, except Irish coffee.",
-      "pt": "Alfajor à escolha: Freddo Clásico Argentino ou Freddo White Dubai. Qualquer infusão da lista de cafeteria, exceto café irlandês."
-     },
-     "precio": 13900,
-     "tags": [
-      "NUEVO"
-     ]
-    }
-   ]
-  },
   {
    "id": "ensaladas",
    "nombre": {
@@ -231,7 +183,7 @@
     "en": "Cold sandwiches",
     "pt": "Sanduíches frios"
    },
-   "foto": "lb-sandwicheria.jpg",
+   "foto": "lb-sandwicheria-fria.jpg",
    "nota": {},
    "items": [
     {
@@ -307,7 +259,7 @@
     "en": "Hot sandwiches",
     "pt": "Sanduíches quentes"
    },
-   "foto": "",
+   "foto": "lb-sandwicheria-caliente.jpg",
    "nota": {},
    "items": [
     {
@@ -579,7 +531,7 @@
     "en": "Kids",
     "pt": "Infantil"
    },
-   "foto": "",
+   "foto": "lb-menores.jpg",
    "nota": {},
    "items": [
     {
@@ -1017,6 +969,37 @@
    ]
   },
   {
+   "id": "servicio-te",
+   "nombre": {
+    "es": "Nuestra propuesta de té",
+    "en": "Afternoon tea",
+    "pt": "Chá da tarde"
+   },
+   "foto": "lb-te.jpg",
+   "nota": {
+    "es": "Servicio para 2 personas. Viernes, sábados, domingos y feriados de 16:00 a 18:30. Cupos limitados.",
+    "en": "Service for 2. Fridays, Saturdays, Sundays and holidays, 4:00 to 6:30 pm. Limited availability.",
+    "pt": "Serviço para 2 pessoas. Sextas, sábados, domingos e feriados, das 16h às 18h30. Vagas limitadas."
+   },
+   "items": [
+    {
+     "id": "te-servicio-2",
+     "nombre": {
+      "es": "Servicio de té para 2 personas",
+      "en": "Afternoon tea for two",
+      "pt": "Chá da tarde para dois"
+     },
+     "descripcion": {
+      "es": "Salado: Bavaria (salmón ahumado, tártara y rúcula); Sancricca (jamón crudo 12 meses, pategrás, tomates secos y cremoso de queso azul); Avocado (tostón multicereal, Finlandia, palta, huevo de codorniz y cherrys); scons de queso. Dulce: macarons de frutos rojos con centro de frambuesa; semiesfera cítrica con base de granola casera; tarta de manzanas; húmedo de dulce de leche; rústico de chocolate con centro de ddl bañado de chocolate; croissant flat, untuoso de nutella y chocolate. Bebidas: jugo de naranja e infusión a elección.",
+      "en": "Savoury: Bavaria (smoked salmon, tartare sauce and arugula); Sancricca (12-month prosciutto, pategrás, sun-dried tomato and blue cheese cream); Avocado (multigrain toast, Finlandia cheese, avocado, quail egg and cherry tomatoes); cheese scones. Sweet: red berry macarons with a raspberry centre; citrus dome on homemade granola; apple tart; moist dulce de leche sponge; rustic chocolate with a dulce de leche centre; flat croissant with nutella and chocolate. Drinks: orange juice and a hot drink of your choice.",
+      "pt": "Salgado: Bavaria (salmão defumado, molho tártaro e rúcula); Sancricca (presunto cru de 12 meses, pategrás, tomate seco e creme de queijo azul); Avocado (torrada multigrãos, queijo Finlandia, abacate, ovo de codorna e tomates cereja); scones de queijo. Doce: macarons de frutas vermelhas com centro de framboesa; semiesfera cítrica sobre granola caseira; torta de maçã; bolo úmido de doce de leite; rústico de chocolate com centro de doce de leite; croissant flat com nutella e chocolate. Bebidas: suco de laranja e uma infusão à escolha."
+     },
+     "precio": 62000,
+     "tags": []
+    }
+   ]
+  },
+  {
    "id": "cafeteria",
    "nombre": {
     "es": "Cafetería",
@@ -1175,7 +1158,7 @@
     "en": "Soft drinks",
     "pt": "Bebidas sem álcool"
    },
-   "foto": "",
+   "foto": "lb-bebidas.jpg",
    "nota": {},
    "items": [
     {
@@ -1605,7 +1588,7 @@
     "en": "Beers",
     "pt": "Cervejas"
    },
-   "foto": "",
+   "foto": "lb-cerveza.jpg",
    "nota": {},
    "items": [
     {
@@ -1671,7 +1654,7 @@
     "en": "Cabernet Sauvignon",
     "pt": "Cabernet Sauvignon"
    },
-   "foto": "",
+   "foto": "lb-vino.jpg",
    "nota": {
     "es": "Tiene su origen en Burdeos, Francia, donde conforma en altos porcentajes la base de los grandes vinos de esta región. Quizás la cepa más expandida del mundo.",
     "en": "Originally from Bordeaux, France, where it forms the backbone of the region's great wines. Perhaps the most widely planted grape in the world.",
