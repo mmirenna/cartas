@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-20T17:05:52.078Z",
+ "actualizado": "2026-08-21T17:30:42.888Z",
  "cartas": [
   {
    "id": "don-giovanni",
@@ -15,7 +15,7 @@
    "tema": "lb",
    "logo": "lobby-bar.svg",
    "orden": 2,
-   "items": 216
+   "items": 215
   },
   {
    "id": "carta-vinos",
